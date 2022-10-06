@@ -1,0 +1,98 @@
+<!-- BEGIN header -->
+
+<header class="header fixed">
+	<div class="container">
+		<div class="row">
+
+			<nav class="navbar navbar-expand-lg">
+				<div class="navbar__container">
+					
+					
+				
+						{{ .Scratch.Set "img" .Site.Params.logo }}
+						{{ .Scratch.Set "logo_w" 71 }}
+						{{ .Scratch.Set "logo_h" 40 }}
+						{{- partial "_logo.html" . -}}
+					
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+
+					<svg role="img" class="navbar__icon_open icon-4" width="20" height="20">
+						<use xlink:href="#icon-4"></use>
+					</svg>
+
+					<svg role="img" class="navbar__icon_close icon-1" width="20" height="20">
+						<use xlink:href="#icon-1"></use>
+					</svg>
+
+
+					</button>
+
+
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mx-auto">
+							{{ range .Site.Menus.header }}
+							{{ if .HasChildren }}
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="{{ .URL }}" id="navbarDropdown" role="button"
+									data-bs-toggle="dropdown" aria-expanded="false">
+									{{ .Name }}
+								</a>
+								<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+									{{ range .Children }}
+									<li><a class="dropdown-item" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+									{{ end }}
+								</ul>
+							</li>
+							{{ else }}
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="{{ .URL | relURL }}">{{ .Name }}</a>
+							</li>
+							{{ end }}
+							{{ end }}
+						</ul>
+
+						<div class="navbar__btn-group">
+
+							{{- partial "_lang.html" . -}}
+	
+							{{- partial "_btn-call.html" . -}}
+						
+						</div>
+
+					</div>
+
+				
+
+					</div>
+
+				</div>
+			</nav>
+
+
+		</div>
+	</div>
+
+</header>
+<!-- END header -->
+
+{{ if ne .IsHome true }}
+	<style>
+		.header {
+			background-color: #000;
+			color: #fff;
+		}
+
+		.btn_call:hover, .btn_call:active, .btn_call:focus {
+			color: #fff;
+			fill: #fff;
+		}
+
+		.btn_call:hover svg, .btn_call:active svg, .btn_call:focus svg {
+			fill: #fff;
+		}
+		
+	</style>
+{{ end }}

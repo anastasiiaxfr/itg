@@ -1,0 +1,71 @@
+{{ $cls := .Scratch.Get "mode" }}
+
+<div class="modal fade" id="form-call" aria-hidden="true" aria-labelledby="form-callLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+        <div class="modal-body">
+           
+            <div class="form__wrap">
+
+                <h3 class="form__title">
+                    Заявка на підключення
+                </h3>
+        
+                <h4 class="form__subtitle">
+                    Відправте форму, і наш менеджер зв'яжеться з вами
+                </h4>
+        
+                <form action="#" novalidate method="POST" class="form" id="form-call">
+        
+                    <div class="form__group">
+                        
+                        
+                        <input class="form__field" type="text" required name="name_call" placeholder=" " data-validate-field="name_call">
+                        <label class="form__label" for="name_call"> * Ім`я </label>
+                    
+                    </div>
+                
+                    <div class="form__group">
+                        
+                        <input class="form__field" type="tel" required name="tel_call" placeholder="+38 (0__) ___ - __ - __" data-validate-field="tel_call">
+                        <label class="form__label_tel" for="tel_call">
+                            Телефон
+                        </label>
+                    
+                    </div>
+                  
+        
+                    <div class="form__group">
+                        <input type="submit" v alue="Надіслати" class="btn">
+                    </div>
+        
+                </form>
+            </div>
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+<a
+  class="btn btn--bg mx-2"
+  data-bs-toggle="modal"
+  href="#form-call"
+  role="button"
+>
+  <span>
+    Sign up
+  </span>
+</a>
+<a
+  class="btn"
+  data-bs-toggle="modal"
+  href="#form-call"
+  role="button"
+>
+  <span>
+    Log in
+  </span>
+</a>

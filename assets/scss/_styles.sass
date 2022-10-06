@@ -1,0 +1,247 @@
+.hero
+    +pd((t, 175px), (b, 200px))
+    padding-top: clamp(50px, 7.5vmax, 150px)
+    padding-bottom: clamp(75px, 10vmax, 175px)
+    background-color: transparent
+    color: $white
+    &--sm
+        +pd((t, 100px), (b, 150px))
+    &__wrap
+        background-size: cover
+        background-repeat: no-repeat
+   
+.card
+    height: 100%
+    padding: 30px
+    text-align: center
+    color: $blue2
+    border-radius: 10px
+    border: none
+    box-shadow: $bxsd
+    &__title
+        +ft(48, 48, 700, $ffHeading)
+        +mg((b, 15px))
+    &__desc
+        margin: 0
+        +ft(18, 18*1.5, 400, $ffText)
+       
+
+.box
+    &__item
+        height: 100%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        background: $grad1
+        color: $white
+        border-radius: $brs
+    &__content
+        padding: 30px
+        min-height: 300px
+    &__img
+        img
+            display: block
+            width: 100%
+            +mg((l, auto), (r, auto))
+    &__title
+        p
+            margin: 0
+            +ft(28, 28*1.3, 700, $ffHeading)
+    &__desc
+        +ft(18, 18, 400, $ffText)
+        +mg((t, 15px), (b, 15px))
+    &__text
+        +ft(14, 14*1.6, 400, $ffText)
+           
+
+.block
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    height: 100%
+    padding: 30px
+    background: $grad1
+    color: $white
+    border-radius: 56px
+    text-align: center
+    &__header
+        +ft(30, 30, 700, $ffHeading)
+    &__footer
+        width: 100%
+        +mg((t, 15px))
+    &__title
+        +mg((t, 20px), (b, 20px))
+        +ft(47, 47, 600, $ffHeading)
+        color: $main
+    &__desc
+        +ft(34, 34, 400, $ffHeading)
+    &:hover
+        outline: 4px solid $main
+
+
+.section
+    &_3
+        background: $black url('../images/strategy.jpg') no-repeat 50%/cover
+        color: $white
+    &_9
+        background: $black url('../images/bg2.jpg') no-repeat 50%/cover
+        color: $white
+
+        .text
+            max-width: 50%
+            +mg((l, auto), (r, auto))
+
+.feature
+    &__pic
+        +sz(100px, 100px)
+        +mg((l, auto), (r, auto), (b, 15px))
+        img
+            display: block
+    &__title
+        +ft(20, 20*1.2, 700, $ffHeading)
+        +mg((b, 20px))
+    &__desc
+        +ft(14, 14*1.4, 400, $ffText)
+
+.partners
+    display: inline-flex
+    width: auto
+    margin: 20px
+    img
+        display: block
+        width: 100%
+        max-width: 100%
+        +mg((l, auto), (r, auto))
+
+.map
+    max-height: 365px
+    width: 100%
+    border-radius: $brs
+    object-fit: cover
+
+.img
+    &__wrap
+        img
+            display: block
+            margin-left: auto
+            margin-right: auto
+    &--1
+        display: block
+        max-width: 100%
+        margin-left: auto
+        margin-right: auto
+
+.chart
+    +mg((t, 30px), (b, 30px))
+    &__img
+        display: block
+        max-width: 100%
+        height: 360px
+        object-fit: cover
+    &__title
+        +ft(21, 21, 700, $ffHeading)
+        margin-top: 30px
+        margin-bottom: 20px
+    &__content
+        +ft(18, 18*1.4, 400, $ffText)
+
+.news
+    box-shadow: $bxsd
+    border-radius: $brs
+    &__title
+        +ft(14, 14*1.4, 700, $ffHeading)
+        color: $blue4
+        +mg((b, 15px))
+    &__desc
+        padding: 30px
+        color: $grey
+        +ft(14, 14*1.4, 700, $ffText) 
+    &__text, & p
+        +ft(14, 14*1.4, 700, $ffText)
+    p
+        margin: 10px auto 15px 
+    &__link
+        text-decoration: underline
+    &__img
+        img
+            display: block
+            max-width: 100%
+            width: 100%
+
+.cases
+    box-shadow: $bxsd
+    border-radius: $brs
+    padding: 30px
+    color: $grey2
+    +mg((t, 25px), (b, 25px))
+    &__header
+        +flex(flex, center, flex-start, nowrap)
+        width: 100%
+    &__ava
+        +sz(56px, 56px)
+        +mg((r, 20px))
+        border-radius: 50%
+        background-color: lighten($grey, 60%)
+        owerflow: hidden
+        img
+            border-radius: 50%
+            display: block
+            max-width: 100%
+            height: 100%
+            object-fit: contain
+    &__job
+        +ft(14, 14, 400)
+    &__desc
+        p
+            +ft(18, 18*1.4, 400)
+    &__link
+        text-align: right
+        text-decoration: underline
+        display: block
+
+.product
+    background: $black url('../images/product.jpg') no-repeat 50%/cover
+    color: $white
+    border-radius: $brs
+    padding: 30px
+    +flex(flex, center, center, wrap)
+    &__img
+        width: 30%
+        img
+            width: 90%
+    &__desc
+        width: 70%
+    &__info
+        +flex(flex, flex-end, space-between, wrap)
+    &__title
+        +ft(23, 23, 700, $ffHeading)
+    &__desc, & p
+        +ft(15, 15*1.4, 400, $ffText)
+    &__details
+        padding: 0
+        margin: 0
+        margin-right: 30px
+        li
+            list-style-type: none
+            +mg((t, 10px), (b, 10px))
+    &__btn
+        @extend .btn, .btn--main
+        height: auto
+        +sz(143px, 38px)
+        +mg((t, 10px))
+        +ft(15, 15, 500)
+        
+    &__price
+        display: block
+        color: $main
+        +ft(36, 36, 700, $ffHeading)
+    &__more
+        position: relative
+        img
+            width: 100%
+        a
+            position: absolute
+            right: 0
+            &:hover
+                color: $main

@@ -1,0 +1,40 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.section_5 }}
+{{ with $data.homepage.section_5 }}
+
+
+<section class="section section_5 my-0 my-sm-5 py-5">
+    <div class="container">
+        <h2 class="text-center">
+            {{ .title | markdownify }}
+        </h2>
+
+        <div class="row pt-5">
+            {{ range ($.Site.GetPage "section" "cases").Pages }}
+            <div class="col-lg-4">
+                <div class="cases">
+                    <div class="cases__header">
+                        <div class="cases__ava"><img src="{{ .Params.ava | relURL }}" alt="{{ .Title }}"></div>
+                        <div class="cases__text">
+                            <h5 class="cases__title">
+                                {{ .Title | truncate 50}}
+                            </h5>
+                            <div class="cases__job">
+                                {{ .Params.Job | truncate 50 }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cases__desc">
+                        {{ .Content | truncate 100 }}
+                    </div>
+                    <a href="{{ .Permalink }}" class="cases__link"> Подробнее </a>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

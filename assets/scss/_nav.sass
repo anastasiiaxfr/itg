@@ -1,0 +1,33 @@
+.nav
+    &-item
+        padding: 0 10px
+    &-link
+        color: inherit
+        &:hover
+            color: inherit
+            
+
+.dropdown-menu
+    min-width: auto
+    background-color: $blue2
+    color: $white
+    button
+        background-color: transparent
+        border: none
+        color: inherit
+.dropdown-toggle
+    &:hover, &:focus
+        border: none
+        box-shadow: none
+
+
+.navbar
+    +pd((t, 15px), (b, 15px))
+    color: $white
+    &__btn-group
+        +flex(flex, center, center, nowrap)
+      
+.footer
+    background: $black url('../images/footer.jpg') no-repeat 50%/cover
+    color: $white
+    padding: 10px 15px

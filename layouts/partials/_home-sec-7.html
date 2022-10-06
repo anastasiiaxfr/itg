@@ -1,0 +1,45 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.section_7 }}
+{{ with $data.homepage.section_7 }}
+
+
+<section class="section section_7 my-5 pt-0 pt-sm-5" id="news">
+  <div class="container">
+    <h2 class="text-center">
+      {{ .title }}
+    </h2>
+
+
+    <div class="row my-5 pb-5">
+      {{ range ($.Site.GetPage "section" "news").Pages }}
+
+      <div class="col-lg-3 col-md-6">
+        <figure class="news">
+          <div class="news__img">
+            <img src="{{ .Params.img | relURL }}" alt="{{ .Params.title }}">
+          </div>
+          <figcaption class="news__desc">
+            <h5 class="news__title">
+              {{ .Params.title }} 
+            </h5>
+            <div class="news__date">
+              {{ .Date | time.Format ":date_short"  }}
+            </div>
+            <div class="news__text">
+              {{ .Content | truncate 100 }}
+            </div>
+            <a href="{{ .Permalink }}" class="news__link">Детально</a>
+          </figcaption>
+        </figure>
+      </div>
+
+
+      {{ end }}
+    </div>
+
+  </div>
+</section>
+
+{{ end }}
+{{ end }}

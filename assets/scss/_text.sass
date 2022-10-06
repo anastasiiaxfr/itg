@@ -1,0 +1,33 @@
+h1
+    +ft(36, 36*1.2, 700, $ffHeading)
+    font-size: clamp(30px, 2vmax, 36px)
+h2
+    +ft(46, 46*1.2, 700, $ffHeading)
+    font-size: clamp(30px, 2vmax, 36px)
+h3
+    &, p
+        +ft(46, 46*1.2, 400, $ffHeading)
+        margin: 0
+        font-size: clamp(26px, 2vmax, 46px)
+h4
+    +ft(28, 28, 700, $ffText)
+    font-size: clamp(20px, 2vmax, 28px)
+p
+    +ft(18, 18*1.4, 400, $ffText)
+    +mg((t, 20px), (b, 30px))
+
+.text
+    &--note
+        +ft(26, 26*1.4, 400, $ffText)
+        p
+            margin: 0
+    &--price
+        +ft(79, 79, 700, $ffHeading)
+        color: $main
+
+.list
+    li
+        +ft(24, 24*1.4, 400, $ffText)
+        +mg((b, 20px))
+        &:last-child
+            +mg((b, 0))

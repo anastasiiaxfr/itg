@@ -1,0 +1,45 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+
+<section class="section section_11 my-5 py-0 py-sm-5">
+  <div class="container px-0">
+    <div class="row mx-auto px-0">
+
+
+      {{ with $data.homepage.form }}
+
+
+      <form action="#" id="form" class="form row align-items-center mx-auto px-0" novalidate method="POST">
+        <div class="col-lg-6">
+          {{ if $data.homepage.section_11 }}
+          {{ with $data.homepage.section_11 }}
+
+
+          <h3 class="mb-4">
+            {{ .title | markdownify }}
+          </h3>
+          <div class="text--note">
+            {{ .desc | markdownify }}
+          </div>
+
+
+          {{ end }}
+          {{ end }}
+        </div>
+        <div class="col-lg-6">
+          {{ range .form_fields }}
+          <input type="{{ .type }}" placeholder="{{ .placeholder }}" required="{{ .required }}">
+          {{ end }}
+        </div>
+
+        <input type="submit" value="{{ .form_btn }}" class="form__btn mx-auto mt-5">
+
+      </form>
+
+
+
+
+      {{ end }}
+    </div>
+  </div>
+</section>

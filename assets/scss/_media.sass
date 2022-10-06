@@ -1,0 +1,48 @@
++maw($md)
+    .section
+        &_11
+            text-align: center
+        &_9
+            background: $black url('../images/strategy.jpg') no-repeat 50%/cover
+            .text
+                max-width: 100%
+
+    .form input:not([type=submit])
+        margin-left: auto
+        margin-right: auto
+    .text--note p
+        display: inline 
+    .news
+        +mg((t, 25px), (b, 25px))
+
+
++maw($sm)
+    .footer
+        text-align: center
+        +pd((t, 24px), (b, 24px))
+    .contacts
+        +mg((l, auto), (r, auto))
+        text-align: left
+    .form input:not([type=submit])
+        max-width: 100%
+    .product
+        &__img, &__desc 
+            width: 100%
+        &__img
+            max-width: 300px
+            +mg((b, 30px))
+        &__details
+            +mg((l, auto), (r, auto))
+            text-align: center
+    .feature
+        +mg((t, 25px), (b, 25px))
+
++maw($xs)
+    .product__more
+        img
+            display: none !important
+        a
+            display: block
+            position: relative
+            text-decoration: underline
+            text-align: center

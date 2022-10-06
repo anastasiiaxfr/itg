@@ -1,0 +1,46 @@
+<section class="">
+
+    {{ if .Site.Params.form }}
+    {{ with .Site.Params.form }}
+    <div class="modal">
+        <div class="modal__container">
+
+            <h2 class="modal__title">
+                {{ .title }}
+            </h2>
+            <h4 class="modal__description">
+                {{ .title_sub }}
+            </h4>
+
+
+            <form action="{{ .action }}" POST="{{ .method }}" class="form">
+                {{ range .field }}
+
+
+                {{ if eq .type "submit" }}
+
+                <input class="btn_bg" type="{{ .type }}" required value="{{ .placeholder }}">
+                {{ else }}
+
+                <div class="form__group">
+                    <input class="form__field" type="{{ .type }}" required name="{{ .name }}" placeholder=" "
+                        autocomplete="off">
+                    <label class="form__label" for="{{ .name }}">
+                        {{ .placeholder }}
+                    </label>
+                </div>
+                {{ end }}
+
+
+
+                {{ end }}
+            </form>
+
+
+
+        </div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+</section>

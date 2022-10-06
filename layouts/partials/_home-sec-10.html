@@ -1,0 +1,24 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.section_10 }}
+{{ with $data.homepage.section_10 }}
+
+
+<section class="section section_10 my-5 pt-5">
+    <div class="container">
+      <h2 class="text-center">
+        {{ .title }}
+      </h2>
+
+      <div class="row justify-content-center pt-5 mt-4 mx-auto">
+        {{ range .items }}
+        <div class="my-2 partners">
+          <img src="{{ .img | relURL }}" alt="{{ .title }}">
+        </div>
+        {{ end }}
+      </div>
+    </div>
+</section>
+
+{{ end }}
+{{ end }}

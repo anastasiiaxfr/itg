@@ -1,0 +1,16 @@
+faq:
+  nable: true
+  title: "FAQ"
+  items:
+    - dt: "Как использовать продукт?"
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id eros egestas, bibendum diam eget, tincidunt tortor. Bibendum diam eget, tincidunt tortor"
+    - dt: "Как оформить заказ?"
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id eros egestas, bibendum diam eget, tincidunt tortor. Bibendum diam eget, tincidunt tortor"
+    - dt: "Какие есть варианты сотруднечества?"
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id eros egestas, bibendum diam eget, tincidunt tortor. Bibendum diam eget, tincidunt tortor"
+    - dt: "Какие есть гарантии?"
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id eros egestas, bibendum diam eget, tincidunt tortor. Bibendum diam eget, tincidunt tortor"
+    - dt: "Как связаться с компанией, если клиент не нашел ответ в FAQ?"
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id eros egestas, bibendum diam eget, tincidunt tortor. Bibendum diam eget, tincidunt tortor"
+    - dt: "Как использовать продукт?"
+      dd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id eros egestas, bibendum diam eget, tincidunt tortor. Bibendum diam eget, tincidunt tortor"

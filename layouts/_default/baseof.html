@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{{- partial "head.html" . -}}
+
+<body lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" class="page__body">
+  
+
+  <main class="page__wrapper">
+    <div class="hero__wrap" style="background-image: url({{ `../images/hero.jpg` | relURL }});">
+      {{- partial "header.html" . -}}
+    </div>
+    
+    {{- partial "preloader.html" . -}}
+    <div class="header-span"></div>
+
+
+    {{- block "main" . }}{{- end }}
+
+  </main>
+  {{- partial "_btn-top.html" . -}}
+  {{- partial "footer.html" . -}}
+
+
+ 
+
+  {{ range .Site.Params.plugins.js }}
+  <script src="{{ .link | relURL }}"></script>
+  {{ end }}
+
+  {{ $script := resources.Get "js/script.js" | minify }}
+  <script src="{{ $script.Permalink | relURL }}?v={{ now.Format " 01-02-2006-14-52-26"}}"></script>
+
+  {{- partial "_svg.html" . -}}
+
+
+  <script>
+  $('.teams').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  adaptiveHeight: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  });
+
+  $('.products').slick({
+    rows: 2,
+		dots: true,
+		arrows: true,
+		infinite: true,
+		speed: 300,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true,
+        rows: 1
+      }
+    }
+  ]
+ 
+  });
+  </script>
+  
+  
+
+
+</body>
+</html>

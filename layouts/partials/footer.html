@@ -1,0 +1,83 @@
+<!-- Footer -->
+<!--Main Footer-->
+<footer class="footer" id="contacts">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-sm-6 mb-4 my-sm-0">
+                <img class="map" src="{{ `../images/map.jpg` | relURL }}" alt="{{ .Title }}">
+            </div>
+            <div class="col-sm-6">
+                <h4 class="mb-3">
+                    Контакты
+                </h4>
+                <table class="contacts">
+                    <tr>
+                        <td>
+                            <svg class="icon" width="15" height="15">
+                                <use xlink:href="#tel"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <a href="tel: {{ .Site.Params.mobile }}">{{ .Site.Params.mobile }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <svg class="icon" width="15" height="15">
+                                <use xlink:href="#email"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <a href="mailto: {{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <svg class="icon" width="15" height="15">
+                                <use xlink:href="#map"></use>
+                            </svg>
+                        </td>
+                        <td>
+                            <address>
+                                {{ .Site.Params.address }}
+                            </address>
+                        </td>
+                    </tr>
+                </table>
+                <h4 class="mb-3">
+                    Социальные сети:
+                </h4>
+                <nav class="soc">
+                    <a href="#">
+                        <svg class="icon" width="30" height="30">
+                            <use xlink:href="#tiktok"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" width="30" height="30">
+                            <use xlink:href="#im"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" width="30" height="30">
+                            <use xlink:href="#tm"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" width="30" height="30">
+                            <use xlink:href="#ln"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon" width="30" height="30">
+                            <use xlink:href="#ytb"></use>
+                        </svg>
+                    </a>
+                </nav>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!--Main Footer-->

@@ -1,0 +1,31 @@
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.homepage.hero }}
+	{{ with $data.homepage.hero }}
+
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1>
+                        {{ .title | markdownify }}
+                    </h1>
+                    <p>
+                        {{ .title_sub | markdownify }}
+                    </p>
+
+                    {{  if .btn.enable }}
+                    <a href="{{ .btn.link }}" class="btn btn--bg btn--lg">
+                        {{ .btn.label }}
+                    </a>
+                    {{ end }}
+
+                </div>
+            </div>
+        </div>
+    </section>
+       
+    {{ end }}
+{{ end }}
+
