@@ -7,11 +7,8 @@
 		{{- partial "_logo.html" . -}}
 
 
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		
+		<div class="collapse navbar-collapse order-1" id="navbarSupportedContent">
 			<ul class="navbar-nav mx-auto">
 				{{ range .Site.Menus.header }}
 				{{ if .HasChildren }}
@@ -33,13 +30,22 @@
 				{{ end }}
 				{{ end }}
 			</ul>
-			<div class="navbar__btn-group">
-
-				{{- partial "_lang.html" . -}}
-
-				{{- partial "_btn-call.html" . -}}
-
-			</div>
 		</div>
+		<div class="navbar__btn-group order-12 order-lg-1">
+
+			{{- partial "_lang.html" . -}}
+
+			{{- partial "_btn-call.html" . -}}
+
+		</div>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<svg class="navbar-toggler-open icon" width="40" height="40">
+				<use xlink:href="#menu"></use>
+			</svg>
+			<svg class="navbar-toggler-close icon" width="40" height="40">
+				<use xlink:href="#close"></use>
+			</svg>
+		</button>
 	</div>
 </nav>

@@ -26,7 +26,13 @@
     color: $white
     &__btn-group
         +flex(flex, center, center, nowrap)
-      
+    &-toggler
+        color: inherit
+        &:hover, &:focus
+            box-shadow: none
+        &-close
+            display: none
+
 .footer
     background: $black url('../images/footer.jpg') no-repeat 50%/cover
     color: $white
