@@ -1,5 +1,5 @@
 ---
-title: EN International Trade Group начинает активное сотрудничество с Ассоциацией
+title: RU International Trade Group начинает активное сотрудничество с Ассоциацией
   банков Украины
 description: ''
 seo_title: ''
