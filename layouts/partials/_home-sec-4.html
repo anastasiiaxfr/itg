@@ -12,7 +12,9 @@
             {{ .title }}
         </h2>
 
-        <div class="row mt-5 products">
+        <div class="row mt-5">
+            <div class="products">
+            
             {{ range ($.Site.GetPage "section" "products").Pages }}
             <div class="col-lg-6 my-3 px-3">
                 <div class="product">
@@ -33,25 +35,25 @@
                         <div class="product__info">
                             <ul class="product__details">
                                 <li>
-                                    <svg class="icon" width="20" height="20">
+                                    <svg class="icon me-2" width="20" height="20">
                                         <use xlink:href="#prd4"></use>
                                     </svg>
                                     {{ .Params.product_duration }}
                                 </li>
                                 <li>
-                                    <svg class="icon" width="20" height="20">
+                                    <svg class="icon me-2" width="20" height="20">
                                         <use xlink:href="#prd3"></use>
                                     </svg>
                                     {{ .Params.product_date_start }}
                                 </li>
                                 <li>
-                                    <svg class="icon" width="20" height="20">
+                                    <svg class="icon me-2" width="20" height="20">
                                         <use xlink:href="#prd2"></use>
                                     </svg>
                                     {{ .Params.product_count }}
                                 </li>
                                 <li>
-                                    <svg class="icon" width="20" height="20">
+                                    <svg class="icon me-2" width="20" height="20">
                                         <use xlink:href="#prd1"></use>
                                     </svg>
                                     {{ .Params.product_type }}
@@ -69,6 +71,8 @@
 
             </div>
             {{ end }}
+
+        </div>
         </div>
 
     </div>

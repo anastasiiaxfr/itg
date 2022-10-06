@@ -11,7 +11,7 @@
         </h2>
 
         <div class="row pt-5">
-            {{ range ($.Site.GetPage "section" "cases").Pages }}
+            {{ range first 3 ($.Site.GetPage "section" "cases").Pages }}
             <div class="col-lg-4">
                 <div class="cases">
                     <div class="cases__header">
