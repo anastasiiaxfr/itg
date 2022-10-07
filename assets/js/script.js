@@ -1,78 +1,75 @@
 const field_name = document.querySelector("[name=name]");
 const field_email = document.querySelector("[name=email]");
-const field_phone = document.querySelector("[type=tel]");
+const field_phone = document.querySelectorAll("[name=tel]");
 
 // Inputmask("*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]", {
 //     placeholder: "your@mail.com",
 // }).mask(field_email);
-
 
 // for (let i = 0; i < field_phone.length; i++) {
 //     Inputmask('(999) 99-99-99-999').mask(field_phone[i]);
 // }
 
 
-
 const token = '5601478768:AAFQjTOcFqol4WXcUwNf5JPEya8TJZIaHNo';
 const chat_id = '5125757387';
 
+var smtp = "3964d5-2109-4f37-b69b-0225db33e3a1";
+var target_email = "anastasiiaberest@gmail.com";
+var send_email = "anastasiiaberest@gmail.com";
 
-const smtp = 'd46ded46-54ec-47a5-8235-f0b9067d1811';
-const target_email = 'anastasiiaberest@gmail.com';
-const send_email = 'anastasiiaberest@gmail.com';
+var date = new Date().toLocaleString();
 
+var validateForms = function(selector, rules, callback) {
+  new window.JustValidate(selector, {
+    rules: rules,
+    focusWrongField: true,
+    submitHandler: function(form, values, ajax) {
+      const msg = callback(values);
+      const success = document.createElement("label");
 
-const date = new Date().toLocaleString();
+      success.className = "form__label_success text-center";
+      success.innerHTML = "Your data sent!";
 
+      form.append(success);
+      form.querySelector("[type=submit]").disabled = true;
 
-
-let validateForms = function(selector, rules, callback) {
-    new window.JustValidate(selector,{
-        rules: rules,
-        focusWrongField: true,
-        submitHandler: function(form, values, ajax) {
-            const msg = callback(values);
-            const success = document.createElement('label');
-            
-            success.className = "form-label--success text-center";
-            success.innerHTML = 'Your data sent!';
-
-            form.append(success);
-            form.querySelector('[name=btn_submit]').disabled = true;
-           
-            Email.send({
-                SecureToken: smtp,
-                
-                To: target_email,
-
-                From: send_email,
-
-                Subject: "itg.com",
-                Body: "<br> Name: " + field_name.value + "<br> Email: " + field_email.value + "<br> Phone: " + field_phone.value
-
-            }).then();
-           
-            ajax({
-                url: 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html' + '&text=' + encodeURIComponent(msg),
-                method: 'POST',
-                data: {
-                    chat_id: $('5125757387').val(),
-                    text: $('input').val()
-                },
-                success: function() {
-                    alert('your message has been sent!');
-                },
-                async: true,
-                callback: (response)=>{
-                    console.log(response);
-                }
-            });
+      ajax({
+        url: 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html' + '&text=' + encodeURIComponent(msg),
+        method: 'POST',
+        data: {
+            chat_id: $('5125757387').val(),
+            text: $('input').val()
         },
-        invalidFormCallback: function(errors) {
-            console.log(errors);
+        success: function() {
+            alert('your message has been sent!');
         },
+        async: true,
+        callback: (response)=>{
+            console.log(response);
+        }
     });
+
+      Email.send({
+        SecureToken: smtp,
+
+        To: target_email,
+
+        From: send_email,
+
+        Subject: "itg.com",
+        Body:
+          "<br> Name: " + field_name.value + "<br> Phone: " + field_phone.value,
+      }).then();
+
+
+    },
+    invalidFormCallback: function(errors) {
+      console.log(errors);
+    },
+  });
 };
+
 
 validateForms('.js-form', {
     tel: {
@@ -89,10 +86,11 @@ validateForms('.js-form', {
     },
 }, (values)=>{
     return `
-Source: Beforis.com,
-Name:  ${values['name']},
+Source: itg.com,
+ФИО:  ${values['name']},
 E-mail: ${values['email']},
-Phone: ${values['tel']},
+Телефон: ${values['tel']},
 `;
 }
 );
+

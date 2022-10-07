@@ -28,7 +28,7 @@
         </div>
         <div class="col-lg-6">
           {{ range .form_fields }}
-          <input type="{{ .type }}" placeholder="{{ .placeholder }}" required="{{ .required }}" name="{{.name}}">
+          <input type="{{ .type }}" placeholder="{{ .placeholder }}" required="{{ .required }}" name="{{.name}}" data-validate-field="{{ .name }}">
           {{ end }}
         </div>
 
