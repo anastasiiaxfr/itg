@@ -17,7 +17,7 @@
 				{{ .Content }}
 
 				<div class="row my-5">
-					{{ range ($.Site.GetPage "section" "cases").Pages }}
+					{{ range (.Site.GetPage "section" "cases").Pages }}
 					{{- partial "_cases-card.html" . -}}
 					{{ end }}
 				</div>
