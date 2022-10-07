@@ -29,16 +29,18 @@
 				</li>
 				{{ end }}
 				{{ end }}
+				
 			</ul>
+			<div>
+				{{- partial "_btn-call.html" . -}}
+			</div>
+
 		</div>
 		<div class="navbar__btn-group order-12 order-lg-1">
 
 			{{- partial "_lang.html" . -}}
 
-			{{- partial "_btn-call.html" . -}}
-
-		</div>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<svg class="navbar-toggler-open icon" width="40" height="40">
 				<use xlink:href="#menu"></use>
@@ -47,5 +49,7 @@
 				<use xlink:href="#close"></use>
 			</svg>
 		</button>
+		</div>
+		
 	</div>
 </nav>
