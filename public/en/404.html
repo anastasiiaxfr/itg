@@ -1,5 +1,5 @@
 <!DOCTYPE html><head>
-  <meta charset="utf-8" />
+  
   
 
 
@@ -106,16 +106,16 @@
 
   <!-- Main Stylesheet --> 
   
-  <link rel="stylesheet" href="../scss/main.min.css?v=10-07-2022-1017-57-76" media="screen"> 
+  <link rel="stylesheet" href="../scss/main.min.css?v=10-07-2022-1039-467-76" media="screen"> 
    <!-- plugins -->  
    
-  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick.css?v=10-07-2022-1017-57-76"> 
+  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick.css?v=10-07-2022-1039-467-76"> 
    
-  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick-theme.css?v=10-07-2022-1017-57-76"> 
+  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick-theme.css?v=10-07-2022-1039-467-76"> 
   
   <!-- Custom Stylesheet --> 
    
-  <link rel="stylesheet" href="../scss/custom.min.css?v=10-07-2022-1017-57-76" media="screen">
+  <link rel="stylesheet" href="../scss/custom.min.css?v=10-07-2022-1039-467-76" media="screen">
 
 </head>
 <body lang="en" class="page__body">
@@ -192,35 +192,51 @@
 				</li>
 				
 				
+				
 			</ul>
+			<div class="d-flex">
+				<div class="d-none d-lg-block">
+
+</div>
+<ul class="btn__wrap">
+  <li>
+    <a
+    class="btn btn--bg mx-lg-2"
+    data-bs-toggle="modal"
+    href="#form-call"
+    role="button"
+  >
+    <span>
+      Sign Up
+     
+    </span>
+  </a>
+  </li>
+  <li>
+    <a
+    class="btn"
+    data-bs-toggle="modal"
+    href="#form-call"
+    role="button"
+  >
+    <span>
+      Log In
+    </span>
+  </a>
+  
+  </li>
+</ul>
+
+</div>
+
 		</div>
 		<div class="navbar__btn-group order-12 order-lg-1">
 
+			<div class="d-flex d-lg-none">
 
-
-<a
-  class="btn btn--bg mx-2"
-  data-bs-toggle="modal"
-  href="#form-call"
-  role="button"
->
-  <span>
-    Sign Up
-   
-  </span>
-</a>
-<a
-  class="btn"
-  data-bs-toggle="modal"
-  href="#form-call"
-  role="button"
->
-  <span>
-    Log In
-  </span>
-</a>
 </div>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<svg class="navbar-toggler-open icon" width="40" height="40">
 				<use xlink:href="#menu"></use>
@@ -229,6 +245,8 @@
 				<use xlink:href="#close"></use>
 			</svg>
 		</button>
+		</div>
+		
 	</div>
 </nav></div>
 
@@ -360,11 +378,13 @@ scrollToTopBtn.addEventListener("click", scrollToTop)
   
   <script src="../plugins/js/bootstrap.bundle.min.js"></script>
   
+  <script src="../plugins/js/just-validate.min.js"></script>
+  
   <script src="../plugins/js/smtp.js"></script>
   
 
   
-  <script src="../js/script.min.js?v=%2010-07-2022-1017-57-76"></script><svg width="0" height="0" class="hidden">
+  <script src="../js/script.min.js?v=%2010-07-2022-1039-467-76"></script><svg width="0" height="0" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="menu">
     <title>Menu</title>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
@@ -452,7 +472,7 @@ scrollToTopBtn.addEventListener("click", scrollToTop)
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 968,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2

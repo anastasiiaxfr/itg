@@ -31,14 +31,19 @@
 				{{ end }}
 				
 			</ul>
-			<div>
+			<div class="d-flex">
+				<div class="d-none d-lg-block">
+					{{- partial "_lang.html" . -}}
+				</div>
 				{{- partial "_btn-call.html" . -}}
 			</div>
 
 		</div>
 		<div class="navbar__btn-group order-12 order-lg-1">
 
-			{{- partial "_lang.html" . -}}
+			<div class="d-flex d-lg-none">
+				{{- partial "_lang.html" . -}}
+			</div>
 
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

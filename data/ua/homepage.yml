@@ -36,33 +36,33 @@ section_2:
     - name: "Максим \n\n Рыбин"
       job: "CEO / CO-FOUNDER"
       desc: "Менеджмент, маркетинг, опыт управления крупными корпорациями и командами  более 1000 человек"
-      img: "../images/team1.png"
-      img_webp: "../images/team1.webp"
+      img: "images/team1.png"
+      img_webp: "images/team1.webp"
     - name: "Фарид \n\n Бабаев"
       job: "CEO / CO-FOUNDER"
       desc: "Управление инвестиционными портфелями, аналитика, разработка системы трейдинга, разработка аллометрических стратегий."
-      img: "../images/team2.png"
-      img_webp: "../images/team2.webp"
+      img: "images/team2.png"
+      img_webp: "images/team2.webp"
     - name: "Игорь \n\n Порох"
       job: "CEO / CO-FOUNDER"
       desc: "Топ 3 трейдеров СНГ по версии BTC Awards.Торговля на финансовых рынка с 2013 года, разработка аллометрических стратегий с 2015 года."
-      img: "../images/team3.png"
-      img_webp: "../images/team3.webp"
+      img: "images/team3.png"
+      img_webp: "images/team3.webp"
     - name: "Николай \n\n Ульянич"
       job: "Аналитик"
       desc: "Старший трейдер, начальник аналитичесского отдела, главный крипто аудитор"
-      img: "../images/team4.png"
-      img_webp: "../images/team4.webp"
+      img: "images/team4.png"
+      img_webp: "images/team4.webp"
     - name: "Николай \n\n Ульянич"
       job: "Аналитик"
       desc: "Старший трейдер, начальник аналитичесского отдела, главный крипто аудитор"
-      img: "../images/team4.png"
-      img_webp: "../images/team4.webp"
+      img: "images/team4.png"
+      img_webp: "images/team4.webp"
     - name: "Николай \n\n Ульянич"
       job: "Аналитик"
       desc: "Старший трейдер, начальник аналитичесского отдела, главный крипто аудитор"
-      img: "../images/team4.png"
-      img_webp: "../images/team4.webp"
+      img: "images/team4.png"
+      img_webp: "images/team4.webp"
     
     
 # section 3 #
@@ -72,23 +72,23 @@ section_features:
   items:
     - title: "Опыт управление"
       description: "Разработка стратегии и управление инвестиционными портфелями, управление ликвидностью является нашим главным преймуществом"
-      icon: "../images/strategy 1.png"
-      icon_webp: "../images/strategy1.webp"
+      icon: "images/strategy 1.png"
+      icon_webp: "images/strategy1.webp"
 
     - title: "Гибкость"
       description: "Хотя у нас есть четкие регламенты работы с инвесторами и понимания взаимовыгодных отношений, мы всегда открыты к новому диалогу, и придумаем все, чтобы инвестору было комфортно с нами работать."
-      icon: "../images/strategy 2.png"
-      icon_webp: "../images/strategy2.webp"
+      icon: "images/strategy 2.png"
+      icon_webp: "images/strategy2.webp"
       
     - title: "Опыт"
       description: "Более 80% прибыльных результатов достигаются упорным трудом, финансовой грамотностью и очень большим опытом анализа на различных рынках"
-      icon: "../images/strategy 3.png"
-      icon_webp: "../images/strategy3.webp"
+      icon: "images/strategy 3.png"
+      icon_webp: "images/strategy3.webp"
       
     - title: "Знания"
       description: "Наш информационный и аналитический отдел 24/7 анализирует и зондирует рынок цифровых активов. Проводит аудит и аналитику чужих стратегий. "
-      icon: "../images/strategy 4.png"
-      icon_webp: "../images/strategy4.webp"
+      icon: "images/strategy 4.png"
+      icon_webp: "images/strategy4.webp"
 
     
 
@@ -112,7 +112,7 @@ section_7:
 section_9: 
   enable: true
   text: "Благотворительный фонд «For my Ukraine» – это фонд-хаб, объединяющий людей, ресурсы, идеи, возможности, чтобы в синергии реализовывать комплексные национальные и международные социальные проекты."
-  img: "../images/img1.png"
+  img: "images/img1.png"
   btn:
     enable: true
     label: "Подробнее"
@@ -125,18 +125,18 @@ section_10:
   enable: true
   title: "Наши партнеры"
   items:
-    - img: "../images/partners/partner1.png"
-      img_webp: "../images/partners/partner1.webp"
-    - img: "../images/partners/partner2.png"
-      img_webp: "../images/partners/partner2.webp"
-    - img: "../images/partners/partner3.png"
-      img_webp: "../images/partners/partner3.webp"
-    - img: "../images/partners/partner4.png"
-      img_webp: "../images/partners/partner4.webp"
-    - img: "../images/partners/partner5.png"
-      img_webp: "../images/partners/partner5.webp"
-    - img: "../images/partners/partner6.png"
-      img_webp: "../images/partners/partner6.webp"
+    - img: "images/partners/partner1.png"
+      img_webp: "images/partners/partner1.webp"
+    - img: "images/partners/partner2.png"
+      img_webp: "images/partners/partner2.webp"
+    - img: "images/partners/partner3.png"
+      img_webp: "images/partners/partner3.webp"
+    - img: "images/partners/partner4.png"
+      img_webp: "images/partners/partner4.webp"
+    - img: "images/partners/partner5.png"
+      img_webp: "images/partners/partner5.webp"
+    - img: "images/partners/partner6.png"
+      img_webp: "images/partners/partner6.webp"
 
 
 # section 11 #
@@ -154,11 +154,15 @@ form:
     - type: "text"
       placeholder: "Ваше имя"
       required: true
+      name: "name"
     - type: "text"
       placeholder: "Ваш вопрос"
       required: true
+      name: "question"
     - type: "email"
       placeholder: "Ваш Email"
+      name: "email"
     - type: "text"
       placeholder: "Ваш номер телефона"
       required: true
+      name: "tel"

@@ -1,5 +1,5 @@
 <!DOCTYPE html><head>
-  <meta charset="utf-8" />
+  
   
 
 
@@ -106,16 +106,16 @@
 
   <!-- Main Stylesheet --> 
   
-  <link rel="stylesheet" href="../scss/main.min.css?v=10-07-2022-1017-57-76" media="screen"> 
+  <link rel="stylesheet" href="../scss/main.min.css?v=10-07-2022-1039-467-76" media="screen"> 
    <!-- plugins -->  
    
-  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick.css?v=10-07-2022-1017-57-76"> 
+  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick.css?v=10-07-2022-1039-467-76"> 
    
-  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick-theme.css?v=10-07-2022-1017-57-76"> 
+  <link rel="stylesheet" href="../plugins/slick-1.8.1/slick/slick-theme.css?v=10-07-2022-1039-467-76"> 
   
   <!-- Custom Stylesheet --> 
    
-  <link rel="stylesheet" href="../scss/custom.min.css?v=10-07-2022-1017-57-76" media="screen">
+  <link rel="stylesheet" href="../scss/custom.min.css?v=10-07-2022-1039-467-76" media="screen">
 
 </head>
 <body lang="en" class="page__body">
@@ -150,7 +150,7 @@
 <!-- banner-feature -->
 
 
-<div class="hero__wrap" style="background-image: url(/../images/hero.jpg);">
+<div class="hero__wrap" style="background-image: url(images/hero.jpg);">
 <nav class="navbar navbar-expand-lg">
 	<div class="container">
 
@@ -206,9 +206,10 @@
 				</li>
 				
 				
+				
 			</ul>
-		</div>
-		<div class="navbar__btn-group order-12 order-lg-1">
+			<div class="d-flex">
+				<div class="d-none d-lg-block">
 
 
 <nav class="dropdown lang-switcher">
@@ -294,31 +295,130 @@
 </nav>
 
 
-
-
-<a
-  class="btn btn--bg mx-2"
-  data-bs-toggle="modal"
-  href="#form-call"
-  role="button"
->
-  <span>
-    Sign Up
-   
-  </span>
-</a>
-<a
-  class="btn"
-  data-bs-toggle="modal"
-  href="#form-call"
-  role="button"
->
-  <span>
-    Log In
-  </span>
-</a>
 </div>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+<ul class="btn__wrap">
+  <li>
+    <a
+    class="btn btn--bg mx-lg-2"
+    data-bs-toggle="modal"
+    href="#form-call"
+    role="button"
+  >
+    <span>
+      Sign Up
+     
+    </span>
+  </a>
+  </li>
+  <li>
+    <a
+    class="btn"
+    data-bs-toggle="modal"
+    href="#form-call"
+    role="button"
+  >
+    <span>
+      Log In
+    </span>
+  </a>
+  
+  </li>
+</ul>
+
+</div>
+
+		</div>
+		<div class="navbar__btn-group order-12 order-lg-1">
+
+			<div class="d-flex d-lg-none">
+
+
+<nav class="dropdown lang-switcher">
+  
+  
+
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+   
+    
+    
+    ENG
+    
+    
+    
+    
+    
+    
+
+  </button>
+
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    
+    
+    
+    
+    
+    
+    
+   
+    <li>
+      <button class="" id="en" value="/en/" onClick="location = this.value;">ENG</button>
+    </li>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <button class="" id="ru" value="/ru/" onClick="location = this.value;">
+        Ру
+      </button>
+    </li>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <button class="" id="ua" value="/" onClick="location = this.value;">
+        Укр
+      </button>
+    </li>
+
+    
+    
+    
+    
+  </ul>
+  
+</nav>
+
+
+</div>
+
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<svg class="navbar-toggler-open icon" width="40" height="40">
 				<use xlink:href="#menu"></use>
@@ -327,6 +427,8 @@
 				<use xlink:href="#close"></use>
 			</svg>
 		</button>
+		</div>
+		
 	</div>
 </nav>
 
@@ -490,8 +592,8 @@
                         </div>
                         <div class="box__img">
                             <picture>
-                                <source srcset="../../images/team1.webp">
-                                <img src="../../images/team1.png" alt="">
+                                <source srcset="../images/team1.webp">
+                                <img src="../images/team1.png" alt="">
                             </picture>
                         </div>
                     </div>
@@ -514,8 +616,8 @@
                         </div>
                         <div class="box__img">
                             <picture>
-                                <source srcset="../../images/team2.webp">
-                                <img src="../../images/team2.png" alt="">
+                                <source srcset="../images/team2.webp">
+                                <img src="../images/team2.png" alt="">
                             </picture>
                         </div>
                     </div>
@@ -538,8 +640,8 @@
                         </div>
                         <div class="box__img">
                             <picture>
-                                <source srcset="../../images/team3.webp">
-                                <img src="../../images/team3.png" alt="">
+                                <source srcset="../images/team3.webp">
+                                <img src="../images/team3.png" alt="">
                             </picture>
                         </div>
                     </div>
@@ -562,8 +664,8 @@
                         </div>
                         <div class="box__img">
                             <picture>
-                                <source srcset="../../images/team4.webp">
-                                <img src="../../images/team4.png" alt="">
+                                <source srcset="../images/team4.webp">
+                                <img src="../images/team4.png" alt="">
                             </picture>
                         </div>
                     </div>
@@ -586,8 +688,8 @@
                         </div>
                         <div class="box__img">
                             <picture>
-                                <source srcset="../../images/team4.webp">
-                                <img src="../../images/team4.png" alt="">
+                                <source srcset="../images/team4.webp">
+                                <img src="../images/team4.png" alt="">
                             </picture>
                         </div>
                     </div>
@@ -610,8 +712,8 @@
                         </div>
                         <div class="box__img">
                             <picture>
-                                <source srcset="../../images/team4.webp">
-                                <img src="../../images/team4.png" alt="">
+                                <source srcset="../images/team4.webp">
+                                <img src="../images/team4.png" alt="">
                             </picture>
                         </div>
                     </div>
@@ -646,8 +748,8 @@
                 <figure class="feature">
                     <div class="feature__pic">
                         <picture>
-                            <source srcset="../../images/strategy1.webp">
-                            <img src="../../images/strategy%201.png" alt="Опыт управление" width="100" heigh="100">
+                            <source srcset="../images/strategy1.webp">
+                            <img src="../images/strategy%201.png" alt="Опыт управление" width="100" heigh="100">
                         </picture>
 
                     </div>    
@@ -668,8 +770,8 @@
                 <figure class="feature">
                     <div class="feature__pic">
                         <picture>
-                            <source srcset="../../images/strategy2.webp">
-                            <img src="../../images/strategy%202.png" alt="Гибкость" width="100" heigh="100">
+                            <source srcset="../images/strategy2.webp">
+                            <img src="../images/strategy%202.png" alt="Гибкость" width="100" heigh="100">
                         </picture>
 
                     </div>    
@@ -690,8 +792,8 @@
                 <figure class="feature">
                     <div class="feature__pic">
                         <picture>
-                            <source srcset="../../images/strategy3.webp">
-                            <img src="../../images/strategy%203.png" alt="Опыт" width="100" heigh="100">
+                            <source srcset="../images/strategy3.webp">
+                            <img src="../images/strategy%203.png" alt="Опыт" width="100" heigh="100">
                         </picture>
 
                     </div>    
@@ -712,8 +814,8 @@
                 <figure class="feature">
                     <div class="feature__pic">
                         <picture>
-                            <source srcset="../../images/strategy4.webp">
-                            <img src="../../images/strategy%204.png" alt="Знания" width="100" heigh="100">
+                            <source srcset="../images/strategy4.webp">
+                            <img src="../images/strategy%204.png" alt="Знания" width="100" heigh="100">
                         </picture>
 
                     </div>    
@@ -759,10 +861,10 @@
         <div class="row mt-5">
             <div class="products">
             
-            <div class="col-lg-6 my-3 px-3">
+            <div class="col-lg-6 my-3 px-lg-3">
 	<div class="product">
 		<div class="product__img">
-			<img src="../../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+			<img src="../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 		</div>
 		<div class="product__desc">
 			<h5 class="product__title">
@@ -774,7 +876,7 @@ Lorem ipsum dolor sit …</p>
 			</div>
 			<div class="product__more">
 				<a href="../en/products/product1/">Подробнее</a>
-				<img src="../../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+				<img src="../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 			</div>
 			<div class="product__info">
 				<ul class="product__details">
@@ -813,10 +915,10 @@ Lorem ipsum dolor sit …</p>
 		</div>
 	</div>
 
-</div><div class="col-lg-6 my-3 px-3">
+</div><div class="col-lg-6 my-3 px-lg-3">
 	<div class="product">
 		<div class="product__img">
-			<img src="../../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+			<img src="../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 		</div>
 		<div class="product__desc">
 			<h5 class="product__title">
@@ -828,7 +930,7 @@ Lorem ipsum dolor sit …</p>
 			</div>
 			<div class="product__more">
 				<a href="../en/products/product2/">Подробнее</a>
-				<img src="../../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+				<img src="../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 			</div>
 			<div class="product__info">
 				<ul class="product__details">
@@ -867,10 +969,10 @@ Lorem ipsum dolor sit …</p>
 		</div>
 	</div>
 
-</div><div class="col-lg-6 my-3 px-3">
+</div><div class="col-lg-6 my-3 px-lg-3">
 	<div class="product">
 		<div class="product__img">
-			<img src="../../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+			<img src="../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 		</div>
 		<div class="product__desc">
 			<h5 class="product__title">
@@ -882,7 +984,7 @@ Lorem ipsum dolor sit …</p>
 			</div>
 			<div class="product__more">
 				<a href="../en/products/product3/">Подробнее</a>
-				<img src="../../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+				<img src="../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 			</div>
 			<div class="product__info">
 				<ul class="product__details">
@@ -921,10 +1023,10 @@ Lorem ipsum dolor sit …</p>
 		</div>
 	</div>
 
-</div><div class="col-lg-6 my-3 px-3">
+</div><div class="col-lg-6 my-3 px-lg-3">
 	<div class="product">
 		<div class="product__img">
-			<img src="../../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+			<img src="../images/product/product1.png" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 		</div>
 		<div class="product__desc">
 			<h5 class="product__title">
@@ -936,7 +1038,7 @@ Lorem ipsum dolor sit …</p>
 			</div>
 			<div class="product__more">
 				<a href="../en/products/product4/">Подробнее</a>
-				<img src="../../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+				<img src="../images/line.svg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 			</div>
 			<div class="product__info">
 				<ul class="product__details">
@@ -1205,10 +1307,28 @@ Lorem ipsum dolor sit …</p>
 
 
     <div class="row my-5 pb-5">
-      <div class="col-lg-3 col-md-6 my-3 my-lg-0">
+      <div class="col-lg-3 col-md-6 my-3">
 	<figure class="news">
 	  <div class="news__img">
-		<img src="../../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+		<img src="../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины-(copy)">
+	  </div>
+	  <figcaption class="news__desc">
+		<h5 class="news__title">
+		  International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины-(copy) 
+		</h5>
+		<div class="news__date">
+		  10.10.2022
+		</div>
+		<div class="news__text">
+		  
+		</div>
+		<a href="../en/news/international-trade-group-copy/" class="news__link">Детально</a>
+	  </figcaption>
+	</figure>
+  </div><div class="col-lg-3 col-md-6 my-3">
+	<figure class="news">
+	  <div class="news__img">
+		<img src="../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 	  </div>
 	  <figcaption class="news__desc">
 		<h5 class="news__title">
@@ -1218,16 +1338,15 @@ Lorem ipsum dolor sit …</p>
 		  11.11.2019
 		</div>
 		<div class="news__text">
-		  <p>Компания International Trade Group за 3 года своей деятельности заключила…
-Lorem ipsum dolor sit …</p>
+		  <p>Компания International Trade Group за 3 года своей деятельности заключила… Lorem ipsum dolor sit …</p>
 		</div>
 		<a href="../en/news/news1/" class="news__link">Детально</a>
 	  </figcaption>
 	</figure>
-  </div><div class="col-lg-3 col-md-6 my-3 my-lg-0">
+  </div><div class="col-lg-3 col-md-6 my-3">
 	<figure class="news">
 	  <div class="news__img">
-		<img src="../../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+		<img src="../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 	  </div>
 	  <figcaption class="news__desc">
 		<h5 class="news__title">
@@ -1243,10 +1362,10 @@ Lorem ipsum dolor sit …</p>
 		<a href="../en/news/news4/" class="news__link">Детально</a>
 	  </figcaption>
 	</figure>
-  </div><div class="col-lg-3 col-md-6 my-3 my-lg-0">
+  </div><div class="col-lg-3 col-md-6 my-3">
 	<figure class="news">
 	  <div class="news__img">
-		<img src="../../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
+		<img src="../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
 	  </div>
 	  <figcaption class="news__desc">
 		<h5 class="news__title">
@@ -1260,25 +1379,6 @@ Lorem ipsum dolor sit …</p>
 Lorem ipsum dolor sit …</p>
 		</div>
 		<a href="../en/news/news2/" class="news__link">Детально</a>
-	  </figcaption>
-	</figure>
-  </div><div class="col-lg-3 col-md-6 my-3 my-lg-0">
-	<figure class="news">
-	  <div class="news__img">
-		<img src="../../images/news.jpg" alt="International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины">
-	  </div>
-	  <figcaption class="news__desc">
-		<h5 class="news__title">
-		  International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины 
-		</h5>
-		<div class="news__date">
-		  10.10.2019
-		</div>
-		<div class="news__text">
-		  <p>Компания International Trade Group за 3 года своей деятельности заключила…
-Lorem ipsum dolor sit …</p>
-		</div>
-		<a href="../en/news/news3/" class="news__link">Детально</a>
 	  </figcaption>
 	</figure>
   </div>
@@ -1300,7 +1400,7 @@ Lorem ipsum dolor sit …</p>
     <div class="row py-5 mx-auto">
       <div class="col-lg-6 text-center">
         <div class="text">
-          <img src="../../images/img1.png" alt="">
+          <img src="../images/img1.png" alt="">
           <div class="my-4">
             Благотворительный фонд «For my Ukraine» – это фонд-хаб, объединяющий людей, ресурсы, идеи, возможности, чтобы в синергии реализовывать комплексные национальные и международные социальные проекты.
           </div>
@@ -1338,43 +1438,43 @@ Lorem ipsum dolor sit …</p>
         
         <div class="my-4 partners">
           <picture>
-            <source srcset="../../images/partners/partner1.webp">
-            <img src="../../images/partners/partner1.png" alt="">
+            <source srcset="../images/partners/partner1.webp">
+            <img src="../images/partners/partner1.png" alt="">
         </picture>
         </div>
         
         <div class="my-4 partners">
           <picture>
-            <source srcset="../../images/partners/partner2.webp">
-            <img src="../../images/partners/partner2.png" alt="">
+            <source srcset="../images/partners/partner2.webp">
+            <img src="../images/partners/partner2.png" alt="">
         </picture>
         </div>
         
         <div class="my-4 partners">
           <picture>
-            <source srcset="../../images/partners/partner3.webp">
-            <img src="../../images/partners/partner3.png" alt="">
+            <source srcset="../images/partners/partner3.webp">
+            <img src="../images/partners/partner3.png" alt="">
         </picture>
         </div>
         
         <div class="my-4 partners">
           <picture>
-            <source srcset="../../images/partners/partner4.webp">
-            <img src="../../images/partners/partner4.png" alt="">
+            <source srcset="../images/partners/partner4.webp">
+            <img src="../images/partners/partner4.png" alt="">
         </picture>
         </div>
         
         <div class="my-4 partners">
           <picture>
-            <source srcset="../../images/partners/partner5.webp">
-            <img src="../../images/partners/partner5.png" alt="">
+            <source srcset="../images/partners/partner5.webp">
+            <img src="../images/partners/partner5.png" alt="">
         </picture>
         </div>
         
         <div class="my-4 partners">
           <picture>
-            <source srcset="../../images/partners/partner6.webp">
-            <img src="../../images/partners/partner6.png" alt="">
+            <source srcset="../images/partners/partner6.webp">
+            <img src="../images/partners/partner6.png" alt="">
         </picture>
         </div>
         
@@ -1397,7 +1497,7 @@ Lorem ipsum dolor sit …</p>
       
 
 
-      <form action="#" id="form" class="form row align-items-center mx-auto px-0" novalidate method="POST">
+      <form action="#" id="form" class="form js-form row align-items-center mx-auto px-0" novalidate method="POST">
         <div class="col-lg-6">
           
           
@@ -1418,13 +1518,13 @@ Lorem ipsum dolor sit …</p>
         </div>
         <div class="col-lg-6">
           
-          <input type="text" placeholder="Ваше имя" required="true">
+          <input type="text" placeholder="Ваше имя" required="true" name="name">
           
-          <input type="text" placeholder="Ваш вопрос" required="true">
+          <input type="text" placeholder="Ваш вопрос" required="true" name="question">
           
-          <input type="email" placeholder="Ваш Email" required="">
+          <input type="email" placeholder="Ваш Email" required="" name="email">
           
-          <input type="text" placeholder="Ваш номер телефона" required="true">
+          <input type="text" placeholder="Ваш номер телефона" required="true" name="tel">
           
         </div>
 
@@ -1552,11 +1652,13 @@ scrollToTopBtn.addEventListener("click", scrollToTop)
   
   <script src="../plugins/js/bootstrap.bundle.min.js"></script>
   
+  <script src="../plugins/js/just-validate.min.js"></script>
+  
   <script src="../plugins/js/smtp.js"></script>
   
 
   
-  <script src="../js/script.min.js?v=%2010-07-2022-1017-57-76"></script><svg width="0" height="0" class="hidden">
+  <script src="../js/script.min.js?v=%2010-07-2022-1039-467-76"></script><svg width="0" height="0" class="hidden">
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="menu">
     <title>Menu</title>
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M80 160h352M80 256h352M80 352h352"></path>
@@ -1644,7 +1746,7 @@ scrollToTopBtn.addEventListener("click", scrollToTop)
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 968,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2

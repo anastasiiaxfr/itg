@@ -4,7 +4,7 @@ title: International Trade Group начинает активное сотруд�
 description: ''
 seo_title: ''
 seo_description: ''
-img: "../images/news.jpg"
+img: "images/news.jpg"
 date: 2019-11-13T13:39:07.000+06:00
 type: news
 

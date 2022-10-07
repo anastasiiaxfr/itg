@@ -1,4 +1,14 @@
 +maw($md)
+    .btn__wrap
+        justify-content: flex-start
+        li
+            width: 100%
+            padding: 10px
+        .btn
+            background-color: transparent
+            color: inherit
+            padding: 10px 0
+            +ft(16, 16, 400)
     .section
         &_11
             text-align: center
@@ -22,6 +32,8 @@
             text-align: center
     .hero
         text-align: center
+        &__wrap
+            background-image: $grad3 !important
     .footer
         text-align: center
         +pd((t, 24px), (b, 24px))
@@ -63,4 +75,3 @@
             padding: 0
             background: transparent
             color: inherit
-            +ft(13, 13, 600)

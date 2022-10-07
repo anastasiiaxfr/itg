@@ -1,23 +1,30 @@
 {{ $cls := .Scratch.Get "mode" }}
+<ul class="btn__wrap">
+  <li>
+    <a
+    class="btn btn--bg mx-lg-2"
+    data-bs-toggle="modal"
+    href="#form-call"
+    role="button"
+  >
+    <span>
+      {{ i18n "signup" }}
+     
+    </span>
+  </a>
+  </li>
+  <li>
+    <a
+    class="btn"
+    data-bs-toggle="modal"
+    href="#form-call"
+    role="button"
+  >
+    <span>
+      {{ i18n "login" }}
+    </span>
+  </a>
+  
+  </li>
+</ul>
 
-<a
-  class="btn btn--bg mx-2"
-  data-bs-toggle="modal"
-  href="#form-call"
-  role="button"
->
-  <span>
-    {{ i18n "signup" }}
-   
-  </span>
-</a>
-<a
-  class="btn"
-  data-bs-toggle="modal"
-  href="#form-call"
-  role="button"
->
-  <span>
-    {{ i18n "login" }}
-  </span>
-</a>

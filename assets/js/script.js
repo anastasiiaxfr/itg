@@ -1,180 +1,95 @@
-var field_name = document.querySelector("[name=name]");
-var field_phone = document.querySelector("[name=tel]");
+const field_name = document.querySelector("[name=name]");
+const field_email = document.querySelector("[name=email]");
+const field_phone = document.querySelector("[type=tel]");
 
-var field_name_call = document.querySelector("[name=name_call]");
-var field_phone_call = document.querySelector("[name=tel_call]");
-
-var field_name_hero = document.querySelector("[name=name_hero]");
-var field_phone_hero = document.querySelector("[name=tel_hero]");
+// Inputmask("*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]", {
+//     placeholder: "your@mail.com",
+// }).mask(field_email);
 
 
-var smtp = "d46ded46-54ec-47a5-8235-f0b9067d1811";
-var target_email = "join.commercial@gmail.com";
-var send_email = "a.berest@ftr.group";
+// for (let i = 0; i < field_phone.length; i++) {
+//     Inputmask('(999) 99-99-99-999').mask(field_phone[i]);
+// }
 
-var date = new Date().toLocaleString();
 
-var validateForms = function(selector, rules, callback) {
-  new window.JustValidate(selector, {
-    rules: rules,
-    focusWrongField: true,
-    submitHandler: function(form, values, ajax) {
-      const msg = callback(values);
-      const success = document.createElement("label");
+const token = '5601478768:AAFQjTOcFqol4WXcUwNf5JPEya8TJZIaHNo';
+const chat_id = '5125757387';
 
-      success.className = "form__label_success";
-      success.innerHTML = "Your data sent!";
 
-      form.append(success);
-      form.querySelector("[type=submit]").disabled = true;
+const smtp = 'd46ded46-54ec-47a5-8235-f0b9067d1811';
+const target_email = 'anastasiiaberest@gmail.com';
+const send_email = 'anastasiiaberest@gmail.com';
 
-      Email.send({
-        SecureToken: smtp,
 
-        To: target_email,
+const date = new Date().toLocaleString();
 
-        From: send_email,
+let validateForms = function(selector, rules, callback) {
+    new window.JustValidate(selector,{
+        rules: rules,
+        focusWrongField: true,
+        submitHandler: function(form, values, ajax) {
+            const msg = callback(values);
+            const success = document.createElement('label');
+            
+            success.className = "form-label--success";
+            success.innerHTML = 'Your data sent!';
 
-        Subject: "jo1n.com",
-        Body:
-          "<br> Name: " + field_name.value + "<br> Phone: " + field_phone.value,
-      }).then();
-    },
-    invalidFormCallback: function(errors) {
-      console.log(errors);
-    },
-  });
+            form.append(success);
+            form.querySelector('[name=btn_submit]').disabled = true;
+           
+            Email.send({
+                SecureToken: smtp,
+                
+                To: target_email,
+
+                From: send_email,
+
+                Subject: "itg.com",
+                Body: "<br> Name: " + field_name.value + "<br> Email: " + field_email.value + "<br> Phone: " + field_phone.value
+
+            }).then();
+           
+            ajax({
+                url: 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html' + '&text=' + encodeURIComponent(msg),
+                method: 'POST',
+                data: {
+                    chat_id: $('-592603234').val(),
+                    text: $('input').val()
+                },
+                success: function() {
+                    alert('your message has been sent!');
+                },
+                async: true,
+                callback: (response)=>{
+                    console.log(response);
+                }
+            });
+        },
+        invalidFormCallback: function(errors) {
+            console.log(errors);
+        },
+    });
 };
 
-var validateForms_call = function(selector, rules, callback) {
-  new window.JustValidate(selector, {
-    rules: rules,
-    focusWrongField: true,
-    submitHandler: function(form, values, ajax) {
-      const msg = callback(values);
-      const success = document.createElement("label");
-
-      success.className = "form__label_success";
-      success.innerHTML = "Your data sent!";
-
-      form.append(success);
-      form.querySelector("[type=submit]").disabled = true;
-
-      Email.send({
-        SecureToken: smtp,
-
-        To: target_email,
-
-        From: send_email,
-
-        Subject: "jo1n.com",
-        Body:
-          "<br> Name: " +
-          field_name_call.value +
-          "<br> Phone: " +
-          field_phone_call.value,
-      }).then();
-    },
-    invalidFormCallback: function(errors) {
-      console.log(errors);
-    },
-  });
-};
-
-var validateForms_hero = function(selector, rules, callback) {
-  new window.JustValidate(selector, {
-    rules: rules,
-    focusWrongField: true,
-    submitHandler: function(form, values, ajax) {
-      const msg = callback(values);
-      const success = document.createElement("label");
-
-      success.className = "form__label_success";
-      success.innerHTML = "Your data sent!";
-
-      form.append(success);
-      form.querySelector("[type=submit]").disabled = true;
-
-      Email.send({
-        SecureToken: smtp,
-
-        To: target_email,
-
-        From: send_email,
-
-        Subject: "jo1n.com",
-        Body:
-          "<br> Name: " +
-          field_name_hero.value +
-          "<br> Phone: " +
-          field_phone_hero.value,
-      }).then();
-    },
-    invalidFormCallback: function(errors) {
-      console.log(errors);
-    },
-  });
-};
-
-validateForms(
-  "#form",
-  {
+validateForms('.js-form', {
     tel: {
-      required: true,
-      minLength: "10",
+        required: true,
+        minLength: "10"
     },
     name: {
-      required: true,
-      minLength: "2",
+        required: true,
+        minLength: "2"
     },
-  },
-  (values) => {
+    email: {
+        required: true,
+        email: true
+    },
+}, (values)=>{
     return `
-Source: Jo1n.com,
-ФИО:  ${values["name"]},
-Телефон: ${values["tel"]},
+Source: Beforis.com,
+Name:  ${values['name']},
+E-mail: ${values['email']},
+Phone: ${values['tel']},
 `;
-  }
-);
-
-validateForms_call(
-  "#form-call",
-  {
-    tel_call: {
-      required: true,
-      minLength: "10",
-    },
-    name_call: {
-      required: true,
-      minLength: "2",
-    },
-  },
-  (values) => {
-    return `
-  Source: Jo1n.com,
-  ФИО:  ${values["name_call"]},
-  Телефон: ${values["tel_call"]},
-  `;
-  }
-);
-
-validateForms_hero(
-  "#form-hero",
-  {
-    tel_hero: {
-      required: true,
-      minLength: "10",
-    },
-    name_hero: {
-      required: true,
-      minLength: "2",
-    },
-  },
-  (values) => {
-    return `
-  Source: Jo1n.com,
-  ФИО:  ${values["name_hero"]},
-  Телефон: ${values["tel_hero"]},
-  `;
-  }
+}
 );

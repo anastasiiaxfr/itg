@@ -4,7 +4,7 @@ description : ""
 
 seo_title: ""
 seo_description: ""
-img: "../images/news.jpg"
+img: "images/news.jpg"
 date: 2019-10-14T13:39:07+06:00
 draft: false
 type: "news"

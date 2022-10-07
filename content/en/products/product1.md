@@ -7,12 +7,11 @@ product_date_start: "з 25.08"
 product_count: "на 2-х людей"
 product_type: "консультація"
 product_price: "3500$"
-product_img: "../images/product/product1.png"
+product_img: "images/product/product1.png"
 
 
 seo_title: ""
 seo_description: ""
-img: "../images/news.jpg"
 date: 2019-11-13T13:39:07+06:00
 draft: false
 type: "products"     
