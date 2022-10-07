@@ -13,7 +13,11 @@
             <div class="col-md-6 col-lg-3">
                 <figure class="feature">
                     <div class="feature__pic">
-                        <img src="{{ .icon | relURL }}" alt="{{ .title }}">
+                        <picture>
+                            <source srcset="{{ .icon_webp | relURL }}">
+                            <img src="{{ .icon | relURL }}" alt="{{ .title }}">
+                        </picture>
+
                     </div>    
                     <figcaption class="feature__caption">
 
