@@ -23,6 +23,8 @@ const send_email = 'anastasiiaberest@gmail.com';
 
 const date = new Date().toLocaleString();
 
+
+
 let validateForms = function(selector, rules, callback) {
     new window.JustValidate(selector,{
         rules: rules,
@@ -31,7 +33,7 @@ let validateForms = function(selector, rules, callback) {
             const msg = callback(values);
             const success = document.createElement('label');
             
-            success.className = "form-label--success";
+            success.className = "form-label--success text-center";
             success.innerHTML = 'Your data sent!';
 
             form.append(success);
@@ -53,7 +55,7 @@ let validateForms = function(selector, rules, callback) {
                 url: 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html' + '&text=' + encodeURIComponent(msg),
                 method: 'POST',
                 data: {
-                    chat_id: $('-592603234').val(),
+                    chat_id: $('5125757387').val(),
                     text: $('input').val()
                 },
                 success: function() {

@@ -97,8 +97,8 @@ logo_dark = "images/logo.png"
 site_name = "itg"
 site_url = "itg.com"
 
-tm_id = "-587397444"
-tm_token = "2045157225:AAFQjtb_C69OrQqaXjNLnpODfFy01tIe1Lg"
+tm_id = "5125757387"
+tm_token = "5601478768:AAFQjTOcFqol4WXcUwNf5JPEya8TJZIaHNo"
 
 [[params.plugins.js]]
 link = "plugins/js/jquery.min.js"
