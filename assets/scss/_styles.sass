@@ -157,10 +157,15 @@
         +mg((b, 15px))
     &__desc
         padding: 30px
-        color: $grey
+        color: $grey2
         +ft(14, 14*1.4, 700, $ffText) 
+        +ft(12, 12*1.4, 400, $ffText)
+    &__date
+        +ft(12, 12, 400) 
+        +mg((b, 20px))
     &__text, & p
         +ft(14, 14*1.4, 700, $ffText)
+        +ft(14, 14*1.4, 400, $ffText)
     p
         margin: 10px auto 15px 
     &__link
@@ -193,14 +198,19 @@
             height: 100%
             object-fit: contain
     &__job
-        +ft(14, 14, 400)
+        //+ft(14, 14, 400)
+        +ft(12, 12, 400)
     &__desc
         p
-            +ft(18, 18*1.4, 400)
+            //+ft(18, 18*1.4, 400)
+            +ft(14, 14*1.4, 400)
     &__link
         text-align: right
         text-decoration: underline
         display: block
+        +ft(12, 12*1.4, 400)
+    &__title
+        +mg((b, 5px))
 
 .product
     background: $black url('../images/product.jpg') no-repeat 50%/cover
@@ -249,3 +259,13 @@
                 color: $main
 .teams
     padding: 0
+
+.mapouter
+    max-height: 248px
+    width: 100% !important
+    height: 100% !important
+    border-radius: $brs
+    overflow: hidden
+    iframe
+        border-radius: $brs
+        overflow: hidden
