@@ -115,6 +115,8 @@ link = "plugins/js/bootstrap.bundle.min.js"
 # link = "plugins/js/just-validate.min.js"
 [[params.plugins.js]]
 link = "plugins/js/smtp.js"
+
+
 [params.preloader]
 enable = true
 preloader = ""

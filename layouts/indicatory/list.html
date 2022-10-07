@@ -2,7 +2,9 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
 <div class="hero__wrap" style="background-image: url({{ `../images/hero2.jpg` | relURL }});">
-	
+	<!-- BEGIN section -->
+	{{- partial "header.html" . -}}
+	<!-- END section -->
 	<!-- BEGIN section -->
 	<section class="hero hero--sm">
 		<div class="container">
@@ -27,8 +29,8 @@
 						eget, tincidunt tortor. Bibendum diam eget, tincidunt tortor.
 					</p>
 
-					<div class="d-flex align-items-center flex-wrap">
-						<span class="text--price me-5">
+					<div class="d-flex align-items-center justify-content-center flex-wrap">
+						<span class="text--price me-lg-5 mb-3">
 							$300
 						</span>
 						<a href="#" class="btn btn--lg btn--main">
@@ -51,7 +53,7 @@
 
 			<div class="row align-items-center">
 				<div class="col-lg-6 mb-5 mb-lg-0">
-					<img  src="{{ `../images/indicatory1.jpg` | relURL }}" alt="{{ .Title }}">
+					<img class="img--1" src="{{ `../images/indicatory1.jpg` | relURL }}" alt="{{ .Title }}">
 				</div>
 				<div class="col-lg-6">
 					<ul class="list">

@@ -17,6 +17,11 @@
 
 
 +maw($sm)
+    .section
+        &_1
+            text-align: center
+    .hero
+        text-align: center
     .footer
         text-align: center
         +pd((t, 24px), (b, 24px))
@@ -36,8 +41,16 @@
             text-align: center
     .feature
         +mg((t, 25px), (b, 25px))
+    p
+        +ft(14, 14*1.4, 400)
+    h1
+        +ft(25, 25*1.2, 700)
+    h2
+        +ft(25, 25*1.2, 700)
 
 +maw($xs)
+    .chart__img
+        height: auto
     .product__more
         img
             display: none !important
@@ -46,8 +59,9 @@
             position: relative
             text-decoration: underline
             text-align: center
-    .hero__wrap
+    .navbar
         .btn
             padding: 0
             background: transparent
             color: inherit
+            +ft(13, 13, 600)

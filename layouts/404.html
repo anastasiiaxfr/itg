@@ -1,5 +1,9 @@
 {{ define "main" }}
 
+<div class="hero__wrap" style="background-image: url({{ `../images/hero2.jpg` | relURL }});">
+  {{- partial "header.html" . -}}
+</div>
+
 <section class="error-page">
   <div class="center">
     <div class="text-center py-5 my-5">
