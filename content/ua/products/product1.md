@@ -1,12 +1,12 @@
 ---
-title: Аналитический журнал
+title: YouTube обзоры
 description: ''
 product_duration: 3 дні
 product_date_start: з 25.08
 product_count: на 2-х людей
 product_type: консультація
 product_price: 3500$
-product_img: images/product/product1.png
+product_img: images/product/product4.png
 seo_title: ''
 seo_description: ''
 date: 2019-11-13T13:39:07.000+06:00
