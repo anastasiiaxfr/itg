@@ -10,14 +10,18 @@
 </div>
 
 <article class="page__main"> 
-	<section class="page__container">
-		<div class="container">
+	<section class="container py-5">
+		
 			
 			<div class="page__single">
 				{{  .Content }}
 			</div>
+			<div class="row my-5">
+				{{ range ($.Site.GetPage "section" "news").Pages }}
+				{{- partial "_news-card.html" . -}}
+				{{ end }}
+			</div>
 		
-		</div>
 	</section>
 </article>
 

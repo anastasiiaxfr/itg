@@ -1,0 +1,19 @@
+<div class="col-lg-3 col-md-6 my-3 my-lg-0">
+	<figure class="news">
+	  <div class="news__img">
+		<img src="{{ .Params.img | relURL }}" alt="{{ .Params.title }}">
+	  </div>
+	  <figcaption class="news__desc">
+		<h5 class="news__title">
+		  {{ .Params.title }} 
+		</h5>
+		<div class="news__date">
+		  {{ .Date.Format "1.1.2006"  }}
+		</div>
+		<div class="news__text">
+		  {{ .Content | truncate 100 }}
+		</div>
+		<a href="{{ .Permalink }}" class="news__link">Детально</a>
+	  </figcaption>
+	</figure>
+  </div>

@@ -5,19 +5,23 @@
 	<!-- BEGIN section -->
 	{{- partial "header.html" . -}}
 	
-	{{- partial "_hero.html" . -}}
+	
 	<!-- END section -->
 	</div>
 
 <article class="page__main"> 
-	<section class="page__container">
-		<div class="container">
+	<section class="container py-5">
 			
 			<div class="page__single">
 				{{  .Content }}
 			</div>
-		
-		</div>
+			<div class="row my-5">
+				{{ range ($.Site.GetPage "section" "products").Pages }}
+				{{- partial "_product-card.html" . -}}
+				{{ end }}
+			</div>
+            
+
 	</section>
 </article>
 

@@ -1,0 +1,54 @@
+<div class="col-lg-6 my-3 px-3">
+	<div class="product">
+		<div class="product__img">
+			<img src="{{ .Params.product_img | relURL }}" alt="{{ .Params.title }}">
+		</div>
+		<div class="product__desc">
+			<h5 class="product__title">
+				{{ .Title | truncate 50 }}
+			</h5>
+			<div class="product__content">
+				{{ .Content | truncate 100 }}
+			</div>
+			<div class="product__more">
+				<a href="{{ .Permalink }}">Подробнее</a>
+				<img src="{{ `../images/line.svg` | relURL }}" alt="{{ .Title }}">
+			</div>
+			<div class="product__info">
+				<ul class="product__details">
+					<li>
+						<svg class="icon me-2" width="20" height="20">
+							<use xlink:href="#prd4"></use>
+						</svg>
+						{{ .Params.product_duration }}
+					</li>
+					<li>
+						<svg class="icon me-2" width="20" height="20">
+							<use xlink:href="#prd3"></use>
+						</svg>
+						{{ .Params.product_date_start }}
+					</li>
+					<li>
+						<svg class="icon me-2" width="20" height="20">
+							<use xlink:href="#prd2"></use>
+						</svg>
+						{{ .Params.product_count }}
+					</li>
+					<li>
+						<svg class="icon me-2" width="20" height="20">
+							<use xlink:href="#prd1"></use>
+						</svg>
+						{{ .Params.product_type }}
+					</li>
+				</ul>
+				<div class="mx-auto mx-sm-0 text-center">
+					<big class="product__price">
+						{{ .Params.product_price }}
+					</big>
+					<a href="{{ .Permalink }}" class="product__btn">Оформить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
