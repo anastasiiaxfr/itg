@@ -1,5 +1,5 @@
 ---
-title: "International Trade Group начинает активное сотрудничество с Ассоциацией банков Украины"
+title: "Курсы Игоря Пороха"
 description : ""
 
 product_duration: "3 дні"
@@ -7,7 +7,7 @@ product_date_start: "з 25.08"
 product_count: "на 2-х людей"
 product_type: "консультація"
 product_price: "3500$"
-product_img: "../images/product/product1.png"
+product_img: "../images/product/product3.png"
 
 
 seo_title: ""
