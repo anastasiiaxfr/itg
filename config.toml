@@ -1,12 +1,12 @@
 baseURL = "/"
-canonifyURLs = true
+# canonifyURLs = true
 defaultContentLanguage = "ua"
 disableLanguages = []
 languageCode = "ua"
 paginate = "6"
 relativeURLs = true
 summaryLength = "50"
-title = "jo1n - Главная"
+title = "itg - Главная"
 # [Languages.en]
 # contentDir = "content/en"
 # home = "Home"
