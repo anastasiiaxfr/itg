@@ -39,7 +39,11 @@
         padding: 30px
         min-height: 300px
     &__img
-        img
+        height: 350px
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
+        picture
             display: block
             width: 100%
             +mg((l, auto), (r, auto))
@@ -216,15 +220,17 @@
     background: $black url('../images/product.jpg') no-repeat 50%/cover
     color: $white
     border-radius: $brs
+    padding: 30px
     +flex(flex, center, center, wrap)
     &__img
         width: 30%
+        margin-top: 30px
+        margin-bottom: 30px
         img
             width: 90%
-            margin: 0 auto
     &__desc
         width: 70%
-        padding: 30px
+        
     &__info
         +flex(flex, flex-end, space-between, wrap)
     &__title
@@ -270,3 +276,7 @@
     iframe
         border-radius: $brs
         overflow: hidden
+    
+.accordion-button
+    &:focus
+        box-shadow: none
