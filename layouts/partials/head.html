@@ -13,13 +13,13 @@
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }} 
   {{ $main := resources.Get "scss/main.sass" | toCSS | minify }}
-  <link rel="stylesheet" href="{{ $main.Permalink | relURL }}?v={{ now.Format "01-02-2006-14-52-26"}}" media="screen"> 
+  <link rel="stylesheet" href="{{ $main.Permalink | relLangURL }}?v={{ now.Format "01-02-2006-14-52-26"}}" media="screen"> 
   {{ " <!-- plugins --> " | safeHTML }} 
   {{ range .Site.Params.plugins.css }} 
-  <link rel="stylesheet" href="{{ .link | relURL }}?v={{ now.Format "01-02-2006-14-52-26"}}"> 
+  <link rel="stylesheet" href="{{ .link | relLangURL }}?v={{ now.Format "01-02-2006-14-52-26"}}"> 
   {{ end }}
   {{ "<!-- Custom Stylesheet -->" | safeHTML }} 
   {{ $custom := resources.Get "scss/custom.sass" | toCSS |  minify }} 
-  <link rel="stylesheet" href="{{ $custom.Permalink | relURL }}?v={{ now.Format "01-02-2006-14-52-26"}}" media="screen">
+  <link rel="stylesheet" href="{{ $custom.Permalink | relLangURL }}?v={{ now.Format "01-02-2006-14-52-26"}}" media="screen">
 
 </head>
