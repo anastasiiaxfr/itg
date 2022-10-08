@@ -19,6 +19,9 @@
     border-radius: 10px
     border: none
     box-shadow: $bxsd
+    background-color: $grey4
+    &:hover
+        box-shadow: none
     &__title
         +ft(48, 48, 700, $ffHeading)
         +mg((b, 15px))
@@ -91,6 +94,8 @@
     &_3
         background: $black url('../images/strategy.jpg') no-repeat 50%/cover
         color: $white
+        h2
+            color: inherit
     &_9
         background: $black url('../images/bg2.jpg') no-repeat 50%/cover
         color: $white
@@ -156,6 +161,7 @@
 .news
     box-shadow: $bxsd
     border-radius: $brs
+    background-color: $grey4
     height: 100%
     &__title
         +ft(14, 14*1.4, 700, $ffHeading)
@@ -185,9 +191,12 @@
 .cases
     box-shadow: $bxsd
     border-radius: $brs
+    background-color: $grey4
     padding: 30px
     color: $grey2
     +mg((t, 25px), (b, 25px))
+    &:hover
+       box-shadow: none
     &__header
         +flex(flex, center, flex-start, nowrap)
         width: 100%
@@ -280,5 +289,6 @@
         overflow: hidden
     
 .accordion-button
+    background-color: $grey4
     &:focus
         box-shadow: none

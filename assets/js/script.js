@@ -74,9 +74,9 @@ var validateForms = function(selector, rules, callback) {
   });
 };
 
-// if(storage){
-//   form.querySelector("[type=submit]").disabled = true;
-// }
+if(storage){
+  form.querySelector("[type=submit]").disabled = true;
+}
 
 validateForms('.js-form', {
     tel: {

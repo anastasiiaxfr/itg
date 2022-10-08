@@ -11,7 +11,7 @@
     </h2>
 
 
-    <div class="row my-5 pb-5">
+    <div class="row mt-lg-5 pb-5">
       {{ range first 4 ($.Site.GetPage "section" "news").Pages }}
 
     	{{- partial "_news-card.html" . -}}
