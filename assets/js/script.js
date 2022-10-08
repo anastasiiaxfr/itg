@@ -1,6 +1,7 @@
 const field_name = document.querySelector("[name=name]");
 const field_email = document.querySelector("[name=email]");
 const field_phone = document.querySelectorAll("[name=tel]");
+const field_message = document.querySelectorAll("[name=question]");
 
 // Inputmask("*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]", {
 //     placeholder: "your@mail.com",
@@ -19,6 +20,8 @@ var target_email = "anastasiiaberest@gmail.com";
 var send_email = "anastasiiaberest@gmail.com";
 
 var date = new Date().toLocaleString();
+let storage = localStorage.getItem('storage');
+
 
 var validateForms = function(selector, rules, callback) {
   new window.JustValidate(selector, {
@@ -33,7 +36,8 @@ var validateForms = function(selector, rules, callback) {
 
       form.append(success);
       form.querySelector("[type=submit]").disabled = true;
-
+      localStorage.setItem('storage', 'true');
+      console.log(storage);
       ajax({
         url: 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html' + '&text=' + encodeURIComponent(msg),
         method: 'POST',
@@ -62,7 +66,7 @@ var validateForms = function(selector, rules, callback) {
           "<br> Name: " + field_name.value + "<br> Phone: " + field_phone.value,
       }).then();
 
-
+     
     },
     invalidFormCallback: function(errors) {
       console.log(errors);
@@ -70,6 +74,9 @@ var validateForms = function(selector, rules, callback) {
   });
 };
 
+// if(storage){
+//   form.querySelector("[type=submit]").disabled = true;
+// }
 
 validateForms('.js-form', {
     tel: {
@@ -84,12 +91,16 @@ validateForms('.js-form', {
         required: true,
         email: true
     },
+    question: {
+      required: false
+    }
 }, (values)=>{
     return `
 Source: itg.com,
 ФИО:  ${values['name']},
 E-mail: ${values['email']},
 Телефон: ${values['tel']},
+Cообщение: ${values['question']},
 `;
 }
 );
