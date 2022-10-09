@@ -1,0 +1,59 @@
+################# pricing ###################
+pricingTable:
+  # pricing table
+  - title : "Курсы Игоря Пороха"
+    price : "3500"
+    # service list
+    serviceList:
+      - service : "3 дні"
+      - service : "з 25.08"
+      - service : "на 2-х людей"
+      - service : "консультація"
+  
+
+    button:
+      label : "Оформить"
+      link : "#"
+
+
+  # pricing table
+  - title : "Аналитический журнал"
+    price : "3500"
+    # service list
+    serviceList:
+      - service : "3 дні"
+      - service : "з 25.08"
+      - service : "на 2-х людей"
+      - service : "консультація"
+  
+
+
+    button:
+      label : "Оформить"
+      link : "#"
+
+      
+  # pricing table
+  - title : "Курсы трейдера"
+    price : "3500"
+    # service list
+    serviceList:
+      - service : "3 дні"
+      - service : "з 25.08"
+      - service : "на 2-х людей"
+      - service : "консультація"
+      
+    button:
+      label : "Оформить"
+      link : "#"
+
+
+############################## call to action ############################
+cta:
+  enable: true
+  # cta content comes from 'hompage.yml'
+
+#################### clients logo ###############################
+clientsLogo:
+  enable : true
+  # clints logo content comes from 'project.yml'

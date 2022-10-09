@@ -1,19 +1,11 @@
-{{ "<!-- Page Title -->" | safeHTML }}
-<section class="page-hero text-white py-5 row-1" style="background-image: url('{{ .image | absURL }}'), url('{{ .image_url | absURL  }}')" onerror="this.onerror=null;this.src='{{ .image | absURL }}'" class="img-fluid" alt="banner-image">
-  <div class="container py-5">
-    <div class="row align-items-center justify-content-center text-center">
-      <div class="col-12 col-lg-8">
-        <hgroup class="mt-0">
-          <h1 class="heading-1">{{ .title | safeHTML | markdownify }}</h1>
-          <p class="heading-sub mt-4 mb-4">
-            {{ .description | safeHTML | markdownify }}
-          </p>
-          {{ with .button }}
-          <a href="{{ .link | absLangURL }}" class="btn btn-bg">{{ .label }}</a>
-          {{ end }}
-        </hgroup>
+<!-- page-title -->
+<section class="page-title bg-cover" data-background="{{ .Params.BgImage | absURL}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-1 text-white font-weight-bold font-primary">{{ .Title | markdownify }}</h1>
       </div>
     </div>
   </div>
 </section>
-{{ "<!-- End of Page Title -->" | safeHTML }}
+<!-- /page-title -->

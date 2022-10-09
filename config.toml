@@ -1,131 +1,158 @@
+################################### Default Configuration ############################
 baseURL = "/"
-# canonifyURLs = true
-defaultContentLanguage = "ua"
-disableLanguages = []
-languageCode = "ua"
-paginate = "6"
-relativeURLs = true
-summaryLength = "50"
-title = "itg - Главная"
-# [Languages.en]
-# contentDir = "content/en"
-# home = "Home"
-# languageCode = "en-us"
-# languageName = "En"
-# weight = 3
-[Languages.ru]
-contentDir = "content/ru"
-home = "Главная"
-languageCode = "ru"
-languageName = "Ру"
-weight = 2
-[Languages.ua]
-contentDir = "content/ua"
-home = "Головна"
-languageCode = "ua"
-languageName = "Укр"
-weight = 3
-[Languages.en]
-contentDir = "content/en"
-home = "Home"
-languageCode = "en"
-languageName = "ENG"
-weight = 1
+languageCode = "en-us"
+title = "ITG | International Trade Group"
+#theme = "agen-hugo"
 
-# [Languages.ua.params.form]
-# action = "#"
-# enable = true
-# method = "POST"
+#################################### Plugins ##########################################
+[params.plugins]
 
-# [[Languages.ua.params.form.field]]
-# enable = true
-# name = "name"
-# placeholder = "**\\*** Ім`я"
-# required = ""
-# type = "text"
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/venobox/venobox.css"
+  [[params.plugins.css]]
+  URL = "plugins/card-slider/css/style.css"
 
-# [[Languages.ua.params.form.field]]
-# enable = true
-# name = "tel"
-# placeholder = "+38 (0__) ___ - __ - __"
-# label = "Телефон"
-# required = ""
-# type = "tel"
-
-# [[Languages.ua.params.form.field]]
-# enable = true
-# placeholder = "Надіслати"
-# type = "submit"
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/venobox/venobox.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/shuffle/shuffle.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/counto/apear.js"
+  [[params.plugins.js]]
+  URL = "plugins/counto/counTo.js"
+  [[params.plugins.js]]
+  URL = "plugins/card-slider/js/card-slider-min.js"
+  [[params.plugins.js]]
+  URL = "plugins/google-map/gmap.js"
 
 
-[[menu.header]]
-URL = "/#about"
-name = "О компании"
-weight = 1
-[[menu.header]]
-URL = "/#teams"
-name = "Команда"
-weight = 2
-[[menu.header]]
-URL = "/#news"
-name = "Новости"
-weight = 3
-[[menu.header]]
-URL = "/#faq"
-name = "FAQ"
-weight = 4
-[[menu.header]]
-URL = "/#contacts"
-name = "Контакты"
-weight = 5
+###################################### Navigation ######################################
+[menu]
+    
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Cases"
+  URL = "cases"
+  weight = 3
+  
+  [[menu.main]]
+  name = "Product"
+  URL = "products"
+  weight = 4
 
-[outputs]
-home = ["HTML", "RSS", "JSON"]
+  [[menu.main]]
+  name = "Other"
+  weight = 5
+  hasChildren = true
+
+    [[menu.main]]
+    parent = "Other"
+    name = "Team"
+    URL = "team"
+    
+    [[menu.main]]
+    parent = "Other"
+    name = "Blog"
+    URL = "blog"
+    
+    [[menu.main]]
+    parent = "Other"
+    name = "FAQs"
+    URL = "faqs"
+
+  
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight = 6
+
+  ############################# Footer menu ################################
+  [[menu.footer]]
+  name = "About"
+  URL = "about"
+  weight = 2
+  
+  [[menu.footer]]
+  name = "Cases"
+  URL = "cases"
+  weight = 3
+  
+  [[menu.footer]]
+  name = "Product"
+  URL = "products"
+  weight = 4
+  
+  [[menu.footer]]
+  name = "Contact"
+  URL = "contact"
+  weight = 5
+
+
+
+########################### Default parameters ##########################
 [params]
-CIO_site_id = "XXX"
-GTM = "GTM-WHBQ3BV"
-develop = "xfr"
-
-
-address = "м. Київ Кловський узвіз, 7"
-email = "office@itg-investments.com"
-mobile = "+38 050 563 58 07"
-
 logo = "images/logo.png"
-logo_dark = "images/logo.png"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Anastasiia Berest"
+# google map
+gmapAPI = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+mapLatitude = "50.4405345"
+mapLongitude = "30.5389159"
+mapMarker = "images/marker.png"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
 
-site_name = "itg"
-site_url = "itg.com"
+  # Preloader
+  [params.preloader]
+  enable = true
 
-tm_id = "5125757387"
-tm_token = "5601478768:AAFQjTOcFqol4WXcUwNf5JPEya8TJZIaHNo"
+  ############################# Footer Start ###########################
 
-[[params.plugins.js]]
-link = "plugins/js/jquery.min.js"
-[[params.plugins.css]]
-link = "/plugins/slick-1.8.1/slick/slick.css"
-[[params.plugins.css]]
-link = "/plugins/slick-1.8.1/slick/slick-theme.css"
-[[params.plugins.js]]
-link = "/plugins/slick-1.8.1/slick/slick.min.js"
-[[params.plugins.js]]
-link = "plugins/js/bootstrap.bundle.min.js"
+  # footer about
+  [params.footer.about]
+  about = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, odit? Sapiente et temporibus qui corporis veritatis ipsa culpa, numquam id."
 
-[[params.plugins.js]]
-link = "plugins/js/just-validate.min.js"
-[[params.plugins.js]]
-link = "plugins/js/smtp.js"
+  # contact form
+  [params.form]
+  formAction = "#"
 
+  # copyright
+  [params.copyright]
+  copyright = "Copyright &copy;2022"
 
-[params.preloader]
-enable = true
-preloader = ""
-[sitemap]
-ChangeFreq = "daily"
-Priority = 0.6
-Weight = [["main", "1"], ["sub2", "0.8"], ["sub3", "0.6"]]
-enableRobotsTXT = true
-[taxonomies]
-author = "authors"
-category = "categories"
-tag = "tags"
+  ######################### Social site ##############################
+  [[params.social]]
+  icon = "ti-facebook" # themify icon pack https://themify.me/themify-icons
+  link = "#"
+  
+  [[params.social]]
+  icon = "ti-twitter-alt" # themify icon pack https://themify.me/themify-icons
+  link = "#"
+  
+  [[params.social]]
+  icon = "ti-github" # themify icon pack https://themify.me/themify-icons
+  link = "#"
+  
+  [[params.social]]
+  icon = "ti-instagram" # themify icon pack https://themify.me/themify-icons
+  link = "#"

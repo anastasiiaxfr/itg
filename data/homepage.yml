@@ -1,0 +1,86 @@
+############################## Banner ###################################
+banner:
+  bgImage : "images/banner/banner2.jpg"
+  title : "International Trade Group"
+  desc: "Инновационная, динамично развивающаяся консалтинговая компания, открывающая перед инвесторами глобальные перспективы в мире  Web 3.0 технологий и геополитического устройства мира финансов. Мы эксперты в достижении поставленных целей в бизнесе, разработке Blockchain технологии, аудите цифровых активов и фундаментального анализа"
+########################### services ##################################
+service:
+  enable : true
+  title : "О компании"
+  subtitle : "Наша компания основа в 2018 году, в одной из самых диджитализируемых стран мира - Украина. Мы решили развивать, внедрять и разрабатывать различные системы торговли активами, а также приспособить технологии блокчейна в посведневную жизнь и развивать это направление."
+  # service item comes from 'service.yml'
+  
+############################ features #################################
+feature:
+  enable : true
+  image : "images/feature.jpg"
+  title : "Преимущества"
+  featureItem:
+    # feature item
+    - title : "Опыт управление"
+      icon : "ti-vector" # themify icon pack https://themify.me/themify-icons
+      img: "images/strategy1.png"
+      content : "Разработка стратегии и управление инвестиционными портфелями, управление ликвидностью является нашим главным преймуществом"
+      
+    # feature item
+    - title : "Гибкость"
+      icon : "ti-layout" # themify icon pack https://themify.me/themify-icons
+      img: "images/strategy2.png"
+      content : "Хотя у нас есть четкие регламенты работы с инвесторами и понимания взаимовыгодных отношений, мы всегда открыты к новому диалогу, и придумаем все, чтобы инвестору было комфортно с нами работать."
+      
+    # feature item
+    - title : "Опыт"
+      icon : "ti-headphone-alt" # themify icon pack https://themify.me/themify-icons
+      img: "images/strategy3.png"
+      content : "Более 80% прибыльных результатов достигаются упорным трудом, финансовой грамотностью и очень большим опытом анализа на различных рынках"
+      
+    # feature item
+    - title : "Знания"
+      icon : "ti-ruler-pencil" # themify icon pack https://themify.me/themify-icons
+      img: "images/strategy4.png"
+      content : "Наш информационный и аналитический отдел 24/7 анализирует и зондирует рынок цифровых активов. Проводит аудит и аналитику чужих стратегий. "
+
+
+############################# promo video #################################
+promo:
+  enable : true
+  bgImage : "images/backgrounds/about-bg.jpg"
+  title : "Кто мы"
+  content : "Консалтинговая компания, основной деятельностью которой является управление высокодоходными портфелями на рынке цифровых активов на общую сумму более $1 млрд."
+  videoURL : "https://www.youtube.com/watch?v=jrkvirglgaQ"
+  button:
+    enable : true
+    label : "Подробнее"
+    link : "#form"
+
+
+############################## project ####################################
+project:
+  enable : true
+  title : "Our Feature Works"
+  # project item comes from 'project.yml'
+  
+################################## call to action ###########################
+cta:
+  enable : true
+  title : "Let's Start With Us!"
+  bgImage : "images/backgrounds/cta-bg.jpg"
+  content : "Lorem ipsum dolor sit amet, magna habemus ius ad"
+  button : 
+    enable : true
+    label : "Let’s talk"
+    link : "contact"
+
+
+############################## pricing ######################################
+pricing:
+  enable : true
+  title : "Наши продукты"
+  # pricing table comes from 'pricing.yml'
+
+
+############################## blog ######################################
+blog:
+  enable : true
+  title : "Новости"
+  # blog content comes from `content/blog` folder
