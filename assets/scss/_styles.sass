@@ -10,6 +10,7 @@
         background-size: cover
         background-repeat: no-repeat
         background-color: $black
+        filter: contrast(1.4)
    
 .card
     height: 100%
@@ -19,7 +20,7 @@
     border-radius: 10px
     border: none
     box-shadow: $bxsd
-    background-color: $grey4
+    background-color: $white
     &:hover
         box-shadow: none
     &__title
@@ -27,7 +28,8 @@
         +mg((b, 15px))
     &__desc
         margin: 0
-        +ft(18, 18*1.5, 400, $ffText)
+        //+ft(18, 18*1.5, 400, $ffText)
+        +ft(15, 15*1.3, 400, $ffText)
        
 
 .box
@@ -58,9 +60,10 @@
             +ft(28, 28*1.3, 700, $ffHeading)
     &__desc
         +ft(18, 18, 400, $ffText)
-        +mg((t, 15px), (b, 15px))
+        +mg((t, 15px), (b, 25px))
     &__text
-        +ft(14, 14*1.6, 400, $ffText)
+        //+ft(14, 14*1.6, 400, $ffText)
+        +ft(13, 13*1.6, 400, $ffText)
            
 
 .block
@@ -191,10 +194,9 @@
 .cases
     box-shadow: $bxsd
     border-radius: $brs
-    background-color: $grey4
+    background-color: $white
     padding: 30px
     color: $grey2
-    +mg((t, 25px), (b, 25px))
     &:hover
        box-shadow: none
     &__header

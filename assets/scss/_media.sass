@@ -30,10 +30,15 @@
     .section
         &_1
             text-align: center
+        &_3, &_9, .product
+            background: $blue5 
     .hero
         text-align: center
         &__wrap
-            background-image: $grad3 !important
+            background-image: none !important
+            background-color: $blue5
+            filter: none
+    
     .footer
         text-align: center
         +pd((t, 24px), (b, 24px))
@@ -45,6 +50,9 @@
     .product
         &__img, &__desc 
             width: 100%
+            img
+                margin-left: auto
+                margin-right: auto
         &__img
             max-width: 300px
         &__details
@@ -52,12 +60,16 @@
             text-align: center
     .feature
         +mg((t, 25px), (b, 25px))
-    p
+    p, .text--note
         +ft(14, 14*1.4, 400)
     h1
         +ft(25, 25*1.2, 700)
     h2
         +ft(25, 25*1.2, 700)
+    h3, h3 p
+        +ft(25, 25*1.2, 700)
+    .btn--lg
+        font-size: 15px
 
 +maw($xs)
     .chart__img

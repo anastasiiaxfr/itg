@@ -14,12 +14,14 @@ h4
     +ft(28, 28, 700, $ffText)
     font-size: clamp(20px, 2vmax, 28px)
 p
-    +ft(18, 18*1.4, 400, $ffText)
+    //+ft(18, 18*1.4, 400, $ffText)
+    +ft(14, 14*1.4, 400, $ffText)
     +mg((t, 20px), (b, 30px))
 
 .text
     &_sub
         margin: 10px auto
+        +ft(14, 14*1.4, 400, $ffText)
     &--note
         +ft(26, 26*1.2, 400, $ffText)
         p
