@@ -1,9 +1,10 @@
 .hero
-    +pd((t, 175px), (b, 200px))
-    padding-top: clamp(50px, 7.5vmax, 150px)
-    padding-bottom: clamp(75px, 10vmax, 175px)
+    //+pd((t, 175px), (b, 200px))
+    height: 90vh
     background-color: transparent
     color: $white
+    +flex(flex, center, center, wrap)
+    flex-direction: column
     &--sm
         +pd((t, 100px), (b, 150px))
     &__wrap
@@ -95,7 +96,9 @@
 .section
     overflow-x: hidden
     &_3
-        background: $black url('../images/strategy.jpg') no-repeat 50%/cover
+        //background: $black url('../images/strategy.jpg') no-repeat 50%/cover
+        background-color: $blue
+        background-image: $grad3
         color: $white
         h2
             color: inherit
@@ -231,6 +234,7 @@
 
 .product
     background: $black url('../images/product.jpg') no-repeat 50%/cover
+    //background: $blue2 
     color: $white
     border-radius: $brs
     padding: 30px
@@ -243,7 +247,6 @@
             width: 90%
     &__desc
         width: 70%
-        
     &__info
         +flex(flex, flex-end, space-between, wrap)
     &__title
@@ -266,7 +269,7 @@
         
     &__price
         display: block
-        color: $main
+        color: $blue6
         +ft(36, 36, 700, $ffHeading)
     &__more
         position: relative
