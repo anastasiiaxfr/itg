@@ -48,16 +48,17 @@
     .form input:not([type=submit])
         max-width: 100%
     .product
+        &__desc
+            +pd((l, 30px))
+
         &__img, &__desc 
             width: 100%
             img
                 margin-left: auto
                 margin-right: auto
         &__img
-            max-width: 300px
-        &__details
-            +mg((l, auto), (r, auto))
-            text-align: center
+            display: none
+
     .feature
         +mg((t, 25px), (b, 25px))
     p, .text--note
@@ -81,7 +82,7 @@
             display: block
             position: relative
             text-decoration: underline
-            text-align: center
+           
     .navbar
         .btn
             padding: 0

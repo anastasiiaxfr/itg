@@ -23,8 +23,8 @@
         +theme(white)
         color: $blue
         &:hover, &:active, &:focus
-            background-color: $blue5
-            border-color: $blue5
+            background-color: $main
+            border-color: $main
             color: $white
     &--grad
         +sz(312px, 82px)
@@ -33,8 +33,8 @@
         color: $white
         +ft(32, 32, 400, $ffHeading)
         &:hover, &:active, &:focus
-            background: $blue5
-            border-color: $blue5
+            background: $main
+            border-color: $main
             color: $white
     &--dark
         padding: 15px 15px
@@ -51,15 +51,15 @@
         border: none
         color: $white
         &:hover
-            background-image: $grad1
+            background: $main
     &--main
         +sz(314px, 83px)
         width: 100%
         background-color: $blue3
         color: $white
         &:hover
-            background-color: $blue5
-            border-color: $blue5
+            background-color: $main
+            border-color: $main
 
     &--lg
         +sz(280px, 60px)
@@ -89,7 +89,8 @@
         color: $white
         border-radius: $brs
         &:hover
-            background: $blue5
+            background: $main
+            border-color: $main
 
 .soc
     .icon

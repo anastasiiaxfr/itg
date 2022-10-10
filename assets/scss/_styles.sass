@@ -1,9 +1,10 @@
 .hero
-    +pd((t, 175px), (b, 200px))
-    padding-top: clamp(50px, 7.5vmax, 150px)
-    padding-bottom: clamp(75px, 10vmax, 175px)
+    //+pd((t, 175px), (b, 200px))
+    height: 90vh
     background-color: transparent
     color: $white
+    +flex(flex, center, center, wrap)
+    flex-direction: column
     &--sm
         +pd((t, 100px), (b, 150px))
     &__wrap
@@ -96,6 +97,7 @@
     overflow-x: hidden
     &_3
         background: $black url('../images/strategy.jpg') no-repeat 50%/cover
+        background-color: $blue
         color: $white
         h2
             color: inherit
@@ -231,45 +233,51 @@
 
 .product
     background: $black url('../images/product.jpg') no-repeat 50%/cover
+    //background: $blue2 
     color: $white
     border-radius: $brs
-    padding: 30px
+    overflow: hidden
     +flex(flex, center, center, wrap)
     &__img
-        width: 30%
-        margin-top: 30px
-        margin-bottom: 30px
+        width: 45%
+        &--btm
+            height: 200px
         img
-            width: 90%
+            max-width: 90%
+            margin-left: auto
+            margin-right: auto
     &__desc
-        width: 70%
-        
+        width: 55%
+        padding: 30px
+        padding-left: 0
     &__info
         +flex(flex, flex-end, space-between, wrap)
     &__title
-        +ft(23, 23, 700, $ffHeading)
+        //+ft(23, 23, 700, $ffHeading)
+        +ft(20, 20, 700, $ffHeading)
+        +mg((b, 15px))
     &__desc, & p
         +ft(15, 15*1.4, 400, $ffText)
     &__details
         padding: 0
         margin: 0
-        margin-right: 30px
+        
         li
             list-style-type: none
             +mg((t, 10px), (b, 10px))
     &__btn
         @extend .btn, .btn--main
         height: auto
-        +sz(143px, 38px)
         +mg((t, 10px))
         +ft(15, 15, 500)
         
     &__price
         display: block
-        color: $main
+        color: $blue6
         +ft(36, 36, 700, $ffHeading)
     &__more
         position: relative
+        +ft(13, 13, 400)
         img
             width: 100%
         a
