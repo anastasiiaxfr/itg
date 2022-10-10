@@ -1,23 +1,71 @@
 {{ define "main" }}
-{{ $data := index .Site.Data .Site.Language.Lang }}
-<div class="hero__wrap" style="background-image: url({{ `../images/hero2.jpg` | relURL }});">
-	<!-- BEGIN section -->
-	{{- partial "header.html" . -}}
-	
-	<!-- END section -->
-</div>
 
-<article class="page__main"> 
-	<section class="page__container">
-		<div class="container">
-			
-			<div class="page__single">
-				{{  .Content }}
-			</div>
-		
-		</div>
-	</section>
-</article>
+{{ partial "page-title.html" . }}
+
+
+
+{{ if .Site.Data.about.video.enable }}
+<!-- video -->
+{{ with .Site.Data.about.video }}
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="overlay-secondary video-player">
+          <img src="{{ .videoThumb | absURL }}" alt="video-thumb" class="img-fluid w-100">
+          <a class="play-icon">
+            <i class="text-center icon-sm icon-box-sm rounded-circle text-white bg-gradient-primary d-block ti-control-play content-center"
+              data-video="{{ .videoLink | safeURL }}">
+              <div class="ripple"></div>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /video -->
+{{ end }}
+
+{{ if .Site.Data.about.testimonial.enable }}
+<!-- testimonial-slider -->
+{{ with .Site.Data.about.testimonial }}
+<section class="section bg-secondary">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="text-white mb-5">{{ .title | markdownify }}</h2>
+      </div>
+    </div>
+    <div class="row bg-contain" data-background="{{`images/banner/brush.png` | absURL }}">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div id="slider" class="ui-card-slider bg-contain">
+          {{ range .testimonialItem }}
+          <div class="slide">
+            <div class="card text-center">
+              <div class="card-body px-5 py-4">
+                <img src="{{ .image | absURL }}" alt="user-1" class="img-fluid rounded-circle mb-4">
+                <h4 class="text-secondary">{{ .name }}</h4>
+                <p>“{{ .content | markdownify }}”</p>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /testimonial-slider -->
+{{ end }}
+
+<div class="my-5 py-5">
+  {{ if .Site.Data.about.cta.enable }}
+  {{ partial "cta.html" . }}
+  {{ end }}
+</div>
 
 
 {{ end }}

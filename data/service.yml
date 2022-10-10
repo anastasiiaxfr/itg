@@ -1,0 +1,30 @@
+############################### services ####################################
+services:
+  # service item
+  - title : "5+"
+    content : "Лет опыта работы"
+    
+  # service item
+  - title : "500+"
+    content : "Портфелей инвесторов по всему миру"
+    
+  # service item
+  - title : "30+"
+    content : " Специалистов - наша гордость и главный ресурс"
+    
+  # service item
+  - title : "4+"
+    content : "Блокчейн проекта"
+    
+
+
+############################## feature ####################################
+feature:
+  enable: true
+  # feature content comes from 'hompage.yml'
+
+  
+############################## call to action ############################
+cta:
+  enable: true
+  # cta content comes from 'hompage.yml'

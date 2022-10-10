@@ -1,60 +1,36 @@
-<nav class="navbar navbar-expand-lg">
-	<div class="container">
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{.Site.Title}}"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-		{{ .Scratch.Set "img" .Site.Params.logo }}
-		{{ .Scratch.Set "logo_w" 71 }}
-		{{ .Scratch.Set "logo_h" 40 }}
-		{{- partial "_logo.html" . -}}
-
-
-		
-		<div class="collapse navbar-collapse order-1" id="navbarSupportedContent">
-			<ul class="navbar-nav mt-4 pt-4 pt-lg-0 mt-lg-0 mx-auto">
-				{{ range .Site.Menus.header }}
-				{{ if .HasChildren }}
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="{{ .URL | relLangURL  }}" id="navbarDropdown" role="button"
-						data-bs-toggle="dropdown" aria-expanded="false">
-						{{ .Name }}
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						{{ range .Children }}
-						<li><a class="dropdown-item" href="{{ .URL | relLangURL  }}">{{ .Name }}</a></li>
-						{{ end }}
-					</ul>
-				</li>
-				{{ else }}
-				<li class="nav-item">
-					<a class="nav-link" aria-current="page" href="{{ .URL | relLangURL  }}">{{ .Name }}</a>
-				</li>
-				{{ end }}
-				{{ end }}
-				
-			</ul>
-			<div class="d-flex">
-				<div class="d-none d-lg-block me-2">
-					{{- partial "_lang.html" . -}}
-				</div>
-				{{- partial "_btn-call.html" . -}}
-			</div>
-
-		</div>
-		<div class="navbar__btn-group order-12 order-lg-1">
-
-			<div class="d-flex d-lg-none me-3">
-				{{- partial "_lang.html" . -}}
-			</div>
-
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<svg class="navbar-toggler-open icon" width="40" height="40">
-				<use xlink:href="#menu"></use>
-			</svg>
-			<svg class="navbar-toggler-close icon" width="40" height="40">
-				<use xlink:href="#close"></use>
-			</svg>
-		</button>
-		</div>
-		
-	</div>
-</nav>
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .Site.BaseURL }}">{{ with .Site.Params.Home }} {{ . }} {{ end }}</a>
+        </li>
+        {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            {{ .Name }}
+          </a>
+          <div class="dropdown-menu" >
+            {{ range .Children }}
+            <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+            {{ end }}
+          </div>
+        </li>
+        {{ else }}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+  </nav>
+</header>

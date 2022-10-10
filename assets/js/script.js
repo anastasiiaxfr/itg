@@ -1,107 +1,139 @@
-const field_name = document.querySelector("[name=name]");
-const field_email = document.querySelector("[name=email]");
-const field_phone = document.querySelectorAll("[name=tel]");
-const field_message = document.querySelectorAll("[name=question]");
+(function ($) {
+  'use strict';
 
-// Inputmask("*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{2,6}][.*{1,2}]", {
-//     placeholder: "your@mail.com",
-// }).mask(field_email);
+  // Preloader js    
+  $(window).on('load', function () {
+    $('.preloader').fadeOut(100);
+  });
 
-// for (let i = 0; i < field_phone.length; i++) {
-//     Inputmask('(999) 99-99-99-999').mask(field_phone[i]);
-// }
+  // Sticky Menu
+  $(window).scroll(function () {
+    if ($('.navigation').offset().top > 100) {
+      $('.navigation').addClass('nav-bg');
+    } else {
+      $('.navigation').removeClass('nav-bg');
+    }
+  });
 
+  // Background-images
+  $('[data-background]').each(function () {
+    $(this).css({
+      'background-image': 'url(' + $(this).data('background') + ')'
+    });
+  });
 
-const token = '5601478768:AAFQjTOcFqol4WXcUwNf5JPEya8TJZIaHNo';
-const chat_id = '5125757387';
+  // venobox popup 
+  $('.venobox').venobox();
 
-var smtp = "3964d5-2109-4f37-b69b-0225db33e3a1";
-var target_email = "anastasiiaberest@gmail.com";
-var send_email = "anastasiiaberest@gmail.com";
+  // dropdown menu
+  var mobileWidth = 992;
+  var navcollapse = $('.navbar .dropdown');
+  $(window).on('resize', function () {
+    navcollapse.children('.dropdown-menu').hide();
+  });
+  navcollapse.hover(function () {
+    if ($(window).innerWidth() >= mobileWidth) {
+      $(this).children('.dropdown-menu').stop(true, false, true).slideToggle(250);
+    }
+  });
 
-var date = new Date().toLocaleString();
-let storage = localStorage.getItem('storage');
+  // Progress Bar
+  $(window).on('load', function () {
+    $('.progress-bar').each(function () {
+      var width = $(this).data('percent');
+      $(this).css({
+        'transition': 'width 3s'
+      });
+      $(this).appear(function () {
+        $(this).css('width', width + '%');
+        $(this).find('.count').countTo({
+          from: 0,
+          to: width,
+          speed: 3000,
+          refreshInterval: 50
+        });
+      });
+    });
+  });
 
-
-var validateForms = function(selector, rules, callback) {
-  new window.JustValidate(selector, {
-    rules: rules,
-    focusWrongField: true,
-    submitHandler: function(form, values, ajax) {
-      const msg = callback(values);
-      const success = document.createElement("label");
-
-      success.className = "form__label_success text-center";
-      success.innerHTML = "Your data sent!";
-
-      form.append(success);
-      form.querySelector("[type=submit]").disabled = true;
-      localStorage.setItem('storage', 'true');
-      console.log(storage);
-      ajax({
-        url: 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&parse_mode=html' + '&text=' + encodeURIComponent(msg),
-        method: 'POST',
-        data: {
-            chat_id: $('5125757387').val(),
-            text: $('input').val()
-        },
-        success: function() {
-            alert('your message has been sent!');
-        },
-        async: true,
-        callback: (response)=>{
-            console.log(response);
-        }
+  // Shuffle js filter and masonry
+  var containerEl = document.querySelector('.shuffle-wrapper');
+  if (containerEl) {
+    var Shuffle = window.Shuffle;
+    var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+      itemSelector: '.shuffle-item',
+      buffer: 1
     });
 
-      Email.send({
-        SecureToken: smtp,
+    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+      var input = evt.currentTarget;
+      if (input.checked) {
+        myShuffle.filter(input.value);
+      }
+    });
+  }
 
-        To: target_email,
-
-        From: send_email,
-
-        Subject: "itg.com",
-        Body:
-          "<br> Name: " + field_name.value + "<br> Phone: " + field_phone.value,
-      }).then();
-
-     
-    },
-    invalidFormCallback: function(errors) {
-      console.log(errors);
-    },
+  // video iframe load
+  $('.play-icon i').on('click', function () {
+    var video = '<iframe allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
+    $(this).replaceWith(video);
   });
-};
 
-if(storage){
-  form.querySelector("[type=submit]").disabled = true;
-}
+  // Accordions
+  $('.collapse').on('shown.bs.collapse', function () {
+    $(this).parent().find('.ti-plus').removeClass('ti-plus').addClass('ti-minus');
+  }).on('hidden.bs.collapse', function () {
+    $(this).parent().find('.ti-minus').removeClass('ti-minus').addClass('ti-plus');
+  });
 
-validateForms('.js-form', {
-    tel: {
-        required: true,
-        minLength: "10"
-    },
-    name: {
-        required: true,
-        minLength: "2"
-    },
-    email: {
-        required: true,
-        email: true
-    },
-    question: {
-      required: false
-    }
-}, (values)=>{
-    return `
-Source: itg.com,
-ФИО:  ${values['name']},
-E-mail: ${values['email']},
-Телефон: ${values['tel']},
-Cообщение: ${values['question']},
-`;
-}
-);
+  // clients logo slider
+  $('.client-logo-slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: false,
+    arrows: false,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
 
+  // testimonial slider
+  var containerEl2 = document.querySelector('#slider');
+  if (containerEl2) {
+    window.slider = $('#slider').cardSlider({
+      slideClass: 'slide',
+      delay: 300,
+      transition: 'ease'
+    });
+  }
+
+
+})(jQuery);

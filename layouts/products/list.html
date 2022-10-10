@@ -1,29 +1,37 @@
 {{ define "main" }}
-{{ $data := index .Site.Data .Site.Language.Lang }}
 
-<div class="hero__wrap" style="background-image: url({{ `../images/hero.jpg` | relURL }});">
-	<!-- BEGIN section -->
-	{{- partial "header.html" . -}}
-	
-	
-	<!-- END section -->
-	</div>
+{{ partial "page-title.html" . }}
 
-<article class="page__main"> 
-	<section class="container py-5">
-			
-			<div class="page__single">
-				{{  .Content }}
-			</div>
-			<div class="row my-5">
-				{{ range (.Site.GetPage "section" "products").Pages }}
-				{{- partial "_product-card.html" . -}}
-				{{ end }}
-			</div>
-            
+<section class="section pb-0">
+  <div class="container pt-5">
+    <div class="row justify-content-center align-items-stretch">
+      {{ range (.Site.GetPage "section" "products").Pages }}
+      <div class="col-lg-6 my-3">
+        <a class="card hover-bg-secondary shadow py-4" href="{{ .Permalink }}">
+          <div class="card-body text-center">
+            <div class="card-header">
+              <h4 class="">{{ .Params.title  }}</h4>
+              <p>{{ .Params.job }}</p>
+            </div>
+            <p>{{ .Content | truncate 150 }}</p>
+          </div>
+        </a>
+      </div>
+      
+      {{ end }}
+    </div>
+  </div>
+</section>
 
-	</section>
-</article>
 
+<div class="mt-5 pt-5">
+  {{ if .Site.Data.project.cta.enable }}
+  {{ partial "cta.html" . }}
+  {{ end }}
+</div>
+
+{{ if .Site.Data.project.clientsLogo.enable }}
+{{ partial "clients-logo.html" . }}
+{{ end }}
 
 {{ end }}

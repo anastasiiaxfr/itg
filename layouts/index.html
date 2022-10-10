@@ -1,80 +1,176 @@
 {{ define "main" }}
-{{ $data := index .Site.Data .Site.Language.Lang }}
 
-{{ if $data.homepage }}
-<style>
-</style>
+<!-- banner -->
+{{ with .Site.Data.homepage.banner }}
+<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
+  data-background="{{ .bgImage | relURL }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mt-5">
+        <h1 class="display-1 text-white font-weight-bold font-primary">{{ .title | markdownify }}</h1>
+        <p class="text-sub mt-4 mb-5">{{ .desc }}</p>
+        {{ with .button }}
+        <a href="{{ .link | relURL }}" class="btn btn-lg btn-primary">{{ .label }}</a>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /banner -->
+
+{{ if .Site.Data.homepage.service.enable }}
+<!-- service -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.Data.homepage.service }}
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>{{ .title | markdownify }}</h2>
+        <p class="lead">{{ .subtitle | markdownify}}</p>
+        <div class="section-border"></div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      {{ range first 4 .Site.Data.service.services }}
+      <div class="col-lg-3 mb-4 mb-lg-0">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <h2 class="mb-4">{{ .title | markdownify }}</h2>
+            <p>{{ .content | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /service -->
 {{ end }}
 
-	
-{{ "<!-- Hero Section -->" | safeHTML }}
-{{ "<!-- End of Hero Section -->" | safeHTML }}
 
-{{"<!-- banner-feature -->" | safeHTML}}
-{{ if $data.homepage.section.enable }}
-{{ with $data.homepage }}
-
-{{ .title }}
-
-{{ end }}
+{{ if .Site.Data.homepage.feature.enable }}
+{{ partial "feature.html" . }}
 {{ end }}
 
-<div class="hero__wrap" style="background-image: url({{ `../images/hero.jpg` }});">
-<!-- BEGIN section -->
-{{- partial "header.html" . -}}
 
-{{- partial "_hero.html" . -}}
-<!-- END section -->
+
+
+{{ if .Site.Data.homepage.pricing.enable }}
+<!-- pricing -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.Data.homepage.pricing }}
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>{{ .title | markdownify }}</h2>
+        <div class="section-border"></div>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      {{ range .Site.Data.pricing.pricingTable }}
+      <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+        <div class="card bottom-shape bg-secondary pt-4 pb-5">
+          <div class="card-body text-center">
+            <h4 class="text-white">{{ .title }}</h4>
+            <p class="text-light mb-4">{{ .subtitle | markdownify }}</p>
+            <p class="text-white mb-4">$ <span
+                class="display-3 font-weight-bold vertical-align-middle">{{ .price }}</span></p>
+            <ul class="list-unstyled mb-5">
+              {{ range .serviceList }}
+              <li class="text-white mb-3">{{ .service | markdownify }}</li>
+              {{ end }}
+            </ul>
+            {{ with .button }}
+            <a href="{{ .link | safeURL }}" class="btn btn-outline-light">{{ .label }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /pricing -->
+{{ end }}
+
+
+{{ if .Site.Data.homepage.promo.enable }}
+<!-- promo video -->
+{{ with .Site.Data.homepage.promo }}
+<section class="section-lg position-relative bg-cover" data-background="'{{ .bgImage | relURL }}'">
+  <img src="{{`images/backgrounds/about-bg-overlay.png` | relURL }}" alt="overlay" class="overlay-image img-fluid">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-5 col-md-8 col-sm-7 col-8">
+        <h2 class="text-white mb-4">{{ .title  | markdownify }}</h2>
+        <p class="text-light mb-4">{{ .content | markdownify }}</p>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | relURL }}" class="btn btn-primary">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+      <div class="col-md-2 col-sm-4 col-4 text-right align-self-end">
+        <a class="venobox" data-autoplay="true" data-vbtype="video" href="{{ .videoURL | safeURL }}">
+          <i
+            class="text-center icon-sm icon-box rounded-circle text-white bg-gradient-primary d-block ti-control-play"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /promo video -->
+{{ end }}
+
+<div class="my-5 py-5">
+  {{ if .Site.Data.homepage.cta.enable }}
+  {{ partial "cta.html" . }}
+  {{ end }}
+  
 </div>
 
-<!-- BEGIN section -->
-{{- partial "_home-sec-1.html" . -}}
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-2.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-3.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-4.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-5.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-6.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-7.html" . -}} 
-
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-8.html" . -}} 
-<!-- END section -->
 
 
-<!-- BEGIN section -->
-{{- partial "_home-sec-9.html" . -}} 
-<!-- END section -->
+{{ if .Site.Data.homepage.blog.enable }}
+<!-- blog -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row">
+      {{ with .Site.Data.homepage.blog }}
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>{{ .title | markdownify }}</h2>
+        {{ if ne .title "" }}
+        <div class="section-border"></div>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    <div class="row">
+      {{ range first 3 ($.Site.GetPage "section" "blog").Pages }}
 
-<!-- BEGIN section -->
-{{- partial "_home-sec-10.html" . -}} 
-<!-- END section -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <article class="card">
+          <img src="{{ .Params.Image | relURL }}" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-3">
+            <time>{{ .PublishDate.Format "January 02, 2006" }}</time>
+            <a href="{{ .Permalink }}"
+              class="h4 card-title d-block my-3 text-dark hover-text-underline">{{ .Title }}</a>
+            <a href="{{ .Permalink }}" class="btn btn-transparent">Read more</a>
+          </div>
+        </article>
+      </div>
+   
+      {{ end }}
 
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-11.html" . -}} 
-<!-- END section -->
-
-<!-- {{- partial "_modal-form.html" . -}}  -->
-
+      
+    </div>
+  </div>
+</section>
+<!-- /blog -->
 {{ end }}
 
+{{ end }}
