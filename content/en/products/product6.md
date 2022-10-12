@@ -6,7 +6,7 @@ product_date_start: з 25.08
 product_count: на 2-х людей
 product_type: консультація
 product_price: 3500$
-product_img: "../images/product/product2.png"
+product_img: "/images/indicaroty.png"
 seo_title: ''
 seo_description: ''
 img: "/images/indicaroty.png"
