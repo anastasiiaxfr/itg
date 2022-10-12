@@ -1,7 +1,6 @@
 +++
 date = 2019-11-13T07:39:07Z
 description = ""
-draft = true
 img = "/images/indicaroty.png"
 product_count = "на 2-х людей"
 product_date_start = "з 25.08"
