@@ -1,7 +1,7 @@
 +++
 date = 2019-11-13T07:39:07Z
 description = ""
-img = "/images/tex.png"
+img = ""
 product_count = "на 2-х людей"
 product_date_start = "з 25.08"
 product_duration = "3 дні"
