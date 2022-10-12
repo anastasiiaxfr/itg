@@ -1,0 +1,40 @@
+---
+label: Тех. анализ и идеи
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: product_duration
+  label: product_duration
+- type: text
+  name: product_date_start
+  label: product_date_start
+- type: text
+  name: product_count
+  label: product_count
+- type: text
+  name: product_type
+  label: product_type
+- type: text
+  name: product_price
+  label: product_price
+- type: file
+  name: product_img
+  label: product_img
+- type: text
+  name: seo_title
+  label: seo_title
+- type: text
+  name: seo_description
+  label: seo_description
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: type
+  label: type
