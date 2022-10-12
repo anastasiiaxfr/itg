@@ -19,25 +19,21 @@ sections:
   label: content
   create: all
   match: "**/*"
-
 - type: directory
   path: content
   label: news
   create: all
   match: "**/news/*"
-
 - type: directory
   path: content
   label: cases
   create: all
   match: "**/cases/*"
-
 - type: directory
   path: content
   label: products
   create: all
   match: "**/products/*"
-
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
