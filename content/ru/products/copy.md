@@ -1,13 +1,12 @@
 +++
 date = 2019-11-13T07:39:07Z
-
 product_count = "на 2-х людей"
 product_date_start = "з 25.08"
 product_duration = "3 дні"
 product_img = "/images/tex.png"
+product_img_btm = true
 product_price = "3500$"
 product_type = "консультація"
-product_img_btm = "false"
 seo_description = ""
 seo_title = ""
 title = "Тех. анализ и идеи"
