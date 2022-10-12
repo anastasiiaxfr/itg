@@ -1,5 +1,5 @@
 ---
-title: Курсы трейдера
+title: Индикаторы
 description: ''
 product_duration: 3 дні
 product_date_start: з 25.08
@@ -9,7 +9,7 @@ product_price: 3500$
 product_img: "../images/product/product2.png"
 seo_title: ''
 seo_description: ''
-img: "../images/news.jpg"
+img: "/images/indicaroty.png"
 date: 2019-11-13T13:39:07.000+06:00
 type: products
 
