@@ -1,16 +1,16 @@
 +++
 date = 2019-11-13T07:39:07Z
 description = ""
-img = "/images/indicaroty.png"
+img = "/images/tex.png"
 product_count = "на 2-х людей"
 product_date_start = "з 25.08"
 product_duration = "3 дні"
-product_img = "/images/indicaroty.png"
+product_img = "/images/tex.png"
 product_price = "3500$"
 product_type = "консультація"
 seo_description = ""
 seo_title = ""
-title = "Индикаторы-(copy)"
+title = "Тех. анализ и идеи"
 type = "products"
 
 +++
