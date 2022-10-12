@@ -1,17 +1,16 @@
 +++
 date = 2019-11-13T07:39:07Z
 description = ""
-draft = true
 product_count = "на 2-х людей"
 product_date_start = "з 25.08"
 product_duration = "3 дні"
-product_img = "images/product/product2.png"
+product_img = "/images/tex.png"
 product_img_btm = true
 product_price = "3500$"
 product_type = "консультація"
 seo_description = ""
 seo_title = ""
-title = "Курсы трейдера-(copy)"
+title = "Тех. анализ и идеи"
 type = "products"
 
 +++
