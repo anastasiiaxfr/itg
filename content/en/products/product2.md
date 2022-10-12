@@ -1,6 +1,6 @@
 ---
 title: Аналитический журнал
-description: ''
+
 product_duration: 3 дні
 product_date_start: з 25.08
 product_count: на 2-х людей
