@@ -2,8 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/news/news3/</loc>
+    <lastmod>2021-09-21T06:32:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/news/news3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/news/news3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ua"
+                href="/news/news3/"
+                />
+  </url><url>
     <loc>/</loc>
-    <lastmod>2022-10-07T07:39:07+00:00</lastmod>
+    <lastmod>2021-09-21T06:32:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link
@@ -23,7 +43,7 @@
                 />
   </url><url>
     <loc>/news/</loc>
-    <lastmod>2022-10-07T07:39:07+00:00</lastmod>
+    <lastmod>2021-09-21T06:32:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link
@@ -41,41 +61,6 @@
                 hreflang="ua"
                 href="/news/"
                 />
-  </url><url>
-    <loc>/news/ua-test3-international-trade-group-copy-copy/</loc>
-    <lastmod>2022-10-07T07:39:07+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>/news/international-trade-group-copy/</loc>
-    <lastmod>2022-10-06T06:39:07+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/international-trade-group-copy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/news/international-trade-group-copy/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ua"
-                href="/news/international-trade-group-copy/"
-                />
-  </url><url>
-    <loc>/news/ua-test-international-trade-group-copy/</loc>
-    <lastmod>2022-10-05T21:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>/news/ua-test-2-international-trade-group-copy-copy/</loc>
-    <lastmod>2022-10-05T07:39:07+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
   </url><url>
     <loc>/cases/case2/</loc>
     <lastmod>2019-11-14T13:39:07+06:00</lastmod>
@@ -167,26 +152,6 @@
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url><url>
-    <loc>/news/news1/</loc>
-    <lastmod>2019-11-13T13:39:07+06:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/news1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/news/news1/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ua"
-                href="/news/news1/"
-                />
-  </url><url>
     <loc>/products/</loc>
     <lastmod>2019-11-13T07:39:07+00:00</lastmod>
     <changefreq>daily</changefreq>
@@ -206,11 +171,6 @@
                 hreflang="ua"
                 href="/products/"
                 />
-  </url><url>
-    <loc>/news/ua-international-trade-group-copy/</loc>
-    <lastmod>2019-11-13T07:39:07+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
   </url><url>
     <loc>/products/product1/</loc>
     <lastmod>2019-11-13T13:39:07+06:00</lastmod>
@@ -375,46 +335,6 @@
                 rel="alternate"
                 hreflang="ua"
                 href="/news/news4/"
-                />
-  </url><url>
-    <loc>/news/news2/</loc>
-    <lastmod>2019-10-14T13:39:07+06:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/news2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/news/news2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ua"
-                href="/news/news2/"
-                />
-  </url><url>
-    <loc>/news/news3/</loc>
-    <lastmod>2019-10-14T13:39:07+06:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/en/news/news3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ru"
-                href="/ru/news/news3/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ua"
-                href="/news/news3/"
                 />
   </url><url>
     <loc>/authors/</loc>
