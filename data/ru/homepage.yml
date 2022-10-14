@@ -94,12 +94,12 @@ section_features:
 
 # section 4 #
 section_4: 
-  enable: true
+  enable: false
   title: "Наши продукты"
 
 # section 5 #
 section_5: 
-  enable: true
+  enable: false
   title: "Кейсы"
  
 

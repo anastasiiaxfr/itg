@@ -1,5 +1,10 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 
+
+{{ if $data.homepage.section_6.enable }}
+{{ with $data.homepage.section_6 }}
+
+
 {{ if $data.faq.faq }}
 {{ with $data.faq.faq }}
 
@@ -34,6 +39,10 @@
 
     </div>
 </section>
+
+{{ end }}
+{{ end }}
+
 
 {{ end }}
 {{ end }}
