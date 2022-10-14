@@ -3,7 +3,7 @@ title: ITG ЗАПУСКАЕТ ТРЕЙДИНГОВЫЙ КАНАЛ С ИНДИК�
 description: ''
 seo_title: ''
 seo_description: ''
-img: images/news.jpg
+img: "/images/news_img1.jpg"
 date: 2019-11-12T13:39:07.000+06:00
 type: news
 
