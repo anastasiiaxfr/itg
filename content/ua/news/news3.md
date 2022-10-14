@@ -5,7 +5,7 @@ description: ''
 seo_title: ''
 seo_description: ''
 img: images/news.jpg
-date: 2019-10-14T13:39:07.000+06:00
+date: 2021-09-21T06:32:00+00:00
 type: news
 
 ---
