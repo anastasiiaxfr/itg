@@ -167,6 +167,26 @@
                 href="/ru/news/news1/"
                 />
   </url><url>
+    <loc>/ru/products/</loc>
+    <lastmod>2019-11-13T07:39:07+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/products/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ua"
+                href="/products/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/products/"
+                />
+  </url><url>
     <loc>/ru/products/product1/</loc>
     <lastmod>2019-11-13T13:39:07+06:00</lastmod>
     <changefreq>daily</changefreq>
@@ -207,24 +227,39 @@
                 href="/ru/products/product2/"
                 />
   </url><url>
-    <loc>/ru/products/product3/</loc>
+    <loc>/ru/products/product5/</loc>
     <lastmod>2019-11-13T13:39:07+06:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/products/product3/"
+                href="/en/products/product5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ua"
-                href="/products/product3/"
+                href="/products/product5/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/products/product3/"
+                href="/ru/products/product5/"
+                />
+  </url><url>
+    <loc>/ru/products/product6/</loc>
+    <lastmod>2019-11-13T13:39:07+06:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/products/product6/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/products/product6/"
                 />
   </url><url>
     <loc>/ru/products/product4/</loc>
@@ -247,40 +282,65 @@
                 href="/ru/products/product4/"
                 />
   </url><url>
-    <loc>/ru/products/product5/</loc>
+    <loc>/ru/products/product3/</loc>
     <lastmod>2019-11-13T13:39:07+06:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/products/product3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ua"
+                href="/products/product3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/products/product3/"
+                />
   </url><url>
-    <loc>/ru/products/product6/</loc>
-    <lastmod>2019-11-13T13:39:07+06:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url><url>
-    <loc>/ru/products/</loc>
+    <loc>/ru/products/%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9/</loc>
     <lastmod>2019-11-13T07:39:07+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/en/products/"
+                href="/en/products/%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ua"
-                href="/products/"
+                href="/products/%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="/ru/products/"
+                href="/ru/products/%D0%BB%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%B8%D0%B9/"
                 />
   </url><url>
-    <loc>/ru/products/international-trade-group-copy/</loc>
+    <loc>/ru/products/copy/</loc>
     <lastmod>2019-11-13T07:39:07+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/en/products/copy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ua"
+                href="/products/copy/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="/ru/products/copy/"
+                />
   </url><url>
     <loc>/ru/news/news4/</loc>
     <lastmod>2019-11-12T13:39:07+06:00</lastmod>
