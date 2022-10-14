@@ -9,7 +9,7 @@
      
 
 
-      <img src="{{ if eq $logo_mode "dark"  }} {{ $.Site.Params.logo_dark | relURL }} {{ else }} {{ $.Site.Params.logo }} {{ end }}" alt="{{ .Site.Params.site_name }}" {{ if $logo_w}} width="{{ $logo_w }}" height="{{ $logo_h }}" {{ end }}>
+      <img src="{{ if eq $logo_mode "dark"  }} {{ $.Site.Params.logo_dark | absURL }} {{ else }} {{ $.Site.Params.logo | absURL }} {{ end }}" alt="{{ .Site.Params.site_name }}" {{ if $logo_w}} width="{{ $logo_w }}" height="{{ $logo_h }}" {{ end }}>
    
    
       {{ else }}
