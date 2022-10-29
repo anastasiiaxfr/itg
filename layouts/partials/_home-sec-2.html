@@ -3,49 +3,31 @@
 {{ if $data.homepage.section_2 }}
 {{ with $data.homepage.section_2 }}
 
-
-<section class="section section_2 mb-5 pb-lg-5" id="teams">
-    <div class="container">
-        <div class="">
-
-            <h2 class="text-center">
-                {{ .title | markdownify }}
-            </h2>
-
-            <div class="row pt-5">
-                <div class="teams">
-                {{ range .lists }}
-                <div class="col-lg-3 py-3 py-lg-0 px-2">
-                    <div class="box__item">
-                        <div class="box__content">
-                            <div class="box__title">
-                                {{ .name |  markdownify  }}
-                            </div>
-                            <div class="box__desc">
-                                {{ .job | markdownify }}
-                            </div>
-                            <div class="box__text">
-                                {{ .desc | markdownify }}
-                            </div>
-                        </div>
-                        <div class="box__img">
-                            <picture>
-                                <source srcset="{{ .img_webp | relURL }}">
-                                <img src="{{ .img | relURL }}" alt="{{ .title }}">
-                            </picture>
-                        </div>
+<section class="section section_2" id="features">
+    <div class="container my-5 py-5">
+        <div class="text-center pb-5">
+            <h2>{{ .title }}</h2>
+        </div>
+        <div class="row justify-content-between">
+            {{ range .items }}
+            <div class="col-lg-2 col-md-4">
+                <figure class="items">
+                    <div class="items__img">
+                        <svg class="icon" width="40" height="40">
+                            <use xlink:href="#{{ .icon }}"></use>
+                          </svg>
                     </div>
-                </div>
-                {{ end }}
+                    <figcaption class="items__desc">
+                        {{ .title }}
+                    </figcaption>
+                </figure>
             </div>
-            </div>
-
-
-
+            {{ end }}
 
         </div>
     </div>
 </section>
+
 
 {{ end }}
 {{ end }}

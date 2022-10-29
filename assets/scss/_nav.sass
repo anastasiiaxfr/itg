@@ -1,57 +1,24 @@
-.hero
-    //+pd((t, 175px), (b, 200px))
-    min-height: 90vh
-    +pd((t, 30px), (b, 30px))
-    +flex(flex, center, center, wrap)
-    flex-direction: column
-    background-color: transparent
-    color: $white
-    &--sm
-        +pd((t, 100px), (b, 150px))
-    &__wrap
-        background-size: cover
-        background-repeat: no-repeat
-        background-color: $black
-        filter: contrast(1.4)
-   
-
 .nav
-    &-item
-        padding: 0 10px
     &-link
-        color: inherit
+        color: $white
+        font-weight: bold
+        margin: 5px 10px
         &:hover
-            color: inherit
-            
+            color: $main
 
-.dropdown-menu
-    min-width: auto
-    background-color: $blue2
-    color: $white
+.lang-switcher
     button
-        background-color: transparent
+        background: transparent
         border: none
-        color: inherit
-.dropdown-toggle
-    border: none
-    &:hover, &:focus
-        box-shadow: none
-
-
-.navbar
-    +pd((t, 15px), (b, 15px))
-    color: $white
-    &__btn-group
-        +flex(flex, center, center, nowrap)
-    &-toggler
-        padding: 0
-        color: inherit
-        &:hover, &:focus
+        &:hover, &:focus, &:active
+            background-color: transparent
             box-shadow: none
-        &-close
-            display: none
-
-.footer
-    background: $black url('../images/footer.jpg') no-repeat 50%/cover
-    color: $white
-    padding: 10px 15px
+    .dropdown-menu
+        min-width: auto
+        left: 0
+        right: 0
+        margin: auto
+        +theme(black)
+        li
+            button
+                color: inherit

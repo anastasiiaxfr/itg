@@ -1,114 +1,43 @@
 .btn
-    +flex(inline-flex, center, center, nowrap)
-    padding: 10px 15px
-    color: inherit
-    border-radius: $brs
-    +ft(16, 16, 700, $ffText)
+    padding: 20px 25px
+    margin: 15px auto
+    +ft(15, 15, 500)
     text-align: center
-    transition: trs
-    &:hover, &:active, &:focus
-        color: inherit
-        border-color: $white
-        box-shadow: none
-    &__wrap
-        +flex(flex, center, center, wrap)
-        margin: 0
-        padding: 0
-        li
-            list-style-type: none
-    &--text
-        width: auto
-        display: inline-flex
+    justify-content: center
+    border-radius: 10px
+
     &--bg
-        +theme(white)
-        color: $blue
-        &:hover, &:active, &:focus
-            background-color: $main
-            border-color: $main
-            color: $white
-    &--grad
-        +sz(312px, 82px)
-        display: inline-flex
-        background: $grad1
+        background: $grad
         color: $white
-        +ft(32, 32, 400, $ffHeading)
-        &:hover, &:active, &:focus
-            background: $main
-            border-color: $main
-            color: $white
-    &--dark
-        padding: 15px 15px
-        background-color: #181818
-        border: 1px solid $main
-        +ft(12, 12, 700, $ffHeading)
-    &--block
-        display: flex
-        width: 100%
-        padding: 15px
-        +ft(12, 12, 700, $ffHeading)
-        background-color: $main
-        background-image: $grad2
         border: none
+
+        &:hover, &:focus, &:active
+            background: $grad2
+            color: $white
+       
+    &--bd
         color: $white
-        &:hover
-            background: $main
-    &--main
-        +sz(314px, 83px)
-        width: 100%
-        background-color: $blue3
-        color: $white
-        &:hover
-            background-color: $main
-            border-color: $main
+        border: 1px solid $pink1
+        &:hover, &:focus, &:active
+            background: $grad2
+            border-color: transparent
+            color: $white
 
     &--lg
-        +sz(280px, 60px)
-
-    &_top
-        +sz(40px, 40px)
-        position: fixed
-        bottom: 10px
-        right: 10px
-        border-radius: $brs 
-        border: none
-        background: $grad1 
-        z-index: 100500
-
-.form
-    input:not([type=submit])
-        display: block
+        max-width: 406px
         width: 100%
-        max-width: 580px
-        margin: 15px 0
-        padding: 10px
-        border: 1px solid rgba($black,0.25)
-    &__btn
-        max-width: 272px
-        height: 60px
-        border: 1px solid $blue
-        background: $grad1
-        color: $white
-        border-radius: $brs
-        &:hover
-            background: $main
-            border-color: $main
+        +ft(28, 28, 400)
+
+    &--top
+        background-color: $blue
+        display: flex
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        position: fixed
+        right: 10px
+        bottom: 10px
 
 .soc
     .icon
-        margin-right: 10px
-        a:last-child &
-            margin-right: 0
-        &:hover
-            opacity: 0.5
-
-.contacts
-    margin-bottom: 30px
-    td
-        margin: 0
-    address
-        margin: 0
-    .icon
-        margin-right: 5px
-    a:hover
-        color: inherit
-        opacity: 0.5
+        margin: 20px

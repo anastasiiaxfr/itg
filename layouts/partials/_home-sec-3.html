@@ -1,45 +1,15 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $data := index .Site.Data .Site.Language.Lang }} 
+{{ if $data.homepage.section_3 }} 
+{{ with $data.homepage.section_3 }}
 
-{{ if $data.homepage.section_features }}
-{{ with $data.homepage.section_features }}
-
-<section class="section section_3 py-5 my-5">
-    <div class="container">
-        <div class="row text-center">
-
-            <h2 class="mb-5 pb-3">{{ .title | markdownify }}</h2>
-
-            {{ range .items }}
-            <div class="col-md-6 col-lg-3">
-                <figure class="feature">
-                    <div class="feature__pic">
-                        <picture>
-                            <source srcset="{{ .icon_webp | relURL }}">
-                            <img src="{{ .icon | relURL }}" alt="{{ .title }}" width="100" heigh="100">
-                        </picture>
-
-                    </div>    
-                    <figcaption class="feature__caption">
-
-                        <h3 class="feature__title">
-                            {{ .title | markdownify }}
-                        </h3>
-                        <div class="feature__desc">
-                            {{ .description | markdownify }}
-                        </div>
-
-                    </figcaption>
-                </figure>
-            </div>
-            {{ end }}
-          
-            <div class="col-12 text-center">
-                {{- partial "_btn.html" . -}}
-            </div>
-   
-        </div>
+<section class="section section_3 my-5" id="stat">
+  <div class="container my-5">
+    <div class="text-center">
+      <h2>{{ .title }}</h2>
+      <p class="text__sub">{{ .desc }}</p>
+      <img class="img" src="{{ .img | relURL }}" alt="{{ .title }}" />
     </div>
+  </div>
 </section>
 
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}

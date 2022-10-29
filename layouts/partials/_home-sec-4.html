@@ -1,29 +1,52 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
-
-{{ if $data.homepage.section_4.enable }}
+{{ $data := index .Site.Data .Site.Language.Lang }} 
+{{ if $data.homepage.section_4 }} 
 {{ with $data.homepage.section_4 }}
 
+<section class="section section_4" id="testimonials">
+  <div class="container my-5 py-5">
+    <div class="text-center">
+    <h2>
+      {{ .title }}
+    </h2>
+    <p class="text__sub">
+      {{ .desc }}
+    </p>
+    <div class="row mt-5" id="form">
+      {{ range .items }}
+      <div class="col-lg-4 my-3">
+        <figure class="card">
+          <div class="card__badge">
+            {{ .period }}
+          </div>
+          <div class="card__content">
+            <div class="text__price">
+              {{ .prise }}
+            </div>
 
-<section class="section section_4 pt-lg-5">
-    <div class="container">
-
-
-        <h2 class="text-center">
-            {{ .title }}
-        </h2>
-
-        <div class="row mt-5">
-            <div class="products">
-            
-            {{ range ($.Site.GetPage "section" "products").Pages }}
-            {{- partial "_product-card.html" . -}}
+            {{ if .prise_old }}
+            <div class="text__price-old">
+              <del>{{ .prise_old }}</del>
+            </div>
+            {{ end }} 
+            {{ if .benefits }}
+            <div class="text__benefits">
+              {{ .benefits }}
+            </div>
             {{ end }}
-
-        </div>
-        </div>
-
+          </div>
+          <div class="card__footer">
+            {{ if .btn1 }}
+            <a href="{{.btn1.link}}" class="btn btn--bg">{{ .btn1.title }}</a>
+            {{ end }} {{ if .btn2 }}
+            <a href="{{.btn2.link}}" class="btn btn--bd">{{ .btn2.title }}</a>
+            {{ end }}
+          </div>
+        </figure>
+      </div>
+      {{ end }}
     </div>
+    </div>
+  </div>
 </section>
 
-{{ end }}
-{{ end }}
+{{ end }} {{ end }}

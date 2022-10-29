@@ -1,40 +1,46 @@
 h1
-    +ft(36, 36*1.2, 700, $ffHeading)
-    font-size: clamp(30px, 2vmax, 36px)
-h2
-    +ft(46, 46*1.2, 700, $ffHeading)
-    color: $blue2
-    margin-bottom: 0
-h3
-    &, p
-        +ft(46, 46*1.2, 600, $ffHeading)
-        margin: 0
-        
-h4
-    +ft(28, 28, 700, $ffText)
-    font-size: clamp(20px, 2vmax, 28px)
-p
-    //+ft(18, 18*1.4, 400, $ffText)
-    +ft(14, 14*1.4, 400, $ffText)
+    color: iherit
+    +ft(58, 58*1.4, 700)
+    +maw($xs)
+        +ft(32, 32*1.4, 700)
+h2 
+    +ft(39, 39, 700)
+    margin-bottom: 30px
+    +maw($xs)
+        +ft(26, 26*1.4, 700)
 
+
+p
+    +ft(21, 21*1.4, 400)
+    +maw($xs)
+        +ft(16, 16*1.4, 400)
 .text
-    &_sub
-        margin: 10px auto
-        +ft(14, 14*1.4, 400, $ffText)
-    &__subtitle
-        +mg((t, 30px), (b, 50px))
-    &--note
-        +ft(26, 26*1.2, 400, $ffText)
-        p
-            margin: 0
-    &--price
-        +ft(79, 79, 700, $ffHeading)
-        color: $main
+    &__sub
+        +ft(18, 18*1.4, 400)
+        margin-bottom: 30px
+    &__price
+        +ft(38, 38, 600)
+        colro: $main
+        &-old
+            +ft(32, 32, 400)
+            margin-top: 15px
+            margin-bottom: 15px
+    &__benefits
+        +ft(14, 14, 400)
+        margin-bottom: 15px
 
 .list
+    +maw($xs)
+        text-align: left
     li
-        //+ft(24, 24*1.4, 400, $ffText)
-        +ft(20, 20*1.4, 400, $ffText)
-        +mg((b, 20px))
-        &:last-child
-            +mg((b, 0))
+        display: inline-flex
+        align-items: center
+        margin: 5px 10px
+        &::before
+            content: ''
+            display: inline-flex
+            align-items: center
+            +sz(10px, 10px)
+            border-radius: 10px
+            background: $main
+            margin-right: 10px
