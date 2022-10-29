@@ -4,13 +4,13 @@
 {{ with $data.homepage.section_2 }}
 
 <section class="section section_2" id="features">
-    <div class="container my-5 py-5">
+    <div class="container my-5 py-lg-5">
         <div class="text-center pb-5">
             <h2>{{ .title }}</h2>
         </div>
         <div class="row justify-content-between">
             {{ range .items }}
-            <div class="col-lg-2 col-md-4">
+            <div class="col-lg-2 col-md-4 my-2">
                 <figure class="items">
                     <div class="items__img">
                         <svg class="icon" width="40" height="40">
