@@ -15,7 +15,7 @@ body
     text-align: center
     border-radius: $brs2
     // border: 1px solid $main
-    box-shadow: 0 1px 0px 1px #7e6bf0, 0 -1px 0 1px #7ed9ff
+    box-shadow: $bxsd2
     &__desc
         +ft(20, 20*1.4, 400)
         margin-top: 17px
@@ -42,6 +42,10 @@ body
         margin: -25px auto 25px
         padding: 10px
         min-width: 132px
+
+    &:hover
+        box-shadow: $bxsd2
+
 
 .hero
     color: $white

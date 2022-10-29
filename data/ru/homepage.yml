@@ -57,7 +57,7 @@ section_4:
     - period: 1 месяц
       prise: 200$
       btn1: 
-        link: #
+        link: "https://forms.gle/BpZ8HUUmTBmcqsZz6"
         title: Заполнить форму
       btn2:
         link: #
@@ -68,7 +68,7 @@ section_4:
       prise_old: 600$
       benefits: 300$ экономии
       btn1: 
-        link: #
+        link: "https://forms.gle/BpZ8HUUmTBmcqsZz6"
         title: Заполнить форму
       btn2:
         link: #
@@ -79,7 +79,7 @@ section_4:
       prise_old: 999$
       benefits: 399$ экономии
       btn1: 
-        link: #
+        link: "https://forms.gle/BpZ8HUUmTBmcqsZz6"
         title: Заполнить форму
       btn2:
         link: #

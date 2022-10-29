@@ -32,10 +32,17 @@ p
 .list
     +maw($xs)
         text-align: left
+        
+    padding-left: 100%
+    animation: scroll 10s infinite linear
+    &__wrap
+        white-space: nowrap
+        overflow: hidden
     li
         display: inline-flex
         align-items: center
         margin: 5px 10px
+
         &::before
             content: ''
             display: inline-flex
@@ -44,3 +51,11 @@ p
             border-radius: 10px
             background: $main
             margin-right: 10px
+    
+@keyframes scroll 
+    0% 
+        transform: translate(0, 0)
+    100% 
+        transform: translate(-100%, 0)
+    
+    
