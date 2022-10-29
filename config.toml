@@ -1,6 +1,6 @@
 baseURL = "/"
-canonifyURLs = true
-defaultContentLanguage = "ua"
+canonifyURLs = false
+defaultContentLanguage = "ru"
 disableLanguages = []
 languageCode = "ua"
 paginate = "6"
@@ -69,7 +69,7 @@ home = "Home"
 logo = "/images/logo.png"
 logo_w = "161"
 logo_h = "84"
-copyright = "All Rights Reserved 2022 ITG  "
+copyright = "All Rights Reserved 2022 ITG"
 
 tm_id = "-587397444"
 tm_token = "2045157225:AAFQjtb_C69OrQqaXjNLnpODfFy01tIe1Lg"
@@ -78,38 +78,43 @@ tm_token = "2045157225:AAFQjtb_C69OrQqaXjNLnpODfFy01tIe1Lg"
 link = "plugins/js/bootstrap.bundle.min.js"
 [[params.plugins.js]]
 link = "plugins/js/jquery.min.js"
-
-# [[params.plugins.css]]
-# URL = "plugins/icon/themify-icons/themify-icons.css"
+[[params.plugins.js]]
+link = "plugins/js/parallax.min.js"
 
 [[params.soc]]
 title = "tiktok"
 icon = "tiktok" 
+icon_h = "tiktok2" 
 link = "https://www.tiktok.com/@itg_general__"
 
 [[params.soc]]
 title = "instagram"
 icon = "im" 
+icon_h = "im2"
 link = "https://instagram.com/itg_official__"
 
 [[params.soc]]
 title = "telegram"
 icon = "tm" 
+icon_h = "tm2"
 link = "https://t.me/ITG_club"
 
 [[params.soc]]
 title = "linkedin"
 icon = "in" 
+icon_h = "in2"
 link = "https://www.linkedin.com/in/international-trade-group"
 
 [[params.soc]]
 title = "youtube"
 icon = "ytb" 
+icon_h = "ytb2"
 link = "https://www.youtube.com/channel/UC4Blz7CAtrKwTL8mYt6LpfA"
 
 [[params.soc]]
 title = "site"
 icon = "site" 
+icon_h = "site2"
 link = "https://itg-investments.com/"
 
 [params.preloader]

@@ -12,9 +12,9 @@
 
             <div class="row align-items-center justify-content-between my-5">
                 <div class="col-lg-4">
-                    {{ range .text }}
-                       <p>{{ . }}</p>
-                    {{ end }}
+                    
+                       <p>{{ .text | markdownify }}</p>
+                   
                 </div>
                 <div class="col-lg-8">
                     <img class="img" src="{{ .img | relURL }}" alt="{{ .title }}">

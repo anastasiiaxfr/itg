@@ -39,5 +39,17 @@
         bottom: 10px
 
 .soc
-    .icon
+    .icon, .icon--hover
+        position: absolute
+    .icon--hover
+        opacity: 0
+    a
+        position: relative
+        display: inline-flex
+        +sz(40px, 40px)
         margin: 20px
+        &:hover
+            .icon
+                opacity: 0
+            .icon--hover
+                opacity: 1

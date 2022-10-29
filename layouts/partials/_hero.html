@@ -14,7 +14,12 @@
 
         </div>
         <div class="col-lg-6 d-none d-lg-block">
-          <img class="img" src="{{ .img | relURL }}" alt="{{ .title }}">
+
+          <div id="scene" class="scene">
+            <img  data-depth="1.00" alt="{{ .title }}" src="{{ `images/arrow1.png` | relURL }}">
+            <img  data-depth="1.80" alt="{{ .title }}" src="{{ `images/arrow2.png` | relURL }}">
+          </div> 
+
         </div>
       </div>
     </div>
