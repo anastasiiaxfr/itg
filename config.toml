@@ -81,6 +81,7 @@ link = "plugins/js/jquery.min.js"
 [[params.plugins.js]]
 link = "plugins/js/parallax.min.js"
 
+
 [[params.soc]]
 title = "tiktok"
 icon = "tiktok" 
