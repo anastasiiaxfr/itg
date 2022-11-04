@@ -3,7 +3,7 @@
 
 <body lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" class="page__body">
 
-<!-- Meta Pixel Code -->
+{{ "<!-- Meta Pixel Code -->" | safeHTML }}
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -19,8 +19,8 @@
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=395240172578352&ev=PageView&noscript=1"
   /></noscript>
-  <!-- End Meta Pixel Code -->
-  
+  {{ "<!-- End Meta Pixel Code -->" | safeHTML }}
+
 
   <main class="page__wrap">
 
