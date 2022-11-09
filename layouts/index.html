@@ -6,30 +6,158 @@
 </style>
 {{ end }}
 
-	
+
 {{ "<!-- Hero Section -->" | safeHTML }}
 {{ "<!-- End of Hero Section -->" | safeHTML }}
 
-<div class="bg" style="background-image: url(images/bg.png);">
-{{- partial "header.html" . -}}
-<!-- BEGIN section -->
-{{- partial "_hero.html" . -}}
-<!-- END section -->
+<section class="section section_1">
+    {{- partial "header.html" . -}}
+
+    <div class="container">
+        <div class="row row--1">
+            <div class="col-lg-5 my-4 my-lg-0">
+                <div class="card">
+                    <div class="card__title">
+                        Депозит:
+                    </div>
+                    <div class="card__text">
+                        $72032,42
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card__title">
+                                Доход:
+                            </div>
+                            <div class="card__text">
+                                $720,42
+                            </div>
+                        </div>
+                        <div class="col-md-8 mt-5 mt-md-0">
+                            <div class="card__title">
+                                Период:
+                            </div>
+                            <div class="card__box">
+                                21/08/2022
+                            </div>
+                            <span class="card__divider">-</span>
+                            <div class="card__box">
+                                21/09/2022
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card__footer">
+                    <div class="card__label mb-4 mb-md-0">
+                        <a href="#" class="btn card__btn" disabled>Запрос на вывод</a>
+                        <span class="card__label--error">*Вы уже делали запрос в этом месяце </span>
+                    </div>
+                    <div class="card__label">
+                        <a href="#" class="btn card__btn" data-bs-toggle="modal" data-bs-target="#exampleModal">История выводов</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section section_2">
+   <div class="container">
+    <h1>Список сделок:</h1>
+    <div class="table__wrap">
+    <table class="table">
+        <tr>
+            <th>Тикер</th>
+            <th>Дата входа</th>
+            <th>Вход</th>
+            <th>Дата выхода</th>
+            <th>Выход</th>
+            <th>Сторона</th>
+            <th>Прибыль</th>
+        </tr>
+        <tr>
+            <td>BNBUSDT</td>
+            <td>11.10.22/02:45</td>
+            <td>271.8</td>
+            <td>11.10.22
+                /09:48</td>
+            <td>271.27</td>
+            <td>LONG</td>
+            <td>5.214522635522923</td>
+        </tr>
+        <tr>
+            <td>BNBUSDT</td>
+            <td>11.10.22/02:45</td>
+            <td>271.8</td>
+            <td>11.10.22
+                /09:48</td>
+            <td>271.27</td>
+            <td>LONG</td>
+            <td>5.214522635522923</td>
+        </tr>
+        <tr>
+            <td>BNBUSDT</td>
+            <td>11.10.22/02:45</td>
+            <td>271.8</td>
+            <td>11.10.22
+                /09:48</td>
+            <td>271.27</td>
+            <td>LONG</td>
+            <td>5.214522635522923</td>
+        </tr>
+        <tr>
+            <td>BNBUSDT</td>
+            <td>11.10.22/02:45</td>
+            <td>271.8</td>
+            <td>11.10.22
+                /09:48</td>
+            <td>271.27</td>
+            <td>LONG</td>
+            <td>5.214522635522923</td>
+        </tr>
+        <tr>
+            <td>BNBUSDT</td>
+            <td>11.10.22/02:45</td>
+            <td>271.8</td>
+            <td>11.10.22
+                /09:48</td>
+            <td>271.27</td>
+            <td>LONG</td>
+            <td>5.214522635522923</td>
+        </tr>
+    </table>
+    </div>
+   </div>
+</section>
 
 
-<!-- BEGIN section -->
-{{- partial "_home-sec-1.html" . -}}
-<!-- END section -->
-</div>
-<!-- BEGIN section -->
-{{- partial "_home-sec-2.html" . -}}
-<!-- END section -->
-<!-- BEGIN section -->
-{{- partial "_home-sec-3.html" . -}}
-<!-- END section -->
-<!-- BEGIN section -->
-{{- partial "_home-sec-4.html" . -}}
-<!-- END section -->
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        
+        <div class="modal-body">
+          <h2 class="modal__title">
+            Спасибо
+          </h2>
+          <p class="modal__text">
+            Ваш запрос был отпрален.
+          </p>
+          <p class="modal__text">
+            Мы обработаем его в ближайшее время.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
 {{ end }}
-

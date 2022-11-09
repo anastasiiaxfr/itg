@@ -22,3 +22,42 @@
         li
             button
                 color: inherit
+
+.navbar
+    color: $white
+    &-toggler
+        padding: 0
+        &:hover
+            box-shadow: none
+
+.header
+    +maw($lg)
+        &__btns
+            text-align: center
+            justify-content: center
+            width: 100%
+            margin-top: 30px
+        .btn--white
+            display: none
+        span
+            display: block
+            width: 100%
+   
+.modal
+    &-content
+        border-radius: 14px
+        padding: 70px 50px
+    &__title
+        text-align: center
+        +ft(34, 34, 700)
+        margin-bottom: 20px
+    &__text
+        text-align: center
+        +ft(16, 16, 700)
+    .btn-close
+        position: absolute
+        right: 20px
+        top: 20px
+    +maw($sm)
+        &-content
+            padding: 20px 

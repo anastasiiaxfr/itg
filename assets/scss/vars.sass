@@ -1,4 +1,4 @@
-	
+    
 $black: #0E0E0E
 $dark: #1A1A1C
 $dark2: #171717
@@ -35,108 +35,108 @@ $trs: all 0.35s ease-in-out
 
 
 =ft($fz, $lh: 16, $fw: 400, $ff: $ffText)
-	$lh: $lh/$fz
-	$fz: $fz/16 + rem
-	$ff: $ff, $ffBack
-	font: $fw $fz/$lh $ff 
+    $lh: $lh/$fz
+    $fz: $fz/16 + rem
+    $ff: $ff, $ffBack
+    font: $fw $fz/$lh $ff 
 
 
 =theme($theme)
-	@if $theme == dark
-		background-color: $dark2
-		color: $main
+    @if $theme == dark
+        background-color: $dark2
+        color: $main
 
-	@if $theme == black
-		background-color: $black
-		color: $white
+    @if $theme == black
+        background-color: $black
+        color: $white
 
-	@if $theme == main
-		background-color: $main
-		color: $white
+    @if $theme == main
+        background-color: $main
+        color: $white
 
-	@if $theme == white
-		background-color: rgba($yellow_light, 0.5)
-		color: $black
+    @if $theme == white
+        background-color: rgba($yellow_light, 0.5)
+        color: $black
 
-	
+    
 
 =sz($w, $h)
-	width: $w
-	height: $h
+    width: $w
+    height: $h
 
 =flex($fx, $ai, $jc, $fxw)
-	display: $fx
-	align-items: $ai
-	justify-content: $jc
-	flex-wrap: $fxw
+    display: $fx
+    align-items: $ai
+    justify-content: $jc
+    flex-wrap: $fxw
 
 
 // input +padding((t, 30px), (b, 40px))
 // +position(absolute, (t, 0), (r, 0))
 =position($ps, $val)
-	@each $x in $ps
-		@if $x == t
-			top: $val
+    @each $x in $ps
+        @if $x == t
+            top: $val
 
-		@if $x == b
-			bottom: $val
+        @if $x == b
+            bottom: $val
 
-		@if $x == l
-			left: $val
+        @if $x == l
+            left: $val
 
-		@if $x == r
-			right: $val
+        @if $x == r
+            right: $val
 
 =ps($params...)
-	position: nth($params, 1)
-	@each $par, $val in $params
-		@if $par != null and $val != null
-			+position($par, $val)
+    position: nth($params, 1)
+    @each $par, $val in $params
+        @if $par != null and $val != null
+            +position($par, $val)
 
 // input +padding((t, 30px), (b, 40px))
 =padding($pd, $val)
-	@if $pd == t
-		padding-top: $val
+    @if $pd == t
+        padding-top: $val
 
-	@if $pd == b
-		padding-bottom: $val
+    @if $pd == b
+        padding-bottom: $val
 
-	@if $pd == l
-		padding-left: $val
+    @if $pd == l
+        padding-left: $val
 
-	@if $pd == r
-		padding-right: $val
+    @if $pd == r
+        padding-right: $val
 
-	@if $pd == all
-		padding: $val
+    @if $pd == all
+        padding: $val
 
-	
+    
 
 =pd($params...)
-	@each $par, $val in $params
-		@if $par != null and $val != null
-			+padding($par, $val)
+    @each $par, $val in $params
+        @if $par != null and $val != null
+            +padding($par, $val)
 
 =margin($mg, $val)
-	@if $mg == t
-		margin-top: $val
+    @if $mg == t
+        margin-top: $val
 
-	@if $mg == b
-		margin-bottom: $val
+    @if $mg == b
+        margin-bottom: $val
 
-	@if $mg == l
-		margin-left: $val
+    @if $mg == l
+        margin-left: $val
 
-	@if $mg == r
-		margin-right: $val
+    @if $mg == r
+        margin-right: $val
 
-	@if $mg == all
-		margin: $val
+    @if $mg == all
+        margin: $val
 
 =mg($params...)
-	@each $par, $val in $params
-		@if $par != null and $val != null
-			+margin($par, $val)
+    @each $par, $val in $params
+        @if $par != null and $val != null
+            +margin($par, $val)
 
 // =sp($prop, $params...)
 // 	@if $prop == mg
@@ -146,60 +146,65 @@ $trs: all 0.35s ease-in-out
 
 $i: 0
 =spacer($arr)
-	@for $val from 1 through length($arr) 
-		$spr: nth($arr, 1)
-	@if $spr == mg
-		@for $i from 2 through length($arr)
-			$props: nth($arr, $i)
-			+margin($props...)
-	@if $spr == pd
-		@for $i from 2 through length($arr)
-			$props: nth($arr, $i)
-			+padding($props...)
-	
+    @for $val from 1 through length($arr) 
+        $spr: nth($arr, 1)
+    @if $spr == mg
+        @for $i from 2 through length($arr)
+            $props: nth($arr, $i)
+            +margin($props...)
+    @if $spr == pd
+        @for $i from 2 through length($arr)
+            $props: nth($arr, $i)
+            +padding($props...)
+    
 =sp($x, $y)
-	+spacer($x)
-	+spacer($y)
-		
-	
+    +spacer($x)
+    +spacer($y)
+        
+    
 //+sp((mg, (l, 20px), (b, 15px)), (pd, (r, 10px)))
 
-	
+    
 =maw($brkp)
-	@media only screen and (max-width: $brkp+"px")
-		@content
+    @media only screen and (max-width: $brkp+"px")
+        @content
 
 =miw($brkp)
-	@media only screen and (min-width: $brkp+"px")
-		@content
+    @media only screen and (min-width: $brkp+"px")
+        @content
 
 =mw($min, $max)
-	@media only screen and (min-width: $min+"px") and (max-width: $max+"px")
-		@content
+    @media only screen and (min-width: $min+"px") and (max-width: $max+"px")
+        @content
 
 
 @function rem($val)
-	$res: $val/16 + rem
-	@return $res
+    $res: $val/16 + rem
+    @return $res
 
 @function em($val)
-	$res: $val/16 + em
-	@return $res 
+    $res: $val/16 + em
+    @return $res 
 
 
 
 //  font-size: calc([minfz] + ([maxfz] - [minfz]) * ((100vw - [miw]) / ([maw] - [miw])));
-	
+    
 =rfz($maw, $miw, $minfz, $maxfz)
-	$maw : $maw + px
-	$miw : $miw + px
-	$minfz : $minfz + px
-	$maxfz : $maxfz + px	
-	@media only screen and (min-width: $miw) 
-		font-size: calc(#{$minfz} + (#{$maxfz} - #{$minfz}) * ((100vw - #{$miw}) / (#{$maw} - #{$miw})))
+    $maw : $maw + px
+    $miw : $miw + px
+    $minfz : $minfz + px
+    $maxfz : $maxfz + px	
+    @media only screen and (min-width: $miw) 
+        font-size: calc(#{$minfz} + (#{$maxfz} - #{$minfz}) * ((100vw - #{$miw}) / (#{$maw} - #{$miw})))
 
-	@media only screen and (min-width: $maw)
-		font-size: $maxfz
-	
+    @media only screen and (min-width: $maw)
+        font-size: $maxfz
+    
 // +rfz(1120, 320, 12, 40)
 
+%card
+    background: rgba(68, 73, 159, 0.25)
+    border-radius: 14px
+    color: $white
+    box-shadow: 0 6px 6px 0 rgba($black, 0.25)

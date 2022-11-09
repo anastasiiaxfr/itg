@@ -2,12 +2,12 @@
 
 <header class="header">
   <div class="container">
-    <div class="d-flex align-items-center justify-content-between">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
       <nav class="navbar navbar-expand-lg w-100">
        
           {{ .Scratch.Set "img" .Site.Params.logo }} 
-          {{ .Scratch.Set "logo_w" 161 }}
-          {{ .Scratch.Set "logo_h" 84 }}
+          {{ .Scratch.Set "logo_w" 71 }}
+          {{ .Scratch.Set "logo_h" 40 }}
           {{- partial "_logo.html" . -}}
 
           <button
@@ -19,55 +19,47 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-          <svg class="icon" width="20" height="20">
+          <svg class="icon icon-menu" width="20" height="20">
             <use xlink:href="#menu"></use>
+          </svg>
+          <svg class="icon icon-close d-none" width="20" height="20">
+            <use xlink:href="#close"></use>
           </svg>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              {{ range .Site.Menus.header }} {{ if .HasChildren }}
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  {{ .Name }}
-                </a>
-
-                <ul class="dropdown-menu">
-                  {{ range .Children }}
-                  <li>
-                    <a class="dropdown-item" href="{{ .URL | relLangURL }}"
-                      >{{ .Name }}</a
-                    >
-                  </li>
-                  {{ end }}
-                </ul>
-              </li>
-              {{ else }}
-              <li class="nav-item">
-                <a class="nav-link" href="{{ .URL | relLangURL }}"
-                  >{{ .Name }}</a
-                >
-              </li>
-
-              {{ end }}
-			  {{ end }}
-            </ul>
+          
           </div>
-          <div class="d-none">
-            {{- partial "_lang.html" . -}}
-          </div>
+
+         <div class="header__btns">
+         <span class="me-lg-5 mx-auto">Добро пожаловать, {user name}
+        </span>
+        <a href="#" class="btn btn--white">Выйти</a>
+        </div>
+        
+         
       </nav>
     </div>
   </div>
 </header>
 <!-- END header -->
+
+
+<script>
+  let close = document.querySelector('.icon-close');
+  let menu = document.querySelector('.icon-menu');
+
+  menu.addEventListener('click', function(){
+    this.classList.toggle('d-none');
+    close.classList.remove('d-none');
+  })
+  close.addEventListener('click', function(){
+    this.classList.toggle('d-none');
+    menu.classList.remove('d-none');
+  })
+
+ 
+</script>
 
 {{ if ne .IsHome true }} 
 {{ end }}

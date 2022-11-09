@@ -28,6 +28,17 @@
         width: 100%
         +ft(28, 28, 400)
 
+    &--white
+        background-color: $white
+        color: #103F94
+        +ft(16, 22, 700)
+        padding: 9px 62px
+        
+        &:hover, &:focus, &:active
+            background: $grad3
+            color: $white
+       
+
     &--top
         background-color: $blue
         display: flex
@@ -53,3 +64,105 @@
                 opacity: 0
             .icon--hover
                 opacity: 1
+
+.form
+    margin-left: auto
+    margin-right: auto
+    width: auto
+    &__wrap
+        @extend %card
+        width: auto
+        margin: 20px auto
+        padding: 60px 80px
+        border-radius: 40px
+    &-group
+        margin-bottom: 50px
+    label
+        display: block
+        position: relative
+        cursor: pointer
+        +ft(18, 18, 600)
+        margin-bottom: 24px
+        &[for="checkbox"]
+            +ft(18, 18, 400)
+            position: relative
+            
+    input:not([type=checkbox])
+        +ft(18, 18, 400)
+        padding: 20px 30px
+        max-width: 400px
+        width: 400px
+        border-radius: 10px
+        border: 1px solid $white
+        background-color: transparent
+        color: $white
+        &:hover, &:focus, &:active
+            border-color: #6b6ae9
+            color: #6b6ae9
+        
+    input[type=checkbox]
+        display: none
+        height: initial
+        width: initial
+        margin-bottom: 0
+        display: none
+        cursor: pointer
+        & + label::before
+            content: ''
+            appearance: none
+            background-color: transparent
+            border: 2px solid $white
+            border-radius: 4px
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05)
+            padding: 10px
+            display: inline-block
+            position: relative
+            vertical-align: middle
+            cursor: pointer
+            margin-right: 20px
+    input:checked + label:after 
+        content: ''
+        display: block
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 9px
+        margin: auto
+        width: 6px
+        height: 14px
+        
+        border: solid $white
+        border-width: 0 2px 2px 0
+        transform: rotate(45deg)
+
+    button
+        border-radius: 10px
+        background-color: $white
+        border: none
+        color: $black
+        +ft(20, 20, 600)
+        padding: 26px 
+        width: 100%
+
+        &:hover, &:focus, &:active
+            background-color: #6b6ae9
+            color: $white
+
+    .btn--link
+        display: inline-flex
+        justify-content: center
+        width: 100%
+        margin-top: 20px
+        text-decoration: underline
+        &:hover, &:focus, &:active
+            text-decoration: none
+            color: inherit
+    
+    +maw($sm)
+        label
+            +ft(36, 36, 400)
+        input:not([type=checkbox])
+            padding: 15px
+            +ft(26, 26, 400)
+        button
+            +ft(26, 26, 400)

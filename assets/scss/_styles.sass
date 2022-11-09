@@ -1,65 +1,120 @@
-.footer
-    +theme(black)
-body
-    +theme(dark)
+.row
+    &--1
+        margin-top: 80px
+        +maw($sm)
+            margin-top: 0px
 
-.img
-    display: block
-    max-width: 100%
-    border-radius: $brs
-    margin-left: auto
-    margin-right: auto
-    &--bd
-        box-shadow: $bxsd2
-
-.items
-    padding: 30px 15px
-    text-align: center
-    border-radius: $brs2
-    // border: 1px solid $main
-    box-shadow: $bxsd2
-    &__desc
-        +ft(18, 20*1.4, 400)
-        margin-top: 17px
-
-.card
-    padding: 25px
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    align-items: stretch
-    height: 100%
-    background-color: $dark
-    box-shadow: $bxsd
-    border-radius: $brs2
-    color: $main
-
-    .btn
-        display: flex
-
-    &__badge
-        background: $grad
-        border-radius: 0 0 $brs2 $brs2
-        color: $black
-        margin: -25px auto 25px
-        padding: 10px
-        min-width: 132px
-
-    &:hover
-        box-shadow: $bxsd2
-
-
-.hero
+.bg
+    background-color: rgba(0, 0, 62, 0.8)
+    background-image: url('../images/bg2.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 0 0
     color: $white
-    +maw($xs)
-        text-align: center
+    min-height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
 
 .section
     &_1
-        +maw($xs)
-            text-align: center
+        background-color: rgba(0, 0, 62, 0.8)
+        background-image: url('../images/bg1.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: 0 0
 
-.bg 
-    background-repeat: no-repeat
-    background-position: 50%
-    background-size: cover
+        padding-top: 55px
+        padding-bottom: 80px
+
+        +maw($sm)
+            background-image: none
+            padding-top: 20px
+
+    &_2
+        margin-top: 35px
+        margin-bottom: 35px
+        text-align: center
+        color: #00003E
+
+
+
+.card
+    background: rgba(68, 73, 159, 0.25)
+    border-radius: 14px
+    color: $white
+    box-shadow: 0 6px 6px 0 rgba($black, 0.25)
+    padding: 52px 46px
+    &__title
+        +ft(34, 46, 700)
+        margin-bottom: 24px
+    &__text
+        +ft(34, 46, 400)  
+    &__box
+        display: inline-flex
+        justify-content: center
+        border-radius: 10px
+        background-color: #D9D9D9
+        color: #00003E
+        padding: 9px 25px  
+        margin: 8px auto
+        +ft(12, 16, 400)
+        text-align: center
+    &__divider
+        margin-left: 10px
+        margin-right: 10px
+    &__btn
+        display: inline-flex
+        width: auto
+        background: #353484
+        color: $white
+        padding: 15px 70px
+        &:hover, &:active, &:focus
+            background: $grad3
+            color: $white
+        &[disabled]
+            background: #5F5F69
+    
+    &__label
+        margin: 8px 20px 8px 0
+        color: $white
+        span
+            display: block
+            +ft(12, 12, 400)
+            text-align: center
+        &:last-child
+            margin-right: 0
+
+    &__footer
+        display: flex
+        justify-content: flex-end
+        margin-top: 40px
+    +maw($sm)
+        &__label
+            margin-right: 0
+
+        &__box
+            width: 100%
+        &__divider
+            display: none
+        &__footer
+            flex-wrap: wrap
+            justify-content: center
+            margin-top: 20px
+            .btn
+                width: 100%
+                &:first-child
+                    margin-right: 0
+
+
+.table
+    width: 100%
+    max-width: 100%
+    margin-left: auto
+    margin-right: auto
+    td, th
+        border: 1px solid #000
+    &__wrap
+        +maw($sm)
+            overflow-x: scroll 
