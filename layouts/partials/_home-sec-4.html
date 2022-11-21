@@ -36,9 +36,11 @@
           </div>
           <div class="card__footer">
             {{ if .btn1 }}
-            <a href="{{.btn1.link}}" class="btn btn--bg">{{ .btn1.title }}</a>
+            <a href="{{.btn1.link}}" class="btn btn--bg" onclick="return gtag_report_conversion('{{.btn1.link}}')"
+>{{ .btn1.title }}</a>
             {{ end }} {{ if .btn2 }}
-            <a href="{{.btn2.link}}" class="btn btn--bd">{{ .btn2.title }}</a>
+            <a href="{{.btn2.link}}" class="btn btn--bd" onclick="return gtag_report_conversion('{{.btn2.link}}')"
+>{{ .btn2.title }}</a>
             {{ end }}
           </div>
         </figure>

@@ -123,4 +123,18 @@
     /></noscript>
     {{ "<!-- End Meta Pixel Code -->" | safeHTML }}
   
-    
+    <script>
+      function gtag_report_conversion(url) {
+           var callback = function () {
+           if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'TAG_ID/CONVERSION_LABEL',
+            'value': 1.0,
+             'event_callback': callback
+        });
+      return false;
+      }
+      </script>
