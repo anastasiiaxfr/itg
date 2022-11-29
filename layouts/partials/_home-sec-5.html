@@ -1,0 +1,35 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.homepage.section_5 }}
+{{ with $data.homepage.section_5 }}
+
+<section class="section section_5" id="about">
+  <div class="container pb-5 mb-5">
+    <h2 class="text-center">{{ .title }}</h2>
+    <div class="row mt-5 pt-3">
+      {{ range .paragraphs }}
+      <div class="col-md-6">
+        {{ .paragraph | markdownify }}
+      </div>
+      {{ end }}
+     
+    </div>
+    <div class="row my-5">
+      {{ range .items }}
+      <div class="col-md-3 my-3">
+        <div class="card py-5">
+          <div class="text__price mb-2">
+            {{ .title }}
+          </div>
+          <div class="card__text">
+           {{ .subtitle }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      
+    </div>
+  </div>
+</section>
+
+{{ end }} 
+{{ end }}
