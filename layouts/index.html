@@ -10,7 +10,7 @@
 {{ "<!-- Hero Section -->" | safeHTML }}
 {{ "<!-- End of Hero Section -->" | safeHTML }}
 
-<div class="bg" style="background-image: url(images/bg.png);">
+<div class="bg" style="background-image: url({{`images/bg.png` | relURL}});">
 {{- partial "header.html" . -}}
 <!-- BEGIN section -->
 {{- partial "_hero.html" . -}}
