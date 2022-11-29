@@ -53,36 +53,35 @@ section_4:
   title: Оформити підписку
   desc: "*безоплатно до 30 листопада"
   items:
-    - period: 1 месяц
+    - period: 1 місяць
       prise: 200$
       btn1: 
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
-        title: Заполнить форму
+        title: Заповнити форму
       btn2:
         link: https://t.me/windowitg_bot
-        title: Связаться в Telegram
+        title: Зв'язатися в Telegram
 
-    - period: 3 месяца 
+    - period: 3 місяці 
       prise: 300$
       prise_old: 600$
-      benefits: 300$ экономии
+      benefits: 300$ економії
       btn1: 
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
-        title: Заполнить форму
+        title: Заповнити форму
       btn2:
         link: https://t.me/windowitg_bot
-        title: Связаться в Telegram
-
-    - period: 12 месяцев
+        title: Зв'язатися в Telegram
+    - period: 12  місяців
       prise: 600$
       prise_old: 999$
-      benefits: 399$ экономии
+      benefits: 399$ економії
       btn1: 
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
-        title: Заполнить форму
+        title: Зв'язатися в Telegram
       btn2:
         link: https://t.me/windowitg_bot
-        title: Связаться в Telegram
+        title: Зв'язатися в Telegram
 
 # section #
 section_5:
@@ -93,10 +92,34 @@ section_5:
     - paragraph:  "ККонсалтингова компанія, основною діяльністю якої є управління високоприбутковими портфелями на ринку цифрових активів на загальну суму понад $1 млрд. Докладніше можна ознайомитися [тут](https://itg-investments.com/)."
   items:
     - title: 5+ 
-      subtitle: Лет опыта работы  
+      subtitle: Років досвіду роботи
     - title: 500+ 
-      subtitle:  Портфелей инвесторов по всему миру 
+      subtitle:  Портфелів інвесторів по всьому світу 
     - title: 30+   
-      subtitle:  Специалистов - наша гордость и главный ресурс
+      subtitle:  Фахівців - наша гордість та головний ресурс
     - title: 4+  
-      subtitle:  Блокчейн проекта
+      subtitle:  Блокчейн проекти
+
+
+# section #
+section_6:
+  enable: true
+  title: FAQ
+  faq:
+    - dd: Я хочу отримати індикатор, але поки що не визначився з вибором підписки
+      dt: "Всім новим користувачам ми даємо змогу протестувати індикатор ITG OBS PREDICROR протягом 7 днів абсолютно БЕЗОПЛАТНО. \n\n Що для цього потрібно? \n\n Підписатися на наш [телеграм](https://t.me/ITG_club).\n\n Написати нашому менеджеру @International_TradeGroup «хочу індикатор»"
+
+    - dd: Як я можу сплатити за продукт?
+      dt: "Оплата в USDT на адресу TRC-20: \n\n TJp18C4obGQfLfR9X5rRXxVxGYQt1B7oKE \n\n ✅ Після оплати надсилайте менеджеру @International_TradeGroup посилання на транзакцію"
+
+    - dd: Як підключити сповіщення на індикатор ITG OBS PREDICTOR у Trading View?
+      dt: Натисніть на кнопку «повідомлення», виберіть умови, за яких спрацьовуватиме сигнал, і спосіб зв'язку, куди саме надходитимуть повідомлення.
+
+    - dd: Як користуватись індикатором?
+      dt: Ознайомитись з інструкцією можна у [телеграф](https://telegra.ph/Torgovyj-indikator-ITG-OBS-Predictor-11-14)
+
+    - dd: На якому таймфреймі найкраще використовувати індикатор ITG OBS PREDICTOR?
+      dt: Оптимально використовувати на 4-годинному таймфреймі.
+
+    - dd: У мене залишились питання.
+      dt: "Ви можете написати нам в чат-підтримку в [телеграм](https://t.me/ITG_club) @International_TradeGroup. \n\n Підтримка активна у будні з 9:00 до 18:00."
