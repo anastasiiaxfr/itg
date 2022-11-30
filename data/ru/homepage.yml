@@ -74,8 +74,8 @@ section_4:
 
     - period: 12 месяцев
       prise: 600$
-      prise_old: 999$
-      benefits: 399$ экономии
+      prise_old: 2400$
+      benefits: 1800$ экономии
       btn1: 
         link: "https://forms.gle/BpZ8HUUmTBmcqsZz6"
         title: Заполнить форму
