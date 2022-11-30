@@ -10,71 +10,31 @@
 {{ "<!-- Hero Section -->" | safeHTML }}
 {{ "<!-- End of Hero Section -->" | safeHTML }}
 
-{{"<!-- banner-feature -->" | safeHTML}}
-{{ if $data.homepage.section.enable }}
-{{ with $data.homepage }}
-
-{{ .title }}
-
-{{ end }}
-{{ end }}
-
-<div class="hero__wrap" style="background-image: url({{ `images/hero.jpg` | absURL }});">
-<!-- BEGIN section -->
+<div class="bg" style="background-image: url({{`images/bg.png` | relURL}});">
 {{- partial "header.html" . -}}
-
+<!-- BEGIN section -->
 {{- partial "_hero.html" . -}}
 <!-- END section -->
-</div>
+
 
 <!-- BEGIN section -->
 {{- partial "_home-sec-1.html" . -}}
 <!-- END section -->
-
+</div>
 <!-- BEGIN section -->
-{{- partial "_home-sec-2.html" . -}} 
+{{- partial "_home-sec-2.html" . -}}
 <!-- END section -->
-
 <!-- BEGIN section -->
-{{- partial "_home-sec-3.html" . -}} 
+{{- partial "_home-sec-3.html" . -}}
 <!-- END section -->
-
 <!-- BEGIN section -->
-{{- partial "_home-sec-4.html" . -}} 
+{{- partial "_home-sec-4.html" . -}}
 <!-- END section -->
-
 <!-- BEGIN section -->
-{{- partial "_home-sec-5.html" . -}} 
+{{- partial "_home-sec-5.html" . -}}
 <!-- END section -->
-
 <!-- BEGIN section -->
-{{- partial "_home-sec-6.html" . -}} 
+{{- partial "_home-sec-6.html" . -}}
 <!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-7.html" . -}} 
-
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-8.html" . -}} 
-<!-- END section -->
-
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-9.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-10.html" . -}} 
-<!-- END section -->
-
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-11.html" . -}} 
-<!-- END section -->
-
-<!-- {{- partial "_modal-form.html" . -}}  -->
-
 {{ end }}
 

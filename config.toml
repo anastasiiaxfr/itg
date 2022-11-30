@@ -1,12 +1,12 @@
 baseURL = "/"
-# canonifyURLs = true
-defaultContentLanguage = "ua"
+canonifyURLs = false
+defaultContentLanguage = "ru"
 disableLanguages = []
 languageCode = "ua"
 paginate = "6"
 relativeURLs = true
 summaryLength = "50"
-title = "itg - Главная"
+title = "ITG | International Trade Group"
 # [Languages.en]
 # contentDir = "content/en"
 # home = "Home"
@@ -24,98 +24,99 @@ contentDir = "content/ua"
 home = "Головна"
 languageCode = "ua"
 languageName = "Укр"
-weight = 3
-[Languages.en]
-contentDir = "content/en"
-home = "Home"
-languageCode = "en"
-languageName = "ENG"
 weight = 1
 
-# [Languages.ua.params.form]
-# action = "#"
-# enable = true
-# method = "POST"
-
-# [[Languages.ua.params.form.field]]
-# enable = true
-# name = "name"
-# placeholder = "**\\*** Ім`я"
-# required = ""
-# type = "text"
-
-# [[Languages.ua.params.form.field]]
-# enable = true
-# name = "tel"
-# placeholder = "+38 (0__) ___ - __ - __"
-# label = "Телефон"
-# required = ""
-# type = "tel"
-
-# [[Languages.ua.params.form.field]]
-# enable = true
-# placeholder = "Надіслати"
-# type = "submit"
-
-
 [[menu.header]]
-URL = "/#about"
-name = "О компании"
+URL = "#how-work"
+name = "Как работает?"
 weight = 1
+hasChildren = true
+
 [[menu.header]]
-URL = "/#teams"
-name = "Команда"
+URL = "#features"
+name = "Особенности"
 weight = 2
+hasChildren = true
+
 [[menu.header]]
-URL = "/#news"
-name = "Новости"
+URL = "#stat"
+name = "Статистика"
 weight = 3
+hasChildren = true
+
 [[menu.header]]
-URL = "/#faq"
-name = "FAQ"
+URL = "#testimonials"
+name = "Подписки"
 weight = 4
+hasChildren = true
+
 [[menu.header]]
-URL = "/#contacts"
+URL = "#contacts"
 name = "Контакты"
 weight = 5
+hasChildren = true
 
 [outputs]
 home = ["HTML", "RSS", "JSON"]
 [params]
 CIO_site_id = "XXX"
-GTM = "GTM-WHBQ3BV"
+GTM = "GTM-XXX"
+
+description = ""
 develop = "xfr"
+home = "Home"
 
+logo = "/images/logo.png"
+logo_w = "161"
+logo_h = "84"
+copyright = "All Rights Reserved 2022 ITG"
 
-address = "м. Київ Кловський узвіз, 7"
-email = "office@itg-investments.com"
-mobile = "+38 050 563 58 07"
+tm_id = "-587397444"
+tm_token = "2045157225:AAFQjtb_C69OrQqaXjNLnpODfFy01tIe1Lg"
 
-logo = "images/logo.png"
-logo_dark = "images/logo.png"
-
-site_name = "itg"
-site_url = "itg.com"
-
-tm_id = "5125757387"
-tm_token = "5601478768:AAFQjTOcFqol4WXcUwNf5JPEya8TJZIaHNo"
-
-[[params.plugins.js]]
-link = "plugins/js/jquery.min.js"
-[[params.plugins.css]]
-link = "/plugins/slick-1.8.1/slick/slick.css"
-[[params.plugins.css]]
-link = "/plugins/slick-1.8.1/slick/slick-theme.css"
-[[params.plugins.js]]
-link = "/plugins/slick-1.8.1/slick/slick.min.js"
 [[params.plugins.js]]
 link = "plugins/js/bootstrap.bundle.min.js"
-
 [[params.plugins.js]]
-link = "plugins/js/just-validate.min.js"
+link = "plugins/js/jquery.min.js"
 [[params.plugins.js]]
-link = "plugins/js/smtp.js"
+link = "plugins/js/parallax.min.js"
 
+
+[[params.soc]]
+title = "tiktok"
+icon = "tiktok" 
+icon_h = "tiktok2" 
+link = "https://www.tiktok.com/@itg_general__"
+
+[[params.soc]]
+title = "instagram"
+icon = "im" 
+icon_h = "im2"
+link = "https://instagram.com/itg_official__"
+
+[[params.soc]]
+title = "telegram"
+icon = "tm" 
+icon_h = "tm2"
+link = "https://t.me/ITG_club"
+
+[[params.soc]]
+title = "linkedin"
+icon = "in" 
+icon_h = "in2"
+link = "https://www.linkedin.com/in/international-trade-group"
+
+[[params.soc]]
+title = "youtube"
+icon = "ytb" 
+icon_h = "ytb2"
+link = "https://www.youtube.com/channel/UC4Blz7CAtrKwTL8mYt6LpfA"
+
+[[params.soc]]
+title = "site"
+icon = "site" 
+icon_h = "site2"
+link = "https://itg-investments.com/"
 
 [params.preloader]
 enable = true
@@ -129,3 +130,4 @@ enableRobotsTXT = true
 author = "authors"
 category = "categories"
 tag = "tags"
+

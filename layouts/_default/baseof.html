@@ -3,23 +3,24 @@
 
 <body lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" class="page__body">
 
+<!-- Mgid Sensor --> 
+<script type="text/javascript"> (function() { var d = document, w = window; w.MgSensorData = w.MgSensorData || []; w.MgSensorData.push({ cid:723981, lng:"us", project: "a.mgid.com" }); var l = "a.mgid.com"; var n = d.getElementsByTagName("script")[0]; var s = d.createElement("script"); s.type = "text/javascript"; s.async = true; var dt = !Date.now?new Date().valueOf():Date.now(); s.src = "https://" + l + "/mgsensor.js?d=" + dt; n.parentNode.insertBefore(s, n); })(); 
+</script> 
+<!-- /Mgid Sensor -->
 
-  <main class="page__wrapper">
-
+  <main class="page__wrap">
 
     {{- partial "preloader.html" . -}}
     <div class="header-span"></div>
 
+    
 
     {{- block "main" . }}{{- end }}
 
   </main>
+  <!-- {{- partial "_btn-top.html" . -}} -->
 
-
-  {{- partial "_btn-top.html" . -}}
   {{- partial "footer.html" . -}}
-
-
 
   {{ range .Site.Params.plugins.js }}
   <script src="{{ .link | relURL }}"></script>
@@ -29,79 +30,16 @@
   <script src="{{ $script.Permalink | relURL }}?v={{ now.Format " 01-02-2006-14-52-26"}}"></script>
 
   {{- partial "_svg.html" . -}}
-
-
+  
   <script>
-    $('.teams').slick({
-      dots: true,
-      infinite: false,
-      speed: 300,
-      slidesToShow: 4,
-      slidesToScroll: 4,
-      adaptiveHeight: false,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 968,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    });
 
-    $('.products').slick({
-      rows: 2,
-      dots: true,
-      arrows: true,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      adaptiveHeight: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            rows: 1
-          }
-        }
-      ]
-
-    });
-
-    let navbar_toggle = document.querySelector('.navbar-toggler');
-    let navbar_toggle_open = document.querySelector('.navbar-toggler-open');
-    let navbar_toggle_close = document.querySelector('.navbar-toggler-close');
-
-    navbar_toggle.addEventListener('click', function () {
-      navbar_toggle_close.classList.toggle('d-block')
-      navbar_toggle_open.classList.toggle('d-none')
-    })
-
+    // Pretty simple huh?
+    var scene = document.getElementById('scene');
+    var parallax = new Parallax(scene);
+  
   </script>
 
 
-
-
+ 
 </body>
-
 </html>

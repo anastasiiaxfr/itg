@@ -8,6 +8,7 @@
 	background-color: rgba($white, 1);
 
     &-dots {
+        @include sz(100px, 0);
 
         .dot {
             display: inline-block;

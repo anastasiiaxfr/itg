@@ -1,144 +1,125 @@
----
-hero:
+
+# section #
+hero: 
   enable: true
-  title: International Trade Group
-  title_sub: Инновационная, динамично развивающаяся консалтинговая компания, открывающая
-    перед инвесторами глобальные перспективы в мире  Web 3.0 технологий и геополитического
-    устройства мира финансов. Мы эксперты в достижении поставленных целей в бизнесе,
-    разработке Blockchain технологии, аудите цифровых активов и фундаментального анализа
-  bg_img: "/images/hero.jpg"
+  title: "Торговий індикатор ITG OBS Predictor для трейдерів!"
   btn:
     enable: true
-    label: Наши продукты
+    lable: Оформити
     link: "#form"
+  img: images/arrows.png
+
+# section #
 section_1:
   enable: true
-  title: О компании
-  title_sub_l: Наша компания основа в 2018 году, в одной из самых диджитализируемых
-    стран мира - Украина. Мы решили развивать, внедрять и разрабатывать различные
-    системы торговли активами, а также приспособить технологии блокчейна в посведневную
-    жизнь и развивать это направление.
-  title_sub_r: Консалтинговая компания, основной деятельностью которой является управление
-    высокодоходными портфелями на рынке цифровых активов на общую сумму более $1 млрд.
-  cards:
-  - title: 5+
-    desc: Лет опыта работы
-  - title: 500+
-    desc: Портфелей инвесторов по всему миру
-  - title: 30+
-    desc: Специалистов - наша гордость и главный ресурс
-  - title: 4+
-    desc: Блокчейн проекта
+  title: "Як працює індикатор"
+  img: "images/img1.jpg"
+  text: "Торговий індикатор відрізняється від більшості доступних індикаторів на ринку тим, що пропонує готові сигнали для входу в позиції.\n\n Це ідеальне та безпрограшне рішення для заробітку та примноження вашого капіталу без втрати бюджету"
+  desc: "Індикатор ITG OBS Predictor розраховує напрям руху ринку завдяки:"
+  indicators:
+    -  математичним формула
+    -  перекупленості та перепроданості ринку
+    -  справедливій ціні
+    -  коефіцієнту відхилення
+    -  волатильності ринку
+    -  ковзним середнім
+
+# section #
 section_2:
   enable: true
-  title: Команда
-  lists:
-  - name: "Максим \n\n Рыбин"
-    job: CEO / CO-FOUNDER
-    desc: Менеджмент, маркетинг, опыт управления крупными корпорациями и командами  более
-      1000 человек
-    img: images/team1.png
-    img_webp: images/team1.webp
-  - name: "Фарид \n\n Бабаев"
-    job: CEO / CO-FOUNDER
-    desc: Управление инвестиционными портфелями, аналитика, разработка системы трейдинга,
-      разработка аллометрических стратегий.
-    img: images/team2.png
-    img_webp: images/team2.webp
-  - name: "Игорь \n\n Порох"
-    job: CEO / CO-FOUNDER
-    desc: Топ 3 трейдеров СНГ по версии BTC Awards.Торговля на финансовых рынка с
-      2013 года, разработка аллометрических стратегий с 2015 года.
-    img: images/team3.png
-    img_webp: images/team3.webp
-  - name: "Николай \n\n Ульянич"
-    job: Аналитик
-    desc: Старший трейдер, начальник аналитичесского отдела, главный крипто аудитор
-    img: images/team4.png
-    img_webp: images/team4.webp
-section_features:
-  enable: true
-  title: Преимущества
+  title: Ключові особливості індикатора
   items:
-  - title: Опыт управление
-    description: Разработка стратегии и управление инвестиционными портфелями, управление
-      ликвидностью является нашим главным преймуществом
-    icon: images/strategy 1.png
-    icon_webp: images/strategy1.webp
-  - title: Гибкость
-    description: Хотя у нас есть четкие регламенты работы с инвесторами и понимания
-      взаимовыгодных отношений, мы всегда открыты к новому диалогу, и придумаем все,
-      чтобы инвестору было комфортно с нами работать.
-    icon: images/strategy 2.png
-    icon_webp: images/strategy2.webp
-  - title: Опыт
-    description: Более 80% прибыльных результатов достигаются упорным трудом, финансовой
-      грамотностью и очень большим опытом анализа на различных рынках
-    icon: images/strategy 3.png
-    icon_webp: images/strategy3.webp
-  - title: Знания
-    description: 'Наш информационный и аналитический отдел 24/7 анализирует и зондирует
-      рынок цифровых активов. Проводит аудит и аналитику чужих стратегий. '
-    icon: images/strategy 4.png
-    icon_webp: images/strategy4.webp
+    - title: Готові сигнали для входу
+      icon: icon1
+    - title: Визначає напрямок рух
+      icon: icon2
+    - title: Універсальний для крипто-пар та валютних пар
+      icon: icon3
+    - title: Вище 70% прибуткових позицій
+      icon: icon4
+    - title: Можливість поставити стоп-лосс в беззбиток
+      icon: icon5
+
+# section #
+section_3:
+  enable: true
+  title: Статистика
+  desc: На 4 годинному таймфреймі показує відсоток прибуткових позицій вище 70% і фактором прибутку 1.4, що для крипто-ринку з його волатильністю є дуже високим показником.
+  img: images/stats.png
+
+# section #
 section_4:
-  enable: false
-  title: Наши продукты
-section_5:
-  enable: false
-  title: Кейсы
-section_6:
-  enable: false
-  title: FAQ
-section_7:
   enable: true
-  title: Новости
-section_9:
-  enable: true
-  text: Благотворительный фонд «For my Ukraine» – это фонд-хаб, объединяющий людей,
-    ресурсы, идеи, возможности, чтобы в синергии реализовывать комплексные национальные
-    и международные социальные проекты.
-  img: images/img1.png
-  btn:
-    enable: true
-    label: Подробнее
-    link: "#"
-section_10:
-  enable: true
-  title: Наши партнеры
+  title: Оформити підписку
+  desc: "*безоплатно до 30 листопада"
   items:
-  - img: images/partners/partner1.png
-    img_webp: images/partners/partner1.webp
-  - img: images/partners/partner2.png
-    img_webp: images/partners/partner2.webp
-  - img: images/partners/partner3.png
-    img_webp: images/partners/partner3.webp
-  - img: images/partners/partner4.png
-    img_webp: images/partners/partner4.webp
-  - img: images/partners/partner5.png
-    img_webp: images/partners/partner5.webp
-  - img: images/partners/partner6.png
-    img_webp: images/partners/partner6.webp
-section_11:
+    - period: 1 місяць
+      prise: 200$
+      btn1: 
+        link: https://forms.gle/BpZ8HUUmTBmcqsZz6
+        title: Заповнити форму
+      btn2:
+        link: https://t.me/windowitg_bot
+        title: Зв'язатися в Telegram
+
+    - period: 3 місяці 
+      prise: 300$
+      prise_old: 600$
+      benefits: 300$ економії
+      btn1: 
+        link: https://forms.gle/BpZ8HUUmTBmcqsZz6
+        title: Заповнити форму
+      btn2:
+        link: https://t.me/windowitg_bot
+        title: Зв'язатися в Telegram
+    - period: 12  місяців
+      prise: 600$
+      prise_old: 2400$
+      benefits: 1800$ економії
+      btn1: 
+        link: https://forms.gle/BpZ8HUUmTBmcqsZz6
+        title: Зв'язатися в Telegram
+      btn2:
+        link: https://t.me/windowitg_bot
+        title: Зв'язатися в Telegram
+
+# section #
+section_5:
   enable: true
-  title: "Остались вопросы? \n\n Задавайте!"
-  desc: Заполните анкету, чтобы получить подробный ответ на ваши вопросы
-form:
+  title: Про компанію
+  paragraphs: 
+    - paragraph: "Наша компанія заснована у 2018 році, в одній з країн світу, що найбільше диджиталізуються, - в Україні. Ми вирішили розвивати, впроваджувати та розробляти різні системи торгівлі активами, а також пристосувати технології блокчейну до пізно життя і розвивати цей напрям."
+    - paragraph:  "ККонсалтингова компанія, основною діяльністю якої є управління високоприбутковими портфелями на ринку цифрових активів на загальну суму понад $1 млрд. Докладніше можна ознайомитися [тут](https://itg-investments.com/)."
+  items:
+    - title: 5+ 
+      subtitle: Років досвіду роботи
+    - title: 500+ 
+      subtitle:  Портфелів інвесторів по всьому світу 
+    - title: 30+   
+      subtitle:  Фахівців - наша гордість та головний ресурс
+    - title: 4+  
+      subtitle:  Блокчейн проекти
+
+
+# section #
+section_6:
   enable: true
-  form_btn: Отправить
-  form_fields:
-  - type: text
-    placeholder: Ваше имя
-    required: true
-    name: name
-  - type: text
-    placeholder: Ваш вопрос
-    required: true
-    name: question
-  - type: email
-    placeholder: Ваш Email
-    name: email
-  - type: text
-    placeholder: Ваш номер телефона
-    required: true
-    name: tel
+  title: FAQ
+  faq:
+    - dd: Я хочу отримати індикатор, але поки що не визначився з вибором підписки
+      dt: "Всім новим користувачам ми даємо змогу протестувати індикатор ITG OBS PREDICROR протягом 7 днів абсолютно БЕЗОПЛАТНО. \n\n Що для цього потрібно? \n\n Підписатися на наш [телеграм](https://t.me/ITG_club).\n\n Написати нашому менеджеру @International_TradeGroup «хочу індикатор»"
+
+    - dd: Як я можу сплатити за продукт?
+      dt: "Оплата в USDT на адресу TRC-20: \n\n TJp18C4obGQfLfR9X5rRXxVxGYQt1B7oKE \n\n ✅ Після оплати надсилайте менеджеру @International_TradeGroup посилання на транзакцію"
+
+    - dd: Як підключити сповіщення на індикатор ITG OBS PREDICTOR у Trading View?
+      dt: Натисніть на кнопку «повідомлення», виберіть умови, за яких спрацьовуватиме сигнал, і спосіб зв'язку, куди саме надходитимуть повідомлення.
+
+    - dd: Як користуватись індикатором?
+      dt: Ознайомитись з інструкцією можна у [телеграф](https://telegra.ph/Torgovyj-indikator-ITG-OBS-Predictor-11-14)
+
+    - dd: На якому таймфреймі найкраще використовувати індикатор ITG OBS PREDICTOR?
+      dt: Оптимально використовувати на 4-годинному таймфреймі.
+
+    - dd: У мене залишились питання.
+      dt: "Ви можете написати нам в чат-підтримку в [телеграм](https://t.me/ITG_club) @International_TradeGroup. \n\n Підтримка активна у будні з 9:00 до 18:00."

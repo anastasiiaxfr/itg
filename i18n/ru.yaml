@@ -1,5 +1,3 @@
-- id: login
-  translation: Регистрация
+- id: read_more
+  translation: Read More
 
-- id: signup
-  translation: Вход
