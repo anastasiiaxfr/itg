@@ -45,14 +45,14 @@ section_2:
 section_3:
   enable: true
   title: Statistics
-  desc: It shows a percentage of profitable positions above 70% and a profit factor of 1.4 on the 30-hour timeframe, which is very high for the crypto market given its volatility.
+  desc: It shows a percentage of profitable positions above 70% and a profit factor of 1.4 on the 4-hour timeframe, which is very high for the crypto market given its volatility.
   img: images/stats.png
 
 # section #
 section_4:
   enable: true
   title: Subscribe
-  desc: "*by November 30th free 1 month/3 months/12 months"
+  desc: "*by November 30th free"
   items:
     - period: 1 month
       prise: 200$
