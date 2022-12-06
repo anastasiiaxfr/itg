@@ -192,6 +192,12 @@ icon = "site"
 icon_h = "site2"
 link = "https://itg-investments.com/"
 
+[[params.soc]]
+title = "site"
+img = "/images/icon/trading.png"
+link = "https://ru.tradingview.com/u/ITG_company (https://ru.tradingview.com/u/ITG_company/)/"
+
+
 [params.preloader]
 enable = true
 preloader = ""

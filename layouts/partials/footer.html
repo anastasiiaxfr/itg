@@ -8,12 +8,16 @@
                 <nav class="soc mb-4">
                     {{ range .Site.Params.soc }}
                     <a href="{{.link}}" target="_blank" rel="noopener noreferrer" title="{{ .title }}">
-                       <svg class="icon me-4" width="45" height="45">
+                      {{ if .img }}
+                        <img src="{{.img}}" alt="{{.title}}">
+                      {{ else }}
+                      <svg class="icon me-4" width="45" height="45">
                         <use xlink:href="#{{.icon}}"></use>
                       </svg>
                       <svg class="icon--hover me-4" width="45" height="45">
                         <use xlink:href="#{{.icon_h}}"></use>
                       </svg>
+                      {{end}}
                     </a>
                     {{ end }}
                 </nav>
