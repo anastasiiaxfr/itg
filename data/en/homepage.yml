@@ -1,0 +1,137 @@
+
+# section #
+hero: 
+  enable: true
+  title: "Trade indicator ITG OBS Predictor for traders!"
+  btn:
+    enable: true
+    lable: Sign up 
+    link: "#form"
+  img: images/arrows.png
+
+# section #
+section_1:
+  enable: true
+  title: "How does this indicator work"
+  img: "images/img1.jpg"
+  text: "This trading indicator differs from most others available on the market in the fact that it gives ready-made signals for entering a position.\n\n It is a perfect and win-win solution for earning and increasing your capital without losing your budget."
+  desc: "The ITG OBS Predictor indicator calculates the direction of the market through:"
+  indicators:
+    -  mathematical formulas
+    -  overbought and oversold market 
+    -  fair price 
+    -  deviation ratio 
+    -  market volatility
+    -  moving averages 
+
+
+# section #
+section_2:
+  enable: true
+  title: Key features of the indicator
+  items:
+    - title: Ready signals to enter positions
+      icon: icon1
+    - title: Determines the direction of movement
+      icon: icon2
+    - title: Versatile for crypto pairs and currency pairs
+      icon: icon3
+    - title: Above 70% of profitable positions
+      icon: icon4
+    - title: Possibility to place stop losses at break-even
+      icon: icon5
+
+# section #
+section_3:
+  enable: true
+  title: Statistics
+  desc: It shows a percentage of profitable positions above 70% and a profit factor of 1.4 on the 30-hour timeframe, which is very high for the crypto market given its volatility.
+  img: images/stats.png
+
+# section #
+section_4:
+  enable: true
+  title: Subscribe
+  desc: "*by November 30th free 1 month/3 months/12 months"
+  items:
+    - period: 1 month
+      prise: 200$
+      btn1: 
+        link: https://forms.gle/BpZ8HUUmTBmcqsZz6
+        title: Fill in the form
+      btn2:
+        link: https://t.me/windowitg_bot
+        title: Telegram Contact
+
+    - period: 3 month
+      prise: 300$
+      prise_old: 600$
+      benefits: 300$ economy
+      btn1: 
+        link: https://forms.gle/BpZ8HUUmTBmcqsZz6
+        title: Fill in the form
+      btn2:
+        link: https://t.me/windowitg_bot
+        title: Telegram Contact
+
+    - period: 12  month
+      prise: 600$
+      prise_old: 2400$
+      benefits: 1800$ economy
+      btn1: 
+        link: https://forms.gle/BpZ8HUUmTBmcqsZz6
+        title: Telegram Contact
+
+      btn2:
+        link: https://t.me/windowitg_bot
+        title: Telegram Contact
+
+
+# section #
+section_5:
+  enable: true
+  title: About ITG
+  paragraphs: 
+    - paragraph: "Our company was founded in 2018 in one of the most digitalized countries in the world - Ukraine. We decided to develop, implement and design different asset trading systems and to adapt blockchain technology into everyday life and to grow this direction."
+    - paragraph:  "It is a consulting firm whose core business is managing high-yield portfolios totaling more than $1 billion in the digital asset market.
+More information can be found on the official [website](https://itg-investments.com/) of the company."
+  items:
+    - title: 5+ 
+      subtitle: Years of Experience
+    - title: 500+ 
+      subtitle:  Investor portfolios worldwide
+    - title: 30+   
+      subtitle:  Professionals are our pride and greatest resource
+    - title: 4+  
+      subtitle:  Blockchain projects
+
+
+# section #
+section_6:
+  enable: true
+  title: FAQ
+  faq:
+    - dd: I want to get the indicator but have not yet decided on the choice of subscription.
+      dt: "We are in a position to offer an absolutely FREE test of the indicator ITG OBS PREDICTOR to all new users for 7 days."
+
+    - dd: So what needs to be done?
+      dt: "Subscribe to the channel in [Telegram](https://t.me/ITG_club). Write to our manager [@International_TradeGroup](https://t.me/ITG_club) 'I want an indicator'"
+
+    - dd: How can I pay for the product?
+      dt: "Payment in USDT to the address TRC-20: \n\n TJp18C4obGQfLfR9X5rRXxVxGYQt1B7oKE \n\n ✅  Please send the link to the transaction after payment to the manager [@International_TradeGroup](https://t.me/ITG_club)"
+
+
+    - dd: How to connect notifications to the ITG OBS PREDICTOR indicator in Trading View?
+
+      dt: Click the "notifications" button, and select the conditions under which the alarm will be triggered and the communication method to which the notices will be sent.
+
+
+    - dd: How to use the indicator?
+      dt: You can read the instructions in the [Telegraph](https://t.me/ITG_club)  
+
+
+    - dd: At what timeframe is better to use the indicator ITG OBS PREDICTOR?
+      dt: "It is optimal to use in the 4-hour timeframe."
+
+    - dd: I have more questions
+      dt: "You can write to us in the chat support on Telegram [@International_TradeGroup](https://t.me/ITG_club). \n\n Support is active on weekdays from 9:00 to 18:00."

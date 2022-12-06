@@ -13,6 +13,9 @@ title = "ITG | International Trade Group"
 # languageCode = "en-us"
 # languageName = "En"
 # weight = 3
+
+[Languages]
+
 [Languages.ru]
 contentDir = "content/ru"
 home = "Главная"
@@ -26,33 +29,104 @@ languageCode = "ua"
 languageName = "Укр"
 weight = 1
 
-[[menu.header]]
+[Languages.en]
+contentDir = "content/en"
+home = "Home"
+languageCode = "en"
+languageName = "Eng"
+weight = 3
+
+
+[[Languages.ua.menu.main]]
 URL = "#how-work"
-name = "Как работает?"
+name = "Як це працює?"
 weight = 1
 hasChildren = true
 
-[[menu.header]]
+[[Languages.ua.menu.main]]
 URL = "#features"
-name = "Особенности"
+name = "Особливостi"
 weight = 2
 hasChildren = true
 
-[[menu.header]]
+[[Languages.ua.menu.main]]
 URL = "#stat"
 name = "Статистика"
 weight = 3
 hasChildren = true
 
-[[menu.header]]
+[[Languages.ua.menu.main]]
+URL = "#testimonials"
+name = "Пiдписки"
+weight = 4
+hasChildren = true
+
+[[Languages.ua.menu.main]]
+URL = "#contacts"
+name = "Контакти"
+weight = 5
+hasChildren = true
+
+###########
+[[Languages.ru.menu.main]]
+URL = "#how-work"
+name = "Как работает?"
+weight = 1
+hasChildren = true
+
+[[Languages.ru.menu.main]]
+URL = "#features"
+name = "Особенности"
+weight = 2
+hasChildren = true
+
+[[Languages.ru.menu.main]]
+URL = "#stat"
+name = "Статистика"
+weight = 3
+hasChildren = true
+
+[[Languages.ru.menu.main]]
 URL = "#testimonials"
 name = "Подписки"
 weight = 4
 hasChildren = true
 
-[[menu.header]]
+[[Languages.ru.menu.main]]
 URL = "#contacts"
 name = "Контакты"
+weight = 5
+hasChildren = true
+
+#################
+
+[[Languages.en.menu.main]]
+URL = "#how-work"
+name = "How does it work?"
+weight = 1
+hasChildren = true
+
+[[Languages.en.menu.main]]
+URL = "#features"
+name = "Features"
+weight = 2
+hasChildren = true
+
+[[Languages.en.menu.main]]
+URL = "#stat"
+name = "Statistics"
+weight = 3
+hasChildren = true
+
+[[Languages.en.menu.main]]
+URL = "#testimonials"
+name = "Subscriptions"
+weight = 4
+hasChildren = true
+
+[[Languages.en.menu.main]]
+URL = "#contacts"
+name = "Contact us"
 weight = 5
 hasChildren = true
 
