@@ -45,14 +45,14 @@ section_2:
 section_3:
   enable: true
   title: Statistics
-  desc: It shows a percentage of profitable positions above 70% and a profit factor of 1.4 on the 30-hour timeframe, which is very high for the crypto market given its volatility.
+  desc: It shows a percentage of profitable positions above 70% and a profit factor of 1.4 on the 4-hour timeframe, which is very high for the crypto market given its volatility.
   img: images/stats.png
 
 # section #
 section_4:
   enable: true
   title: Subscribe
-  desc: "*by November 30th free 1 month/3 months/12 months"
+  desc: "*by November 30th free"
   items:
     - period: 1 month
       prise: 200$
@@ -120,7 +120,7 @@ section_6:
     - dd: How can I pay for the product?
       dt: "Payment in USDT to the address TRC-20: \n\n TJp18C4obGQfLfR9X5rRXxVxGYQt1B7oKE \n\n ✅  Please send the link to the transaction after payment to the manager [@International_TradeGroup](https://t.me/ITG_club)"
       img: "/images/qr.jpg" 
-       
+
     - dd: How to connect notifications to the ITG OBS PREDICTOR indicator in Trading View?
 
       dt: Click the "notifications" button, and select the conditions under which the alarm will be triggered and the communication method to which the notices will be sent.
