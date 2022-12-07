@@ -22,7 +22,10 @@
       </h2>
       <div id="collapse-{{$i}}" class="accordion-collapse collapse" aria-labelledby="heading-{{$i}}" data-bs-parent="#accordionExample">
         <div class="accordion-body">
-          {{ .dt | markdownify }}
+          <div>{{ .dt | markdownify }}</div>
+          {{ if .img }}
+            <img src="{{ .img | relURL }}" alt="{{ .dd }}" height="150">
+          {{ end }}
         </div>
       </div>
     </div>

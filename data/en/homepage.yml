@@ -119,8 +119,8 @@ section_6:
 
     - dd: How can I pay for the product?
       dt: "Payment in USDT to the address TRC-20: \n\n TJp18C4obGQfLfR9X5rRXxVxGYQt1B7oKE \n\n ✅  Please send the link to the transaction after payment to the manager [@International_TradeGroup](https://t.me/ITG_club)"
-
-
+      img: "/images/qr.jpg" 
+       
     - dd: How to connect notifications to the ITG OBS PREDICTOR indicator in Trading View?
 
       dt: Click the "notifications" button, and select the conditions under which the alarm will be triggered and the communication method to which the notices will be sent.
