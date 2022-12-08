@@ -52,7 +52,7 @@ section_3:
 section_4:
   enable: true
   title: Subscribe
-  desc: "*by November 30th free"
+  desc: "*First 7 days free"
   items:
     - period: 1 month
       prise: 200$

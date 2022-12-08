@@ -51,7 +51,7 @@ section_3:
 section_4:
   enable: true
   title: Оформити підписку
-  desc: "*безоплатно до 30 листопада"
+  desc: "*перші 7 днів безкоштовно"
   items:
     - period: 1 місяць
       prise: 200$

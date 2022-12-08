@@ -50,7 +50,7 @@ section_3:
 section_4:
   enable: true
   title: Оформить подписку
-  desc: "*бесплатно до 30 ноября"
+  desc: "*первые 7 дней бесплатно"
   items:
     - period: 1 месяц
       prise: 200$
