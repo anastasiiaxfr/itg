@@ -81,7 +81,6 @@
 
 
 .section
-    overflow-x: hidden
     &_3
         background: $black url('../images/strategy.jpg') no-repeat 50%/cover
         background-color: $blue
@@ -95,6 +94,28 @@
         .text
             max-width: 50%
             +mg((l, auto), (r, auto))
+    &_title
+        color: $white
+        padding-top: 125px
+        padding-bottom: 200px
+        +maw($md)
+            padding-top: 50px
+            padding-bottom: 50px
+    &_web
+        margin-top: -50px
+        margin-bottom: 50px
+        p
+            +ft(18, 25, 400)
+        +maw($md)
+            margin-top: 50px
+            p
+                +ft(16, 16*1.4, 400)
+    &_list
+        +ft(24, 36, 400)
+        +maw($md)
+            +ft(16, 16*1.4, 400)
+    
+
 
 .feature
     &__pic
@@ -287,8 +308,48 @@
     iframe
         border-radius: $brs
         overflow: hidden
-    
+
+.accordion
+    &-item
+        background: transparent
+        border-radius: 10px
+        overflow: hidden
+    &-button:not(.collapsed)
+        background-color: $white
+        color: $black
+        border-bottom: 1px solid rgba(0,0,0,.125)
+.accordion-item:first-of-type .accordion-button, .accordion-item:first-of-type, .accordion-item:last-of-type .accordion-button.collapsed, .accordion-item:last-of-type
+    border-radius: 10px 
+.accordion-item:not(:first-of-type)
+    border-top: 1px solid rgba(0,0,0,.125)
 .accordion-button
-    background-color: $grey4
+    background-color: #F8F8FA
+    +ft(18, 25, 400)
     &:focus
         box-shadow: none
+
+
+.benefits
+    height: 100%
+    padding: 20px
+    text-align: center
+    background-color: $white
+    color: $black
+    border-radius: 10px
+    box-shadow: 0 0 10px 0 rgba($black, 0.15)
+    margin-top: 20px
+    margin-bottom: 20px
+    &__title
+        +ft(15, 20, 600)
+        margin-bottom: 15px
+        margin-top: 15px
+    &__wrap
+        position: relative
+        z-index: 100
+        align-items: stretch
+        transform: translateY(-50%)
+        +maw($md)
+            transform: translate(0)
+
+.img
+    max-width: 100%

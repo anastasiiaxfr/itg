@@ -6,7 +6,7 @@
 </style>
 {{ end }}
 
-	
+
 {{ "<!-- Hero Section -->" | safeHTML }}
 {{ "<!-- End of Hero Section -->" | safeHTML }}
 
@@ -19,62 +19,347 @@
 {{ end }}
 {{ end }}
 
-<div class="hero__wrap" style="background-image: url({{ `images/hero.jpg` | absURL }});">
-<!-- BEGIN section -->
-{{- partial "header.html" . -}}
+<div class="hero__wrap" style="background-image: url({{ `images/hero2.jpg` | absURL }});">
+    <!-- BEGIN section -->
+    {{- partial "header.html" . -}}
 
-{{- partial "_hero.html" . -}}
-<!-- END section -->
+    <section class="section section_title">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img class="img" src="{{ `images/img2.png` | relURL }}" alt="{{ .Title }}">
+                </div>
+                <div class="col-md-6">
+                    <h1 class="h1">
+                        Разработка решений для бизнеса на основе блокчейн технологии
+                    </h1>
+                    <p class="h1__subtitle">
+                        Постоянно растущая потребность в новой технологии блокчейн внесет революционные изменения в наш
+                        образ жизни. Об этом узнают не только простые люди, но и многие технически подкованные компании
+                        уже начали вкладывать средства в реализацию блокчейна.
+                    </p>
+                    <a href="#" class="btn btn--main">
+                        Оформить
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END section -->
 </div>
 
 <!-- BEGIN section -->
-{{- partial "_home-sec-1.html" . -}}
+<section class="section section_benefits">
+    <div class="container">
+        <div class="row justify-content-center benefits__wrap">
+            <div class="col-md-4 my-4">
+                <figure class="benefits">
+                    <div class="benefits__icon">
+                        <img src="{{`images/features1.png`}}" alt="{{ .Title }}">
+                    </div>
+                    <figcaption class="benefits__desc">
+                        <div class="benefits__title">
+                            44 из 100 фирм-гигантов
+                        </div>
+                        <p>
+                            используют блокчейн-технологии в своей деятельности
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 my-4">
+                <figure class="benefits">
+                    <div class="benefits__icon">
+                        <img src="{{`images/features2.png`}}" alt="{{ .Title }}">
+                    </div>
+                    <figcaption class="benefits__desc">
+                        <div class="benefits__title">
+                            43% компаний
+                        </div>
+                        <p>
+                            заинтересованы в этом, но фактически не внедрили какой-либо план.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-md-4 my-4">
+                <figure class="benefits">
+                    <div class="benefits__icon">
+                        <img src="{{`images/features3.png`}}" alt="{{ .Title }}">
+                    </div>
+                    <figcaption class="benefits__desc">
+                        <div class="benefits__title">
+                            Web 3.0
+                        </div>
+                        <p>
+                            Это будещее
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- END section -->
 
 <!-- BEGIN section -->
-{{- partial "_home-sec-2.html" . -}} 
+<section class="section section_web">
+    <div class="container">
+        <h2 class="h2 text-center mb-5">
+            Почему Web 3.0?
+        </h2>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img  class="img my-4" src="{{ `images/img3.png` }}" alt="{{ .Title }}">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Почти половина ведущих компаний мира, а именно 44 из 100 фирм-гигантов, используют
+                    блокчейн-технологии в своей деятельности. Об этом говорится в отчете Finbold, охватывающих период с
+                    августа 2021 по август 2022 года. Среди них страховые компании и финансовые отрасли играют ведущую
+                    роль. Еще 43% компаний заинтересованы в этом, но фактически не внедрили какой-либо план.
+                </p>
+
+                <p>
+                    ИТ-директора этих компаний визуализируют блокчейн как бизнес-модель, способную управлять крупными
+                    отраслями. Тем не менее они также указали, что процесс довольно сложный и может потребовать
+                    дальнейшего изучения.
+                </p>
+
+                <p>
+                    Если вы хотите идти в ногу со временем, вам необходимо адаптировать ваш бизнес на новый
+                    технологический уклад — технологии Web3.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- END section -->
 
 <!-- BEGIN section -->
-{{- partial "_home-sec-3.html" . -}} 
+<section class="section section_list mb-5">
+    <div class="container">
+        <h2 class="h2 text-center mb-5">
+            Компания ITG поможет решить любые задачи по интеграции блокчейна в вашу бизнес-модель.
+        </h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul>
+                    <li>
+                        Рахработка крипто-кошельков
+                    </li>
+                    <li>
+                        Комплексный Security аудит блокчейн проекта
+                    </li>
+                    <li>
+                        Внедрение блокчейн в маркетплейсы и интернет-магазины
+                    </li>
+                    <li>
+                        Токенизация бизнеса
+                    </li>
+                    <li>
+                        Разработка криптовалюты на базе Ethereum
+                    </li>
+                    <li>
+                        Разработка криптомонеты
+                    </li>
+                    <li>
+                        Консалтинг Blockchain проектов
+                    </li>
+                    <li>
+                        Security аудит смарт-контрактов
+                    </li>
+                    <li>
+                        Разработка крипто-игр на блокчейн
+                    </li>
+                    <li>
+                        Разработка стартапов на блокчейне
+                    </li>
+                    <li>
+                        Разработка Metaverse
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+
+                <ul>
+                    <li>
+                        Мобильная разработка на Blockchain
+                    </li>
+                    <li>
+                        Интеграция Blockchain в бизнес
+                    </li>
+                    <li>
+                        Разработка крипто-обменников
+                    </li>
+                    <li>
+                        Разработка крипто-бирж
+                    </li>
+                    <li>
+                        Web-разработка с использованием Blockchain
+                    </li>
+                    <li>
+                        Разработка криптовалют и токенов
+                    </li>
+                    <li>
+                        Юридическая консультация по внедрению Blockchain
+                    </li>
+                    <li>
+                        Разработка смарт-контрактов
+                    </li>
+                    <li>
+                        Внедорение Blockchain в банкинг
+                    </li>
+                    <li>
+                        Разработка крипто-краудфандинговой платформы
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
 <!-- END section -->
 
 <!-- BEGIN section -->
-{{- partial "_home-sec-4.html" . -}} 
+<section class="section section_faq">
+    <div class="container">
+        <h2 class="text-center mb-5">FAQ</h2>
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="accordion">
+                    <div class="accordion-item mb-4">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                                Как использовать продукт?
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item my-4">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                Как оформить заказ?
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item my-4">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                Какие есть варианты сотруднечества?
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+                <div class="accordion">
+                    <div class="accordion-item mb-4">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                Какие есть гарантии?
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item my-4">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                Как связаться с компанией, если клиент не нашел ответ в FAQ?
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item my-4">
+                        <h2 class="accordion-header" id="heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                Как использовать продукт?
+                            </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 <!-- END section -->
 
 <!-- BEGIN section -->
-{{- partial "_home-sec-5.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-6.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-7.html" . -}} 
-
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-8.html" . -}} 
-<!-- END section -->
-
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-9.html" . -}} 
-<!-- END section -->
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-10.html" . -}} 
-<!-- END section -->
-
-
-<!-- BEGIN section -->
-{{- partial "_home-sec-11.html" . -}} 
+<section class="section my-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h3 class="mb-4">
+                    Остались вопросы? <br>Задавайте!
+                </h3>
+                <h5>
+                    Свяжитесь с нашим менеджером и мы сделаем чет такое что вы у нас все купите
+                </h5>
+            </div>
+            <div class="col-md-6 text-center my-4">
+                <div class="btn btn--grad">
+                    Связаться
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- END section -->
 
 <!-- {{- partial "_modal-form.html" . -}}  -->
 
 {{ end }}
-
