@@ -28,6 +28,8 @@
             color: $white
     &--grad
         +sz(312px, 82px)
+        min-width: 200px
+        padding: 20px 0
         display: inline-flex
         background: $grad1
         color: $white
@@ -36,6 +38,10 @@
             background: $main
             border-color: $main
             color: $white
+        +maw($sm)
+            width: auto
+            height: auto
+            +ft(16, 16, 400)
     &--dark
         padding: 15px 15px
         background-color: #181818
