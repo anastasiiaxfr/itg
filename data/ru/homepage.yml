@@ -58,7 +58,7 @@ section_4:
         link: "https://forms.gle/BpZ8HUUmTBmcqsZz6"
         title: Заполнить форму
       btn2:
-        link: "https://t.me/windowitg_bot"
+        link: "https://t.me/ITG_Company_bot"
         title: Связаться в Telegram
 
     - period: 3 месяца 
@@ -69,7 +69,7 @@ section_4:
         link: "https://forms.gle/BpZ8HUUmTBmcqsZz6"
         title: Заполнить форму
       btn2:
-        link: "https://t.me/windowitg_bot"
+        link: "https://t.me/ITG_Company_bot"
         title: Связаться в Telegram
 
     - period: 12 месяцев
@@ -80,7 +80,7 @@ section_4:
         link: "https://forms.gle/BpZ8HUUmTBmcqsZz6"
         title: Заполнить форму
       btn2:
-        link: "https://t.me/windowitg_bot"
+        link: "https://t.me/ITG_Company_bot"
         title: Связаться в Telegram
 
 # section #

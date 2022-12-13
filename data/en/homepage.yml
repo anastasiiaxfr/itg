@@ -60,7 +60,7 @@ section_4:
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
         title: Fill in the form
       btn2:
-        link: https://t.me/windowitg_bot
+        link: https://t.me/ITG_Company_bot
         title: Telegram Contact
 
     - period: 3 month
@@ -71,7 +71,7 @@ section_4:
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
         title: Fill in the form
       btn2:
-        link: https://t.me/windowitg_bot
+        link: https://t.me/ITG_Company_bot
         title: Telegram Contact
 
     - period: 12  month
@@ -80,10 +80,10 @@ section_4:
       benefits: 1800$ economy
       btn1: 
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
-        title: Telegram Contact
+        title: Fill in the form
 
       btn2:
-        link: https://t.me/windowitg_bot
+        link: https://t.me/ITG_Company_bot
         title: Telegram Contact
 
 

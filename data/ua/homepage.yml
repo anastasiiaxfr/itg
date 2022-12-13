@@ -59,7 +59,7 @@ section_4:
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
         title: Заповнити форму
       btn2:
-        link: https://t.me/windowitg_bot
+        link: https://t.me/ITG_Company_bot
         title: Зв'язатися в Telegram
 
     - period: 3 місяці 
@@ -70,7 +70,7 @@ section_4:
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
         title: Заповнити форму
       btn2:
-        link: https://t.me/windowitg_bot
+        link: https://t.me/ITG_Company_bot
         title: Зв'язатися в Telegram
     - period: 12  місяців
       prise: 600$
@@ -78,9 +78,9 @@ section_4:
       benefits: 1800$ економії
       btn1: 
         link: https://forms.gle/BpZ8HUUmTBmcqsZz6
-        title: Зв'язатися в Telegram
+        title: Заповнити форму
       btn2:
-        link: https://t.me/windowitg_bot
+        link: https://t.me/ITG_Company_bot
         title: Зв'язатися в Telegram
 
 # section #
