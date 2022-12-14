@@ -40,6 +40,56 @@
   </script>
 
 
- 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+var $owl = $('.owl-carousel');
+
+$owl.children().each( function( index ) {
+  $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+});
+
+$owl.owlCarousel({
+  center: true,
+  loop: true,
+  items: 5,
+  responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        600:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:4,
+        }
+    }
+});
+
+$(document).on('click', '.owl-item>div', function() {
+  var $speed = 300;  // in ms
+  $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
+});
+ </script>
+
+ <style>
+  .owl-item > div {
+  cursor: pointer;
+  margin: 6% 8%;
+  transition: margin 0.4s ease;
+}
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.owl-item:not(.center) > div:hover {
+  opacity: .75;
+}
+ </style>
 </body>
 </html>

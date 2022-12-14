@@ -135,3 +135,12 @@ section_6:
 
     - dd: I have more questions
       dt: "You can write to us in the chat support on Telegram [@International_TradeGroup](https://t.me/ITG_club). \n\n Support is active on weekdays from 9:00 to 18:00."
+
+# section #
+section_7:
+  enable: false
+  title: Testimonials
+  items:
+    - img: "images/testimonials4.png" 
+    - img: "images/testimonials2.png" 
+    - img: "images/testimonials5.png"

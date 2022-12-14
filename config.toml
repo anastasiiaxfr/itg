@@ -154,7 +154,10 @@ link = "plugins/js/bootstrap.bundle.min.js"
 link = "plugins/js/jquery.min.js"
 [[params.plugins.js]]
 link = "plugins/js/parallax.min.js"
-
+# [[params.plugins.js]]
+# link = "plugins/owl/owl.min.js"
+[[params.plugins.css]]
+link = "plugins/owl/owl.carousel.min.css"
 
 [[params.soc]]
 title = "tiktok"

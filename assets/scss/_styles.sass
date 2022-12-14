@@ -115,3 +115,38 @@ iframe
             display: none
         &:focus
             box-shadow: none
+
+.slick
+    &-track 
+        display: flex !important
+        align-items: center
+    &-slide
+        padding: 0 10px
+
+.slider
+    &__wrap
+        position: relative
+    &__nav
+        &-toggler
+            position: absolute
+            top: 0
+            bottom: 0
+            margin: auto
+            display: flex !important
+            align-items: center
+            justify-content: center
+            width: 4em
+            height: 4em
+            border-radius: 50%
+            background-color: rgba(0, 0, 0, 0.79)
+            list-style-type: none
+            &.prev
+                left: 40px
+            &.next
+                right: 40px
+            +maw($md)
+                display: none !important
+
+.owl-carousel .owl-stage
+    display: flex
+    align-items: center

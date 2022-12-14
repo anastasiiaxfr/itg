@@ -124,3 +124,14 @@ section_6:
 
     - dd: У мене залишились питання.
       dt: "Ви можете написати нам в чат-підтримку в [телеграм](https://t.me/ITG_club) @International_TradeGroup. \n\n Підтримка активна у будні з 9:00 до 18:00."
+
+# section #
+section_7:
+  enable: true
+  title: Відгуки
+  items:
+    - img: "images/testimonials4.png" 
+    - img: "images/testimonials2.png" 
+    - img: "images/testimonials5.png"
+
+   
