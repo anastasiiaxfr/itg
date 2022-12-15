@@ -1,19 +1,30 @@
 {{ $data := index .Site.Data .Site.Language.Lang }}
 {{ if $data.homepage.section_7 }}
 {{ with $data.homepage.section_7 }}
-
+{{ if .enable }}
 <section class="section section_7" id="testimonials">
   <div class="container pb-5 mb-5">
     <h2 class="text-center mb-5 pb-3">{{ .title }}</h2>
     
     <div class="slider__wrap">
       <div class="owl-carousel">
+       
         {{ range .items }}
         <div>
-          <img src="{{ .img | relURL }}" alt="{{ .Title }}">
+        <div class="comment">
+          <div class="comment__question">
+            {{ if .question }}
+            {{ .question }}
+          {{ end }}
+          </div>
+         <div class="comment__answear">
+          {{ .answear }}
+          </div>
         </div>
+      </div>
         {{ end }}
       </div>
+      
    
     <ul class="slider__nav">
       <li class="slider__nav-toggler prev">
@@ -32,6 +43,8 @@
 
   </div>
 </section>
+
+{{ end }}
 
 {{ end }} 
 {{ end }}

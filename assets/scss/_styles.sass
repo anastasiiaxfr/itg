@@ -147,6 +147,41 @@ iframe
             +maw($md)
                 display: none !important
 
+
 .owl-carousel .owl-stage
     display: flex
     align-items: center
+
+.owl-item > div 
+  cursor: pointer
+  margin: 6% 8%
+  transition: margin 0.4s ease
+
+.owl-item:not(.center) > div:hover 
+  opacity: .75
+
+// .owl-carousel .owl-stage
+//     &::before
+//         content: ''
+//         position: absolute
+//         left: 0
+//         display: block
+//         width: 100%
+//         background: linear-gradient(90deg,$dark2 23%,transparent 40%, $dark2 59%)
+//         z-index: 100
+//         height: 100%
+
+.comment
+    padding: 30px 15px
+    text-align: center
+    background-color: $dark
+    box-shadow: $bxsd
+    border-radius: $brs2
+    color: $main
+    &:hover
+        box-shadow: $bxsd2
+    &__question
+        +ft(14, 14*1.4, 700)
+        margin-bottom: 30px
+    &__answear
+        +ft(14, 14*1.4, 400)
