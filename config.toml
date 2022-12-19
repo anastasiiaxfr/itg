@@ -111,10 +111,7 @@ link = "/plugins/slick-1.8.1/slick/slick.min.js"
 [[params.plugins.js]]
 link = "plugins/js/bootstrap.bundle.min.js"
 
-[[params.plugins.js]]
-link = "plugins/js/just-validate.min.js"
-[[params.plugins.js]]
-link = "plugins/js/smtp.js"
+
 
 
 [params.preloader]

@@ -116,7 +116,13 @@
             margin: 0
         +maw($md)
             +ft(16, 16*1.4, 400)
-    
+    &--bg
+        background-color: $blue 
+        background-image: url(../images/logo-lg.png) ,url(../images/hero2.jpg) 
+        background-repeat: no-repeat
+        background-size: contain, cover
+        background-position: 100% 50%
+        color: $white
 
 
 .feature
@@ -355,3 +361,69 @@
 
 .img
     max-width: 100%
+    &--bd
+        border-radius: 12px
+        max-width: 100%
+
+.list--orderred
+    counter-reset: counter
+    list-style-type: none
+    margin: 0
+    column-count: 2
+    column-gap: 100px
+    & > li
+        counter-increment: counter
+        position: relative
+        font-weight: bold
+        margin: 20px auto
+        padding-left: 40px
+        &:before
+            content: counter(counter)
+            position: absolute
+            top: 0
+            bottom: 0
+            left: 0
+            display: inline-flex
+            align-items: center
+            justify-content: center
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            margin-right: 10px
+            background: linear-gradient(137.96deg, #000045 3.43%, #E3E3FF 113.8%)
+            color: $white
+        & li
+            font-weight: normal
+            list-style-type: lower-alpha
+            margin-left: 0
+    +maw($sm)
+        column-count: 1
+
+.slick-slide 
+    img
+        max-width: 96%
+        margin: 0 auto
+
+.slider
+    &__wrap
+        position: relative
+    &__nav
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        width: 90%
+        margin: auto
+        display: flex
+        align-items: center
+        justify-content: space-between
+        +maw($sm)
+            display: none
+        &-item
+            width: 4em
+            height: 4em
+            border-radius: 50%
+            background-color: $blue
+            color: $white
+            border: none
