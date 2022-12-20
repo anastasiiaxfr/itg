@@ -8,8 +8,9 @@
     transition: trs
     &:hover, &:active, &:focus
         color: inherit
-        border-color: $white
+        background: $grad4
         box-shadow: none
+        border-color: transparent
     &__wrap
         +flex(flex, center, center, wrap)
         margin: 0
@@ -23,9 +24,17 @@
         +theme(white)
         color: $blue
         &:hover, &:active, &:focus
-            background-color: $main
-            border-color: $main
+            background-color: $grad4
+            border-color: transparent
             color: $white
+    &--white
+        background-color: $white
+        border: none
+        color: $blue
+        padding: 17px
+        &:hover
+            background:  $grad4
+            
     &--grad
         +sz(312px, 82px)
         min-width: 200px
@@ -35,8 +44,8 @@
         color: $white
         +ft(32, 32, 400, $ffHeading)
         &:hover, &:active, &:focus
-            background: $main
-            border-color: $main
+            background:  $grad4
+            border-color: transparent
             color: $white
         +maw($sm)
             width: auto
@@ -57,7 +66,7 @@
         border: none
         color: $white
         &:hover
-            background: $main
+            background: $grad4
     &--main
         display: inline-flex
         background-color: $blue3
@@ -66,8 +75,8 @@
         min-width: 200px
         +ft(21, 26, 500)
         &:hover
-            background-color: $main
-            border-color: $main
+            background-color:  $grad4
+            border-color: transparent
 
     &--lg
         +sz(280px, 60px)
