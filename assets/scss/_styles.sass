@@ -123,6 +123,12 @@
         background-size: contain, cover
         background-position: 100% 50%
         color: $white
+    &--transform
+        margin-top: -40px
+        .row
+            margin-left: auto
+            margin-right: auto
+          
 
 
 .feature
@@ -154,6 +160,7 @@
     object-fit: cover
 
 .img
+    max-width: 100%
     &__wrap
         img
             display: block
@@ -164,6 +171,9 @@
         max-width: 100%
         margin-left: auto
         margin-right: auto
+    &--bd
+        border-radius: 1.5em
+        max-width: 100%
 
 .chart
     +mg((t, 30px), (b, 30px))
@@ -359,11 +369,7 @@
         +maw($md)
             transform: translate(0)
 
-.img
-    max-width: 100%
-    &--bd
-        border-radius: 12px
-        max-width: 100%
+
 
 .list--orderred
     counter-reset: counter
@@ -429,23 +435,30 @@
             border: none
 
 .item
-    background: linear-gradient(180deg, #00003E 0%, #221C5E 100%)
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-    border-radius: 10px
-    color: $white
     padding: 25px
     margin: 12px auto
     display: flex
     flex-wrap: wrap
     align-items: center
+    // background: linear-gradient(180deg, #00003E 0%, #221C5E 100%)
+    // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    // color: $white
+    background: transparent
+    border: 1px solid #00003E
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    color: $blue
+    border-radius: 10px
     &:hover
-        background: linear-gradient(180deg, #45108A 0%, #3C2461 100%)
+        box-shadow: none
+        //background: linear-gradient(180deg, #45108A 0%, #3C2461 100%)
+    svg
+        stroke-width: 1px
     &__text
         margin-top: 10px
     &__img
         display: block
         width: 100%
-        margin-bottom: 10px
+        margin-bottom: 15px
     &__title
         display: block
         
@@ -472,11 +485,11 @@
         &-6, &-5
             height: 235px
         &-3, &-2
-            height: 350px
+            height: 354px
         &-1
             height: 200px
         &-10
-            justify-content: center
+            height: 200px
         
     
 
@@ -500,3 +513,33 @@
             margin-top: 20px
     +maw($sm)
         +ft(18, 18*1.4, 600)
+
+
+.figure
+    box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.3)
+    max-width: 280px
+    padding: 15px 15px 20px
+    margin: 20px 0
+    text-align: center
+    background-color: #fff
+    border-radius: 10px
+
+    @media only screen and (max-width: 992px)
+        max-width: 100%
+        flex: auto
+
+    &__img
+        img
+            display: block
+            width: 70px
+            height: 70px
+            margin-left: auto
+            margin-right: auto
+    &__title
+        margin-bottom: 8px
+        margin-top: 8px
+        font-weight: 600
+        font-size: 15px
+        line-height: 1
+    &__text
+        font-size: 13px

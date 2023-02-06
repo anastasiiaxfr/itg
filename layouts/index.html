@@ -24,20 +24,23 @@
     {{- partial "header.html" . -}}
 
     <!-- BEGIN section -->
-    <section class="section pb-5 pt-lg-5">
-        <div class="container py-lg-5">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="images/consultation.jpg" alt="{{ .Title }}" class="img--bd mb-5 mb-lg-0">
-                </div>
-                <div class="col-lg-6">
+    <section class="hero__content section">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <img src="images/consultation.jpg" alt="{{ .Title }}" class="img--bd mb-5 mb-lg-0">
+
+                <div class="hero__text">
 
                     <h1 class="h1">
                         Консалтинговые услуги от International Trade Group
                     </h1>
                     <p class="h1__subtitle">
-Аналитики компании проводят экспертные консультации в области трейдинга, экономят Ваше время и помогают преобразовать Вашу торговлю на бирже в основной источник дохода.                    </p>
-                    <a href="#" class="btn btn--main">Записаться</a>
+                        International Trade Group (ITG) — международная прогрессивная, динамично развивающаяся
+                        консалтинговая компания, которая решает глобальные проблемы в мире цифровых финансов,
+                        инновационного подхода к инвестированию и интеграции Web 3.0 технологий в бизнес.
+                    </p>
+                    <a href="#" class="btn btn--main">Оставить заявку</a>
                 </div>
             </div>
         </div>
@@ -47,11 +50,54 @@
 <!-- END section -->
 
 <!-- BEGIN section -->
+<section class="section section--transform">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col figure">
+                <div class="figure__img">
+                    <img src="images/pic1.png" alt="Доступ к профессионалам">
+                </div>
+                <div class="figure__title">
+                    Доступ к профессионалам
+                </div>
+                <div class="figure__text">
+                    Однимиз лучших и специалистов на крипторынке
+                </div>
+            </div>
+            <div class="col figure">
+                <div class="figure__img">
+                    <img src="images/pic2.png" alt="Снижение рисков">
+                </div>
+                <div class="figure__title">
+                    Снижение рисков
+                </div>
+                <div class="figure__text">
+                    Вы можете снизить риски, выбрав нашу компанию.
+                </div>
+            </div>
+            <div class="col figure">
+                <div class="figure__img">
+                    <img src="images/pic3.png" alt="Экономия времени">
+                </div>
+                <div class="figure__title">
+                    Экономия времени
+                </div>
+                <div class="figure__text">
+                    Люди, которым вы доверяете данную работу, занимаются этим каждый день на постоянной основе.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END section -->
+
+
+<!-- BEGIN section -->
 <section class="section">
     <div class="container py-lg-5 my-4">
         <h2 class="h2 text-center mb-4">Аналитики International Trade Group предлагают</h2>
 
-        <div class="row my-lg-5">
+        <div class="row mt-lg-5">
 
             <div class="col-lg-4 col-md-6">
 
@@ -141,7 +187,7 @@
                                 </li>
                             </ol>
                         </div>
-    
+
                     </div>
                     <div class="col-lg-12">
                         <div class="item item-5">
@@ -229,19 +275,15 @@
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-6">
-                        <div class="item item--white item-10">
-                            <div>
-                                <div class="item__heading">
-                                    Остались вопросы? <br>
-                                    Задавайте!
-                                </div>
-                                <p>
-                                    Мы ответим в течении часа
-                                </p>
-                                <div class="btn btn--grad">
-                                    Связаться
-                                </div>
+                        <div class="item item-10">
+                            <div class="item__img">
+                                <svg class="icon" width="80" height="80">
+                                    <use xlink:href="#i10"></use>
+                                </svg>
                             </div>
+                            <b class="item__title">
+                                Личный опыт, кейсы по торговле,опыт личных инвестиции.
+                            </b>
                         </div>
                     </div>
                 </div>
@@ -259,51 +301,53 @@
 <!-- BEGIN section -->
 <section class="section section--bg">
     <div class="container py-5">
-        <div class="col-md-8 mx-auto">
-            <h2 class="h2 text-center">
-                ITG предоставляет эксклюзивные условия своим клиентам:
-            </h2>
-        </div>
-        <div class="row mt-5">
-            <div class="col-lg-6">
-                <figure class="numbs">
-                    <big class="numbs__num">
-                        1
-                    </big>
-                    <div class="numbs__text">
-                        Ежедневные <br> торговые идеи.
-                    </div>
-                </figure>
+        <div class="py-4">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="h2 text-center">
+                    ITG предоставляет эксклюзивные условия своим клиентам:
+                </h2>
             </div>
-            <div class="col-lg-6">
-                <figure class="numbs">
-                    <big class="numbs__num">
-                        2
-                    </big>
-                    <div class="numbs__text">
-                        Бесплатный чек-<br>лист
-                    </div>
-                </figure>
-            </div>
-            <div class="col-lg-6">
-                <figure class="numbs">
-                    <big class="numbs__num">
-                        3
-                    </big>
-                    <div class="numbs__text">
-                        Стоимость <br> консультаций от 20$
-                    </div>
-                </figure>
-            </div>
-            <div class="col-lg-6">
-                <figure class="numbs">
-                    <big class="numbs__num">
-                        4
-                    </big>
-                    <div class="numbs__text">
-                        Длительность консультации до 60 минут — зависит от выбранной тематики.
-                    </div>
-                </figure>
+            <div class="row mt-5">
+                <div class="col-lg-6">
+                    <figure class="numbs">
+                        <big class="numbs__num">
+                            1
+                        </big>
+                        <div class="numbs__text">
+                            Ежедневные <br> торговые идеи.
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="numbs">
+                        <big class="numbs__num">
+                            2
+                        </big>
+                        <div class="numbs__text">
+                            Авторский гайд по <br> торговле.
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="numbs">
+                        <big class="numbs__num">
+                            3
+                        </big>
+                        <div class="numbs__text">
+                            Доступная стоимость <br> консультаций.
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="numbs">
+                        <big class="numbs__num">
+                            4
+                        </big>
+                        <div class="numbs__text">
+                            Развернутые ответы на все <br> вопросы.
+                        </div>
+                    </figure>
+                </div>
             </div>
         </div>
     </div>
@@ -370,12 +414,12 @@
 
 <!-- BEGIN section -->
 <sevtion class="section section_rss">
-    <div class="container py-lg-5 my-lg-5 mt-4">
+    <div class="container pt-lg-5 mt-lg-5 mt-4">
         <div class="row">
             <div class="rss">
                 <div class="rss__title">
                     Остались вопросы? <br>
-Задавайте!
+                    Задавайте!
                 </div>
                 <a href="#" class="btn btn--white">Связаться</a>
             </div>
@@ -386,7 +430,7 @@
 <!-- END section -->
 
 <!-- BEGIN section -->
-<section class="section my-lg-5 py-3">
+<section class="section my-lg-5 py-lg-4 py-3">
     <div class="container">
         <h2 class="h2 text-center">
             Будь успешным в инвестировании и трейдинге вместе с International Trade Group
